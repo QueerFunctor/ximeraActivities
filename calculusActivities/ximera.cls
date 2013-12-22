@@ -84,6 +84,8 @@
 \RequirePackage{titletoc} 
 
 \newcommand{\answer}{}
+\everymath{\displaystyle} %makes everymath display style could be optional
+
 
 
 

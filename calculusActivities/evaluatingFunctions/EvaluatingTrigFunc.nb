@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     21865,        425]
-NotebookOptionsPosition[     21627,        412]
-NotebookOutlinePosition[     21963,        427]
-CellTagsIndexPosition[     21920,        424]
+NotebookDataLength[     22691,        441]
+NotebookOptionsPosition[     22453,        428]
+NotebookOutlinePosition[     22789,        443]
+CellTagsIndexPosition[     22746,        440]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -62,32 +62,42 @@ Cell[BoxData[{
         RowBox[{"RandomChoice", "[", "UnitCirc", "]"}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a4", " ", "=", " ", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a3", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a2", "=", 
         RowBox[{"Random", "[", 
          RowBox[{"Integer", ",", 
           RowBox[{"{", 
            RowBox[{
-            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], ",", 
+            RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a1", "=", 
         RowBox[{"Random", "[", 
          RowBox[{"Integer", ",", 
           RowBox[{"{", 
            RowBox[{
-            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], ",", 
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a0", "=", 
         RowBox[{"Random", "[", 
@@ -178,15 +188,16 @@ Cell[BoxData[{
          RowBox[{"ToString", "[", 
           RowBox[{"TeXForm", "[", 
            RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-         "\"\<$, evaluate $f(\>\"", ",", 
+         "\"\<$, evaluate $f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"point", ",", 
            RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\n$f(\>\"", ",", 
+         "\"\<\\\\right)$. Express your answer in an exact form.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"point", ",", 
            RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<)=\>\"", ",", 
+         "\"\<\\\\right)=\>\"", ",", 
          RowBox[{"StringReplace", "[", 
           RowBox[{
            RowBox[{"ToString", "[", 
@@ -194,17 +205,19 @@ Cell[BoxData[{
              RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
            RowBox[{"\"\<x\>\"", "\[Rule]", 
             RowBox[{"StringJoin", "[", 
-             RowBox[{"\"\<(\>\"", ",", 
+             RowBox[{"\"\<\\\\left(\>\"", ",", 
               RowBox[{"ToString", "[", 
                RowBox[{"point", ",", 
                 RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-              "\"\<)\>\""}], "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", 
-         "\[IndentingNewLine]", 
-         "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$f(\>\"", ",", 
+              "\"\<\\\\right)\>\""}], "]"}]}]}], "]"}], ",", "\"\<$.\>\"", 
+         ",", "\[IndentingNewLine]", 
+         "\"\< Note, you could stop here and have a perfectly acceptable \
+answer. However, you could also recall facts about the unit circle and \
+continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"point", ",", 
            RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<)=\>\"", ",", 
+         "\"\<\\\\right)=\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{
            RowBox[{"f", "[", "point", "]"}], ",", 
@@ -229,7 +242,7 @@ Cell[BoxData[{
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "1", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
 
  CellChangeTimes->{{3.595089976699493*^9, 3.595090058171722*^9}, {
    3.595090412504594*^9, 3.5950904195124197`*^9}, {3.595090471768955*^9, 
@@ -408,10 +421,13 @@ Cell[BoxData[{
    3.596553887999385*^9, 3.5965539225683002`*^9}, {3.5965540091048107`*^9, 
    3.59655401102389*^9}, {3.596554881688581*^9, 3.596554908770316*^9}, {
    3.5965549792317266`*^9, 3.5965549806477127`*^9}, {3.59655508045426*^9, 
-   3.596555082338193*^9}}]
+   3.596555082338193*^9}, {3.596718492151642*^9, 3.59671853769907*^9}, {
+   3.5967185699264107`*^9, 3.596718624835802*^9}, 3.596718766820195*^9, {
+   3.596718807452546*^9, 3.59671881604797*^9}, {3.596723184703114*^9, 
+   3.596723222476959*^9}}]
 },
 WindowSize->{896, 654},
-WindowMargins->{{-6, Automatic}, {Automatic, -8}},
+WindowMargins->{{-9, Automatic}, {Automatic, -8}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
@@ -426,7 +442,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 21066, 390, 1023, "Input"]
+Cell[557, 20, 21892, 406, 1111, "Input"]
 }
 ]
 *)

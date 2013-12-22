@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     17361,        307]
-NotebookOptionsPosition[     17066,        292]
-NotebookOutlinePosition[     17402,        307]
-CellTagsIndexPosition[     17359,        304]
+NotebookDataLength[     17918,        320]
+NotebookOptionsPosition[     17623,        305]
+NotebookOutlinePosition[     17959,        320]
+CellTagsIndexPosition[     17916,        317]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,18 +26,28 @@ Cell[BoxData[{
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"a4", " ", "=", " ", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a3", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a2", "=", 
         RowBox[{"Random", "[", 
@@ -85,9 +95,10 @@ Cell[BoxData[{
         ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", "\"\<)$.\>\"", ",",
-         "\[IndentingNewLine]", 
-        "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$f(x+h)-f(x)=\>\"", ",", 
+          RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
+        "\"\<)$. Note, you could stop here and have a perfectly acceptable \
+answer. However, we can simplify a bit more.\n\\\\end{hint}\n\\\\begin{hint}\n\
+$f(x+h)-f(x)=\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
           RowBox[{
@@ -107,7 +118,7 @@ Cell[BoxData[{
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "1", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
 
  CellChangeTimes->{{3.595089976699493*^9, 3.595090058171722*^9}, {
    3.595090412504594*^9, 3.5950904195124197`*^9}, {3.595090471768955*^9, 
@@ -284,7 +295,9 @@ Cell[BoxData[{
    3.596556306857148*^9, 3.5965563156828613`*^9}, {3.596556356253418*^9, 
    3.596556357882779*^9}, {3.596556431361212*^9, 3.5965564320555363`*^9}, {
    3.596556677870593*^9, 3.596556694157303*^9}, {3.596651258679986*^9, 
-   3.596651278317943*^9}},
+   3.596651278317943*^9}, {3.596724518803217*^9, 3.596724557463353*^9}, {
+   3.596724589830371*^9, 3.596724595320085*^9}, {3.596724801982913*^9, 
+   3.596724802086384*^9}},
  CellID->931296407],
 
 Cell[BoxData[""], "Input",
@@ -306,9 +319,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 16408, 267, 605, "Input",
+Cell[557, 20, 16965, 280, 627, "Input",
  CellID->931296407],
-Cell[16968, 289, 94, 1, 32, "Input"]
+Cell[17525, 302, 94, 1, 32, "Input"]
 }
 ]
 *)

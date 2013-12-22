@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     19399,        351]
-NotebookOptionsPosition[     19161,        338]
-NotebookOutlinePosition[     19498,        353]
-CellTagsIndexPosition[     19455,        350]
+NotebookDataLength[     20361,        371]
+NotebookOptionsPosition[     20048,        355]
+NotebookOutlinePosition[     20385,        370]
+CellTagsIndexPosition[     20342,        367]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"code", ":=", 
@@ -109,8 +111,8 @@ Cell[BoxData[{
          "\"\<$, evaluate $f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
-         "\"\<\\\\right)$.\n\\\\begin{solution}\n\\\\begin{hint}\n$f\\\\left(\
-\>\"", ",", 
+         "\"\<\\\\right)$. Express your answer in an exact form.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
          "\"\<\\\\right)=\>\"", ",", 
@@ -124,9 +126,10 @@ Cell[BoxData[{
              RowBox[{"\"\<(\>\"", ",", 
               RowBox[{"ToString", "[", 
                RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
-              "\"\<)\>\""}], "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", 
-         "\[IndentingNewLine]", 
-         "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
+              "\"\<)\>\""}], "]"}]}]}], "]"}], ",", 
+         "\"\<$. Note, you could stop here and have a perfectly acceptable \
+answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
+\n$f\\\\left(\>\"", ",", 
          RowBox[{"ToString", "[", 
           RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
          "\"\<\\\\right)=\>\"", ",", 
@@ -334,10 +337,24 @@ Cell[BoxData[{
    3.596590826831575*^9, 3.596590910833992*^9}, 3.59662535880585*^9, {
    3.596625433734489*^9, 3.596625509219809*^9}, {3.596625584900923*^9, 
    3.596625588114923*^9}, {3.596626001989403*^9, 3.5966262673586063`*^9}, {
-   3.596626322249764*^9, 3.596626327391724*^9}}]
+   3.596626322249764*^9, 3.596626327391724*^9}, {3.596723921742416*^9, 
+   3.5967239370425367`*^9}, {3.596723986547552*^9, 3.5967240224593077`*^9}}],
+
+Cell[BoxData["\<\"\\\\begin{exercise}\\nGiven that $f(x)=\\\\sqrt{5 x+3}$, \
+evaluate $f\\\\left(\\\\frac{39}{10}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$f\\\\left(\\\\frac{39}{\
+10}\\\\right)=\\\\sqrt{5 \
+(\\\\frac{39}{10})+3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n$f\\\\left(\\\\\
+frac{39}{10}\\\\right)=3 \\\\sqrt{\\\\frac{5}{2}}$.\\n\\\\end{hint}\\nThe \
+value of the function $f(x) = \\\\sqrt{5 x+3}$, evaluated at \
+$x=\\\\frac{39}{10}$, is $\\\\answer{3 \
+\\\\sqrt{\\\\frac{5}{2}}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>\
+"], "Output",
+ CellChangeTimes->{3.5967239377517014`*^9}]
+}, Open  ]]
 },
 WindowSize->{740, 652},
-WindowMargins->{{152, Automatic}, {Automatic, -8}},
+WindowMargins->{{142, Automatic}, {Automatic, -8}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
@@ -352,7 +369,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 18600, 316, 803, "Input"]
+Cell[CellGroupData[{
+Cell[579, 22, 18796, 318, 869, "Input"],
+Cell[19378, 342, 654, 10, 385, "Output"]
+}, Open  ]]
 }
 ]
 *)
