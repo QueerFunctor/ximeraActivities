@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     17702,        317]
-NotebookOptionsPosition[     17425,        302]
-NotebookOutlinePosition[     17781,        318]
-CellTagsIndexPosition[     17738,        315]
+NotebookDataLength[     18655,        339]
+NotebookOptionsPosition[     18378,        324]
+NotebookOutlinePosition[     18734,        340]
+CellTagsIndexPosition[     18691,        337]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,18 +34,28 @@ Cell[BoxData[{
              RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}], "/", "10"}]}], 
        ",", "\[IndentingNewLine]", 
        RowBox[{"a4", " ", "=", " ", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a3", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a2", "=", 
         RowBox[{"Random", "[", 
@@ -85,6 +95,15 @@ Cell[BoxData[{
         RowBox[{"a2", "*", 
          RowBox[{"x", "^", "2"}]}], "+", 
         RowBox[{"a1", "*", "x"}], "+", "a0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"answer", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}], ",", 
+         RowBox[{"f", "[", "prePoint", "]"}], ",", 
+         RowBox[{"N", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
       RowBox[{"StringJoin", "[", 
        RowBox[{"\"\<\\\\begin{exercise}\nGiven that $f(x)=\>\"", ",", 
         RowBox[{"ToString", "[", 
@@ -95,7 +114,8 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"IntegerPart", "[", "point", "]"}], "+", 
           RowBox[{"FractionalPart", "[", "point", "]"}]}], "]"}], ",", 
-        "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\n$f(\>\"", ",", 
+        "\"\<)$. Express your answer in decimal notation.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$f(\>\"", ",", 
         RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
         RowBox[{"StringReplace", "[", 
          RowBox[{
@@ -109,8 +129,7 @@ Cell[BoxData[{
             "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", "\[IndentingNewLine]", 
         "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$f(\>\"", ",", 
         RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"f", "[", "point", "]"}], "]"}], ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
         "\"\<$.\n\\\\end{hint}\nThe value of the function $f(x) = \>\"", ",", 
         " ", 
         RowBox[{"ToString", "[", 
@@ -119,14 +138,13 @@ Cell[BoxData[{
         "\"\<$, evaluated at $x=\>\"", ",", 
         RowBox[{"ToString", "[", "point", "]"}], ",", 
         "\"\<$, is $\\\\answer{\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"f", "[", "point", "]"}], "]"}], ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
         "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
        "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "50", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
 
  CellChangeTimes->{{3.595089976699493*^9, 3.595090058171722*^9}, {
    3.595090412504594*^9, 3.5950904195124197`*^9}, {3.595090471768955*^9, 
@@ -297,11 +315,15 @@ Cell[BoxData[{
    3.596299490783845*^9}, {3.5963039527673063`*^9, 3.596303960529457*^9}, 
    3.596304143565431*^9, {3.596468515824108*^9, 3.596468516491851*^9}, {
    3.596469063274275*^9, 3.5964691039137583`*^9}, {3.596469140042902*^9, 
-   3.596469151897694*^9}},
+   3.596469151897694*^9}, {3.596717012224758*^9, 3.596717013835368*^9}, {
+   3.5967172387129297`*^9, 3.596717313790308*^9}, 3.596717364415305*^9, {
+   3.5967174664262037`*^9, 3.596717487360437*^9}, {3.596717748398324*^9, 
+   3.5967177714842997`*^9}, {3.5967182341638927`*^9, 3.5967182913413754`*^9}},
+ 
  CellID->931296407]
 },
-WindowSize->{1280, 991},
-WindowMargins->{{Automatic, 0}, {0, Automatic}},
+WindowSize->{1366, 708},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 ShowSelection->True,
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
@@ -317,7 +339,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 16864, 280, 605, "Input",
+Cell[557, 20, 17817, 302, 649, "Input",
  CellID->931296407]
 }
 ]

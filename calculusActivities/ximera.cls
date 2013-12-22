@@ -144,7 +144,7 @@
 %% \postdate{\vskip -3em}
 
 
-\newcommand{\activitytitlebreak}{\newpage}
+\newcommand{\activitytitlebreak}{\clearpage}
 
 \newcommand*{\activityheadline}{}
 \newcommand{\headline}[1]{\def\activityheadline{#1}}
