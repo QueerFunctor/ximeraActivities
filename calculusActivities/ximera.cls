@@ -79,8 +79,9 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
-\RequirePackage{titling}
+%\RequirePackage{titling}
 \RequirePackage{titlesec} 
+\RequirePackage{titletoc} 
 
 \newcommand{\answer}{}
 
@@ -143,6 +144,7 @@
 %% \postdate{\vskip -3em}
 
 
+\newcommand{\activitytitlebreak}{\newpage}
 
 \newcommand*{\activityheadline}{}
 \newcommand{\headline}[1]{\def\activityheadline{#1}}
@@ -157,14 +159,8 @@
 \titlespacing*{\activitytitle}{0pt}{0pt}{2em}
 \renewcommand{\theactivitytitle}{\arabic{activitytitle}}
 
-
-
-
-%% \NewEnviron{headline}{
-%%   \par\noindent\textsl{
-%%     \noindent\BODY
-%%   }
-%% }
+\contentsmargin{2.55em}
+\dottedcontents{activitytitle}[3.8em]{}{2.3em}{1pc}
 
 
 
