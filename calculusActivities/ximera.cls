@@ -80,7 +80,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 \RequirePackage{titling}
-
+\RequirePackage{titlesec} 
 
 \newcommand{\answer}{}
 
@@ -129,26 +129,42 @@
 % ---------------------------------------------------------------------
 % ---------------------------------------------------------------------
 %
-%                    ************************************
-%                    ** TITLE AND ACTIVITY DESCRIPTION **
-%                    ************************************
+%                    ************************
+%                    ** TITLE AND HEADLINE **
+%                    ************************
 %
 %
 %
 
-\pretitle{\begin{flushleft}\LARGE\bfseries}
-\posttitle{\par\end{flushleft}}
-\predate{}
-\date{}
-\postdate{\vskip -3em}
+%% \pretitle{\begin{flushleft}\LARGE\bfseries}
+%% \posttitle{\par\end{flushleft}}
+%% \predate{}
+%% \date{}
+%% \postdate{\vskip -3em}
 
 
 
-\NewEnviron{headline}{
-  \par\noindent\textsl{
-    \noindent\BODY
-  }
-}
+\newcommand*{\activityheadline}{}
+\newcommand{\headline}[1]{\def\activityheadline{#1}}
+
+\titleclass{\activitytitle}{straight}[\section]
+\newcounter{activitytitle}
+\titleformat{\activitytitle}
+            {\bfseries\LARGE\raggedright}
+            {\theactivitytitle}{1em}
+            {}
+            [\normalfont\small\itshape\raggedright\activityheadline]
+\titlespacing*{\activitytitle}{0pt}{0pt}{2em}
+\renewcommand{\theactivitytitle}{\arabic{activitytitle}}
+
+
+
+
+%% \NewEnviron{headline}{
+%%   \par\noindent\textsl{
+%%     \noindent\BODY
+%%   }
+%% }
 
 
 
