@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     18655,        339]
-NotebookOptionsPosition[     18378,        324]
-NotebookOutlinePosition[     18734,        340]
-CellTagsIndexPosition[     18691,        337]
+NotebookDataLength[     25687,        515]
+NotebookOptionsPosition[     25306,        497]
+NotebookOutlinePosition[     25684,        514]
+CellTagsIndexPosition[     25641,        511]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -318,14 +318,188 @@ Cell[BoxData[{
    3.596469151897694*^9}, {3.596717012224758*^9, 3.596717013835368*^9}, {
    3.5967172387129297`*^9, 3.596717313790308*^9}, 3.596717364415305*^9, {
    3.5967174664262037`*^9, 3.596717487360437*^9}, {3.596717748398324*^9, 
-   3.5967177714842997`*^9}, {3.5967182341638927`*^9, 3.5967182913413754`*^9}},
- 
- CellID->931296407]
+   3.5967177714842997`*^9}, {3.5967182341638927`*^9, 
+   3.5967182913413754`*^9}, {3.596812519448349*^9, 3.596812570245913*^9}, {
+   3.596820699193266*^9, 3.596820703368079*^9}},
+ CellID->931296407],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"code", ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"func", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
+           "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"variable", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"prePoint", "=", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}], "/", "10"}]}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"a4", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a3", "=", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a2", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a1", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a0", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}]}], 
+      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"point", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", "prePoint", "]"}], ",", "prePoint", ",", 
+         RowBox[{"N", "[", "prePoint", "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"f", "[", "x_", "]"}], "=", 
+       RowBox[{
+        RowBox[{"a4", "*", 
+         RowBox[{"x", "^", "4"}]}], "+", 
+        RowBox[{"a3", "*", 
+         RowBox[{"x", "^", "3"}]}], "+", 
+        RowBox[{"a2", "*", 
+         RowBox[{"x", "^", "2"}]}], "+", 
+        RowBox[{"a1", "*", "x"}], "+", "a0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"answer", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}], ",", 
+         RowBox[{"f", "[", "prePoint", "]"}], ",", 
+         RowBox[{"N", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluate $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{
+          RowBox[{"IntegerPart", "[", "point", "]"}], "+", 
+          RowBox[{"FractionalPart", "[", "point", "]"}]}], "]"}], ",", 
+        "\"\<)$. Express your answer in decimal notation.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], "\[Rule]", 
+           RowBox[{"StringJoin", "[", 
+            RowBox[{"\"\<(\>\"", ",", 
+             RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)\>\""}], 
+            "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", "\[IndentingNewLine]", 
+        "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", " ", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluated at $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", "point", "]"}], ",", 
+        "\"\<$, is $\\\\answer{\>\"", ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
+        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"StringJoin", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{"code", ",", 
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.596820572034473*^9, 3.596820604382983*^9}, 
+   3.5968207012871532`*^9}]
 },
-WindowSize->{1366, 708},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1033, 714},
+WindowMargins->{{97, Automatic}, {Automatic, 0}},
 ShowSelection->True,
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -339,8 +513,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 17817, 302, 649, "Input",
- CellID->931296407]
+Cell[557, 20, 17915, 303, 522, "Input",
+ CellID->931296407],
+Cell[18475, 325, 6704, 166, 590, "Input"],
+Cell[25182, 493, 120, 2, 28, "Input"]
 }
 ]
 *)
