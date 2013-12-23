@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     25687,        515]
-NotebookOptionsPosition[     25306,        497]
-NotebookOutlinePosition[     25684,        514]
-CellTagsIndexPosition[     25641,        511]
+NotebookDataLength[     25624,        513]
+NotebookOptionsPosition[     25243,        495]
+NotebookOutlinePosition[     25621,        512]
+CellTagsIndexPosition[     25578,        509]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -439,10 +439,7 @@ Cell[BoxData[{
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
         
-        RowBox[{"ToString", "[", 
-         RowBox[{
-          RowBox[{"IntegerPart", "[", "point", "]"}], "+", 
-          RowBox[{"FractionalPart", "[", "point", "]"}]}], "]"}], ",", 
+        RowBox[{"ToString", "[", "point", "]"}], ",", 
         "\"\<)$. Express your answer in decimal notation.\n\
 \\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
         RowBox[{"ToString", "[", 
@@ -489,7 +486,8 @@ Cell[BoxData[{
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input"],
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.596822797404059*^9, 3.596822804542852*^9}}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.596820572034473*^9, 3.596820604382983*^9}, 
@@ -513,10 +511,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 17915, 303, 522, "Input",
+Cell[557, 20, 17915, 303, 505, "Input",
  CellID->931296407],
-Cell[18475, 325, 6704, 166, 590, "Input"],
-Cell[25182, 493, 120, 2, 28, "Input"]
+Cell[18475, 325, 6641, 164, 573, "Input"],
+Cell[25119, 491, 120, 2, 28, "Input"]
 }
 ]
 *)
