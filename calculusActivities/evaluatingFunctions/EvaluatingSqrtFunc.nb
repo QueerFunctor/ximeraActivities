@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     20358,        371]
-NotebookOptionsPosition[     20024,        354]
-NotebookOutlinePosition[     20382,        370]
-CellTagsIndexPosition[     20339,        367]
+NotebookDataLength[     35494,        602]
+NotebookOptionsPosition[     35158,        585]
+NotebookOutlinePosition[     35514,        601]
+CellTagsIndexPosition[     35471,        598]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,6 +27,21 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
+       RowBox[{"func", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
+           "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"variable", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"point", "=", 
         RowBox[{
          RowBox[{"Random", "[", 
@@ -103,15 +118,27 @@ Cell[BoxData[{
          RowBox[{"a1", "*", "x"}], "+", "a0"}], "]"}]}], ";", 
       "\[IndentingNewLine]", 
       RowBox[{"StringJoin", "[", 
-       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $f(x)=\>\"", ",", 
+       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-        "\"\<$, evaluate $f\\\\left(\>\"", ",", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluate $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
         "\"\<\\\\right)$. Express your answer in an exact form.\n\
-\\\\begin{solution}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
+\\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
         "\"\<\\\\right)=\>\"", ",", 
@@ -128,19 +155,30 @@ Cell[BoxData[{
              "\"\<)\>\""}], "]"}]}]}], "]"}], ",", 
         "\"\<$. Note, you could stop here and have a perfectly acceptable \
 answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
-\n$f\\\\left(\>\"", ",", 
+\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
         "\"\<\\\\right)=\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
           RowBox[{"f", "[", "point", "]"}], "]"}], "]"}], ",", 
-        "\"\<$.\n\\\\end{hint}\nThe value of the function $f(x) = \>\"", ",", 
-        " ", 
+        "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-        "\"\<$, evaluated at $x=\>\"", ",", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluated at $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+        ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
         "\"\<$, is $\\\\answer{\>\"", ",", 
@@ -152,7 +190,7 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "1", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}], "\[IndentingNewLine]"}], "Input",\
 
  CellChangeTimes->{{3.595089976699493*^9, 3.595090058171722*^9}, {
    3.595090412504594*^9, 3.5950904195124197`*^9}, {3.595090471768955*^9, 
@@ -337,23 +375,216 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
    3.596625588114923*^9}, {3.596626001989403*^9, 3.5966262673586063`*^9}, {
    3.596626322249764*^9, 3.596626327391724*^9}, {3.596723921742416*^9, 
    3.5967239370425367`*^9}, {3.596723986547552*^9, 3.5967240224593077`*^9}, {
-   3.596810001653449*^9, 3.596810001799913*^9}}],
+   3.596810001653449*^9, 3.596810001799913*^9}, {3.5970691466002073`*^9, 
+   3.5970692681990213`*^9}, {3.597069334821787*^9, 3.597069395954949*^9}}],
 
-Cell[BoxData["\<\"\\\\begin{exercise}\\nGiven that $f(x)=\\\\sqrt{5 x+3}$, \
-evaluate $f\\\\left(\\\\frac{39}{10}\\\\right)$. Express your answer in an \
-exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$f\\\\left(\\\\frac{39}{\
-10}\\\\right)=\\\\sqrt{5 \
-(\\\\frac{39}{10})+3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n$f\\\\left(\\\\\
-frac{39}{10}\\\\right)=3 \\\\sqrt{\\\\frac{5}{2}}$.\\n\\\\end{hint}\\nThe \
-value of the function $f(x) = \\\\sqrt{5 x+3}$, evaluated at \
-$x=\\\\frac{39}{10}$, is $\\\\answer{3 \
-\\\\sqrt{\\\\frac{5}{2}}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>\
-"], "Output",
- CellChangeTimes->{3.5967239377517014`*^9}]
+Cell[BoxData["\<\"\\\\begin{exercise}\\nGiven that $a(\\\\theta)=\\\\sqrt{3 \
+\\\\theta ^2-4 \\\\theta +1}$, evaluate \
+$a\\\\left(\\\\frac{39}{10}\\\\right)$. Express your answer in an exact form.\
+\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$a\\\\left(\\\\frac{39}{10}\\\\\
+right)=\\\\sqrt{3 (\\\\frac{39}{10})^2-4 (\\\\frac{39}{10})+1}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$a\\\\left(\\\\frac{39}{10}\\\\right)=\\\
+\\frac{\\\\sqrt{3103}}{10}$.\\n\\\\end{hint}\\nThe value of the function \
+$a(\\\\theta)=\\\\sqrt{3 \\\\theta ^2-4 \\\\theta +1}$, evaluated at \
+$\\\\theta=\\\\frac{39}{10}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{3103}}{10}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that \
+$b(\\\\frac{3103}{100})=\\\\frac{\\\\sqrt{27974927}}{100}$, evaluate \
+$b\\\\left(\\\\frac{27}{10}\\\\right)$. Express your answer in an exact form.\
+\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$b\\\\left(\\\\frac{27}{10}\\\\\
+right)=\\\\sqrt{3 (\\\\frac{27}{10})^2-3 (\\\\frac{27}{10})+2}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$b\\\\left(\\\\frac{27}{10}\\\\right)=\\\
+\\frac{\\\\sqrt{1577}}{10}$.\\n\\\\end{hint}\\nThe value of the function \
+$b(\\\\frac{3103}{100})=\\\\frac{\\\\sqrt{27974927}}{100}$, evaluated at \
+$\\\\frac{3103}{100}=\\\\frac{27}{10}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{1577}}{10}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $c(x)=\\\\sqrt{2 x^2-3 x+4}$, \
+evaluate $c\\\\left(\\\\frac{23}{10}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$c\\\\left(\\\\frac{23}{\
+10}\\\\right)=\\\\sqrt{2 (\\\\frac{23}{10})^2-3 (\\\\frac{23}{10})+4}$. Note, \
+you could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$c\\\\left(\\\\frac{23}{10}\\\\right)=\\\
+\\frac{8 \\\\sqrt{3}}{5}$.\\n\\\\end{hint}\\nThe value of the function $c(x)=\
+\\\\sqrt{2 x^2-3 x+4}$, evaluated at $x=\\\\frac{23}{10}$, is \
+$\\\\answer{\\\\frac{8 \
+\\\\sqrt{3}}{5}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nGiven that $Y(u)=\\\\sqrt{3 u^2-2 u-5}$, evaluate \
+$Y\\\\left(\\\\frac{17}{10}\\\\right)$. Express your answer in an exact form.\
+\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$Y\\\\left(\\\\frac{17}{10}\\\\\
+right)=\\\\sqrt{3 (\\\\frac{17}{10})^2-2 (\\\\frac{17}{10})-5}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$Y\\\\left(\\\\frac{17}{10}\\\\right)=\\\
+\\frac{3 \\\\sqrt{3}}{10}$.\\n\\\\end{hint}\\nThe value of the function \
+$Y(u)=\\\\sqrt{3 u^2-2 u-5}$, evaluated at $u=\\\\frac{17}{10}$, is \
+$\\\\answer{\\\\frac{3 \
+\\\\sqrt{3}}{10}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nGiven that $B(v)=\\\\sqrt{2 v^2-3 v+1}$, evaluate \
+$B\\\\left(4\\\\right)$. Express your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$B\\\\left(4\\\\right)=\\\\\
+sqrt{2 (4)^2-3 (4)+1}$. Note, you could stop here and have a perfectly \
+acceptable answer. However, we can simplify a bit more. \\n\\\\end{hint}\\n\\\
+\\begin{hint}\\n$B\\\\left(4\\\\right)=\\\\sqrt{21}$.\\n\\\\end{hint}\\nThe \
+value of the function $B(v)=\\\\sqrt{2 v^2-3 v+1}$, evaluated at $v=4$, is \
+$\\\\answer{\\\\sqrt{21}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nGiven that $s(v)=\\\\sqrt{4 v+2}$, evaluate \
+$s\\\\left(\\\\frac{14}{5}\\\\right)$. Express your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$s\\\\left(\\\\frac{14}{5}\\\\\
+right)=\\\\sqrt{4 (\\\\frac{14}{5})+2}$. Note, you could stop here and have a \
+perfectly acceptable answer. However, we can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$s\\\\left(\\\\frac{14}{5}\\\\right)=\\\\\
+sqrt{\\\\frac{66}{5}}$.\\n\\\\end{hint}\\nThe value of the function \
+$s(v)=\\\\sqrt{4 v+2}$, evaluated at $v=\\\\frac{14}{5}$, is \
+$\\\\answer{\\\\sqrt{\\\\frac{66}{5}}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $R(\\\\frac{66}{5})=\\\\sqrt{\
+\\\\frac{107}{5}}$, evaluate $R\\\\left(\\\\frac{33}{10}\\\\right)$. Express \
+your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$R\\\\left(\\\\frac{33}{10}\\\
+\\right)=\\\\sqrt{2 (\\\\frac{33}{10})-5}$. Note, you could stop here and \
+have a perfectly acceptable answer. However, we can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$R\\\\left(\\\\frac{33}{10}\\\\right)=2 \
+\\\\sqrt{\\\\frac{2}{5}}$.\\n\\\\end{hint}\\nThe value of the function \
+$R(\\\\frac{66}{5})=\\\\sqrt{\\\\frac{107}{5}}$, evaluated at \
+$\\\\frac{66}{5}=\\\\frac{33}{10}$, is $\\\\answer{2 \
+\\\\sqrt{\\\\frac{2}{5}}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nGiven that $Y(\\\\theta)=\\\\sqrt{\\\\theta ^2-3 \\\\theta \
++5}$, evaluate $Y\\\\left(\\\\frac{2}{5}\\\\right)$. Express your answer in \
+an exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$Y\\\\left(\\\\frac{\
+2}{5}\\\\right)=\\\\sqrt{(\\\\frac{2}{5})^2-3 (\\\\frac{2}{5})+5}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$Y\\\\left(\\\\frac{2}{5}\\\\right)=\\\\\
+frac{3 \\\\sqrt{11}}{5}$.\\n\\\\end{hint}\\nThe value of the function \
+$Y(\\\\theta)=\\\\sqrt{\\\\theta ^2-3 \\\\theta +5}$, evaluated at \
+$\\\\theta=\\\\frac{2}{5}$, is $\\\\answer{\\\\frac{3 \
+\\\\sqrt{11}}{5}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nGiven that $y(z)=\\\\sqrt{2 z^2+3 z+2}$, evaluate \
+$y\\\\left(-\\\\frac{4}{5}\\\\right)$. Express your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$y\\\\left(-\\\\frac{4}{5}\\\\\
+right)=\\\\sqrt{2 (-\\\\frac{4}{5})^2+3 (-\\\\frac{4}{5})+2}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$y\\\\left(-\\\\frac{4}{5}\\\\right)=\\\\\
+frac{\\\\sqrt{22}}{5}$.\\n\\\\end{hint}\\nThe value of the function \
+$y(z)=\\\\sqrt{2 z^2+3 z+2}$, evaluated at $z=-\\\\frac{4}{5}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{22}}{5}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $A(\\\\psi)=2$, evaluate $A\\\
+\\left(\\\\frac{17}{5}\\\\right)$. Express your answer in an exact form.\\n\\\
+\\begin{solution}\\n\\\\begin{hint}\\n$A\\\\left(\\\\frac{17}{5}\\\\right)=2$.\
+ Note, you could stop here and have a perfectly acceptable answer. However, \
+we can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$A\\\\left(\\\\frac{17}{5}\\\\right)=2$.\
+\\n\\\\end{hint}\\nThe value of the function $A(\\\\psi)=2$, evaluated at $\\\
+\\psi=\\\\frac{17}{5}$, is \
+$\\\\answer{2}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nGiven that $s(n)=\\\\sqrt{5 n^2+3 n+1}$, evaluate \
+$s\\\\left(\\\\frac{24}{5}\\\\right)$. Express your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$s\\\\left(\\\\frac{24}{5}\\\\\
+right)=\\\\sqrt{5 (\\\\frac{24}{5})^2+3 (\\\\frac{24}{5})+1}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$s\\\\left(\\\\frac{24}{5}\\\\right)=\\\\\
+sqrt{\\\\frac{653}{5}}$.\\n\\\\end{hint}\\nThe value of the function $s(n)=\\\
+\\sqrt{5 n^2+3 n+1}$, evaluated at $n=\\\\frac{24}{5}$, is \
+$\\\\answer{\\\\sqrt{\\\\frac{653}{5}}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $b(n)=\\\\sqrt{n^2-4 n+2}$, \
+evaluate $b\\\\left(-\\\\frac{47}{10}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$b\\\\left(-\\\\frac{47}\
+{10}\\\\right)=\\\\sqrt{(-\\\\frac{47}{10})^2-4 (-\\\\frac{47}{10})+2}$. \
+Note, you could stop here and have a perfectly acceptable answer. However, we \
+can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$b\\\\left(-\\\\frac{47}{10}\\\\right)=\\\
+\\frac{\\\\sqrt{4289}}{10}$.\\n\\\\end{hint}\\nThe value of the function \
+$b(n)=\\\\sqrt{n^2-4 n+2}$, evaluated at $n=-\\\\frac{47}{10}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{4289}}{10}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $R(n)=\\\\sqrt{4 n^2-3 n-2}$, \
+evaluate $R\\\\left(-\\\\frac{23}{5}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$R\\\\left(-\\\\frac{23}\
+{5}\\\\right)=\\\\sqrt{4 (-\\\\frac{23}{5})^2-3 (-\\\\frac{23}{5})-2}$. Note, \
+you could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$R\\\\left(-\\\\frac{23}{5}\\\\right)=\\\
+\\frac{\\\\sqrt{2411}}{5}$.\\n\\\\end{hint}\\nThe value of the function \
+$R(n)=\\\\sqrt{4 n^2-3 n-2}$, evaluated at $n=-\\\\frac{23}{5}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{2411}}{5}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $a(\\\\psi)=\\\\sqrt{4 \
+\\\\psi ^2+\\\\psi -4}$, evaluate $a\\\\left(\\\\frac{6}{5}\\\\right)$. \
+Express your answer in an exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\
+\\n$a\\\\left(\\\\frac{6}{5}\\\\right)=\\\\sqrt{4 \
+(\\\\frac{6}{5})^2+(\\\\frac{6}{5})-4}$. Note, you could stop here and have a \
+perfectly acceptable answer. However, we can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$a\\\\left(\\\\frac{6}{5}\\\\right)=\\\\\
+frac{\\\\sqrt{74}}{5}$.\\n\\\\end{hint}\\nThe value of the function \
+$a(\\\\psi)=\\\\sqrt{4 \\\\psi ^2+\\\\psi -4}$, evaluated at \
+$\\\\psi=\\\\frac{6}{5}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{74}}{5}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $r(z)=\\\\sqrt{z^2-5 z-3}$, \
+evaluate $r\\\\left(-\\\\frac{14}{5}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$r\\\\left(-\\\\frac{14}\
+{5}\\\\right)=\\\\sqrt{(-\\\\frac{14}{5})^2-5 (-\\\\frac{14}{5})-3}$. Note, \
+you could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$r\\\\left(-\\\\frac{14}{5}\\\\right)=\\\
+\\frac{\\\\sqrt{471}}{5}$.\\n\\\\end{hint}\\nThe value of the function $r(z)=\
+\\\\sqrt{z^2-5 z-3}$, evaluated at $z=-\\\\frac{14}{5}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{471}}{5}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $s(v)=\\\\sqrt{2 v^2+2 v+3}$, \
+evaluate $s\\\\left(-\\\\frac{3}{2}\\\\right)$. Express your answer in an \
+exact form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$s\\\\left(-\\\\frac{3}{\
+2}\\\\right)=\\\\sqrt{2 (-\\\\frac{3}{2})^2+2 (-\\\\frac{3}{2})+3}$. Note, \
+you could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$s\\\\left(-\\\\frac{3}{2}\\\\right)=\\\\\
+frac{3}{\\\\sqrt{2}}$.\\n\\\\end{hint}\\nThe value of the function \
+$s(v)=\\\\sqrt{2 v^2+2 v+3}$, evaluated at $v=-\\\\frac{3}{2}$, is \
+$\\\\answer{\\\\frac{3}{\\\\sqrt{2}}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\\\\begin{exercise}\\nGiven that $s(z)=\\\\sqrt{-4 z^2-z+1}$, \
+evaluate $s\\\\left(0\\\\right)$. Express your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$s\\\\left(0\\\\right)=\\\\\
+sqrt{-4 (0)^2-(0)+1}$. Note, you could stop here and have a perfectly \
+acceptable answer. However, we can simplify a bit more. \\n\\\\end{hint}\\n\\\
+\\begin{hint}\\n$s\\\\left(0\\\\right)=1$.\\n\\\\end{hint}\\nThe value of the \
+function $s(z)=\\\\sqrt{-4 z^2-z+1}$, evaluated at $z=0$, is $\\\\answer{1}$.\
+\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nGiven \
+that $a(z)=\\\\sqrt{5 z^2-2 z+2}$, evaluate $a\\\\left(1\\\\right)$. Express \
+your answer in an exact \
+form.\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$a\\\\left(1\\\\right)=\\\\\
+sqrt{5 (1)^2-2 (1)+2}$. Note, you could stop here and have a perfectly \
+acceptable answer. However, we can simplify a bit more. \\n\\\\end{hint}\\n\\\
+\\begin{hint}\\n$a\\\\left(1\\\\right)=\\\\sqrt{5}$.\\n\\\\end{hint}\\nThe \
+value of the function $a(z)=\\\\sqrt{5 z^2-2 z+2}$, evaluated at $z=1$, is \
+$\\\\answer{\\\\sqrt{5}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nGiven that $f(u)=\\\\sqrt{3 u+5}$, evaluate \
+$f\\\\left(-\\\\frac{9}{10}\\\\right)$. Express your answer in an exact form.\
+\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$f\\\\left(-\\\\frac{9}{10}\\\\\
+right)=\\\\sqrt{3 (-\\\\frac{9}{10})+5}$. Note, you could stop here and have \
+a perfectly acceptable answer. However, we can simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$f\\\\left(-\\\\frac{9}{10}\\\\right)=\\\
+\\sqrt{\\\\frac{23}{10}}$.\\n\\\\end{hint}\\nThe value of the function $f(u)=\
+\\\\sqrt{3 u+5}$, evaluated at $u=-\\\\frac{9}{10}$, is $\\\\answer{\\\\sqrt{\
+\\\\frac{23}{10}}}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nGiven that $b(z)=\\\\sqrt{2 z^2-5 z}$, evaluate \
+$b\\\\left(-\\\\frac{3}{10}\\\\right)$. Express your answer in an exact form.\
+\\n\\\\begin{solution}\\n\\\\begin{hint}\\n$b\\\\left(-\\\\frac{3}{10}\\\\\
+right)=\\\\sqrt{2 (-\\\\frac{3}{10})^2-5 (-\\\\frac{3}{10})}$. Note, you \
+could stop here and have a perfectly acceptable answer. However, we can \
+simplify a bit more. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n$b\\\\left(-\\\\frac{3}{10}\\\\right)=\\\
+\\frac{\\\\sqrt{42}}{5}$.\\n\\\\end{hint}\\nThe value of the function \
+$b(z)=\\\\sqrt{2 z^2-5 z}$, evaluated at $z=-\\\\frac{3}{10}$, is \
+$\\\\answer{\\\\frac{\\\\sqrt{42}}{5}}$.\\n\\\\end{solution}\\n\\\\end{\
+exercise}\\n\\n\"\>"], "Output",
+ CellChangeTimes->{{3.597069256046783*^9, 3.597069269847337*^9}, {
+  3.597069400664756*^9, 3.597069410026853*^9}}]
 }, Open  ]]
 },
 WindowSize->{740, 652},
-WindowMargins->{{142, Automatic}, {Automatic, -8}},
+WindowMargins->{{82, Automatic}, {Automatic, 0}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
 StyleDefinitions->"Default.nb"
@@ -370,8 +601,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 18772, 317, 641, "Input"],
-Cell[19354, 341, 654, 10, 284, "Output"]
+Cell[579, 22, 20503, 356, 743, "Input"],
+Cell[21085, 380, 14057, 202, 5792, "Output"]
 }, Open  ]]
 }
 ]
