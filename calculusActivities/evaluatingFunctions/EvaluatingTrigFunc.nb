@@ -10,43 +10,15 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     22691,        441]
-NotebookOptionsPosition[     22453,        428]
-NotebookOutlinePosition[     22789,        443]
-CellTagsIndexPosition[     22746,        440]
+NotebookDataLength[     24335,        473]
+NotebookOptionsPosition[     24077,        459]
+NotebookOutlinePosition[     24434,        475]
+CellTagsIndexPosition[     24391,        472]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[{
- RowBox[{
-  RowBox[{"UnitCirc", "=", 
-   RowBox[{"List", "[", 
-    RowBox[{
-     RowBox[{"\[Pi]", "/", "6"}], ",", 
-     RowBox[{"\[Pi]", "/", "4"}], ",", 
-     RowBox[{"\[Pi]", "/", "2"}], ",", 
-     RowBox[{"2", 
-      RowBox[{"\[Pi]", "/", "3"}]}], ",", 
-     RowBox[{"3", 
-      RowBox[{"\[Pi]", "/", "4"}]}], ",", 
-     RowBox[{"5", 
-      RowBox[{"\[Pi]", "/", "6"}]}], ",", "\[Pi]", ",", 
-     RowBox[{"7", 
-      RowBox[{"\[Pi]", "/", "6"}]}], ",", 
-     RowBox[{"5", 
-      RowBox[{"\[Pi]", "/", "4"}]}], ",", 
-     RowBox[{"4", 
-      RowBox[{"\[Pi]", "/", "3"}]}], ",", 
-     RowBox[{"3", 
-      RowBox[{"\[Pi]", "/", "2"}]}], ",", 
-     RowBox[{"5", 
-      RowBox[{"\[Pi]", "/", "3"}]}], ",", 
-     RowBox[{"7", 
-      RowBox[{"\[Pi]", "/", "4"}]}], ",", 
-     RowBox[{"11", 
-      RowBox[{"\[Pi]", "/", "6"}]}], ",", 
-     RowBox[{"2", "\[Pi]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Trigf", "=", 
    RowBox[{"List", "[", 
@@ -58,8 +30,49 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
+       RowBox[{"func", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
+           "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"variable", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"point", "=", 
-        RowBox[{"RandomChoice", "[", "UnitCirc", "]"}]}], ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\[Pi]", "/", "6"}], ",", 
+           RowBox[{"\[Pi]", "/", "4"}], ",", 
+           RowBox[{"\[Pi]", "/", "2"}], ",", 
+           RowBox[{"2", 
+            RowBox[{"\[Pi]", "/", "3"}]}], ",", 
+           RowBox[{"3", 
+            RowBox[{"\[Pi]", "/", "4"}]}], ",", 
+           RowBox[{"5", 
+            RowBox[{"\[Pi]", "/", "6"}]}], ",", "\[Pi]", ",", 
+           RowBox[{"7", 
+            RowBox[{"\[Pi]", "/", "6"}]}], ",", 
+           RowBox[{"5", 
+            RowBox[{"\[Pi]", "/", "4"}]}], ",", 
+           RowBox[{"4", 
+            RowBox[{"\[Pi]", "/", "3"}]}], ",", 
+           RowBox[{"3", 
+            RowBox[{"\[Pi]", "/", "2"}]}], ",", 
+           RowBox[{"5", 
+            RowBox[{"\[Pi]", "/", "3"}]}], ",", 
+           RowBox[{"7", 
+            RowBox[{"\[Pi]", "/", "4"}]}], ",", 
+           RowBox[{"11", 
+            RowBox[{"\[Pi]", "/", "6"}]}], ",", 
+           RowBox[{"2", "\[Pi]"}]}], "}"}], "]"}]}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"a4", " ", "=", " ", 
         RowBox[{
@@ -182,63 +195,77 @@ Cell[BoxData[{
          RowBox[{"d", "[", 
           RowBox[{"dd", "*", "x"}], "]"}]}], "+", "a0"}]}], ";", 
       "\[IndentingNewLine]", 
-      RowBox[{"S", "=", 
-       RowBox[{"StringJoin", "[", 
-        RowBox[{"\"\<\\\\begin{exercise}\nGiven that $f(x)=\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"TeXForm", "[", 
-           RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-         "\"\<$, evaluate $f\\\\left(\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"point", ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<\\\\right)$. Express your answer in an exact form.\n\
-\\\\begin{solution}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"point", ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<\\\\right)=\>\"", ",", 
-         RowBox[{"StringReplace", "[", 
-          RowBox[{
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", 
-             RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-           RowBox[{"\"\<x\>\"", "\[Rule]", 
-            RowBox[{"StringJoin", "[", 
-             RowBox[{"\"\<\\\\left(\>\"", ",", 
-              RowBox[{"ToString", "[", 
-               RowBox[{"point", ",", 
-                RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-              "\"\<\\\\right)\>\""}], "]"}]}]}], "]"}], ",", "\"\<$.\>\"", 
-         ",", "\[IndentingNewLine]", 
-         "\"\< Note, you could stop here and have a perfectly acceptable \
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluate $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
+        "\"\<\\\\right)$. Express your answer in an exact form.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
+        "\"\<\\\\right)=\>\"", ",", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
+          RowBox[{"\"\<x\>\"", "\[Rule]", 
+           RowBox[{"StringJoin", "[", 
+            RowBox[{"\"\<\\\\left(\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
+             "\"\<\\\\right)\>\""}], "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",",
+         "\[IndentingNewLine]", 
+        "\"\< Note, you could stop here and have a perfectly acceptable \
 answer. However, you could also recall facts about the unit circle and \
-continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"point", ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<\\\\right)=\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{
-           RowBox[{"f", "[", "point", "]"}], ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<$.\n\\\\end{hint}\nThe value of the function $f(x) = \>\"", ",",
-          " ", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"TeXForm", "[", 
-           RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
-         "\"\<$, evaluated at $x=\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{"point", ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<$, is $\\\\answer{\>\"", ",", 
-         RowBox[{"ToString", "[", 
-          RowBox[{
-           RowBox[{"f", "[", "point", "]"}], ",", 
-           RowBox[{"FormatType", "\[Rule]", "TeXForm"}]}], "]"}], ",", 
-         "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
-        "]"}]}]}]}], "]"}]}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+        "\"\<\\\\left(\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
+        "\"\<\\\\right)=\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "point", "]"}], "]"}], "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluated at $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
+        "\"\<$, is $\\\\answer{\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "point", "]"}], "]"}], "]"}], ",", 
+        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
@@ -424,11 +451,16 @@ continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$f\\\\left(\>\"", ",",
    3.596555082338193*^9}, {3.596718492151642*^9, 3.59671853769907*^9}, {
    3.5967185699264107`*^9, 3.596718624835802*^9}, 3.596718766820195*^9, {
    3.596718807452546*^9, 3.59671881604797*^9}, {3.596723184703114*^9, 
-   3.596723222476959*^9}}]
+   3.596723222476959*^9}, {3.597068183463516*^9, 3.597068219852805*^9}, {
+   3.5970682702172728`*^9, 3.597068270583653*^9}, {3.597068358731242*^9, 
+   3.5970684225296803`*^9}, {3.597068505025053*^9, 3.5970685128483677`*^9}, {
+   3.5970685962937393`*^9, 3.5970686681005163`*^9}, {3.597068729251355*^9, 
+   3.597068852819694*^9}}]
 },
 WindowSize->{896, 654},
-WindowMargins->{{-9, Automatic}, {Automatic, -8}},
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+WindowMargins->{{Automatic, 18}, {Automatic, 19}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -442,7 +474,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 21892, 406, 1111, "Input"]
+Cell[557, 20, 23516, 437, 845, "Input"]
 }
 ]
 *)
