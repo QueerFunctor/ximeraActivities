@@ -1,7 +1,7 @@
 \headline{In this activity we practice evaluating functions at numbers and other functions.} % A one sentence description of the activity
 \activitytitle{Evaluating Functions} % the title of the activity
-% PREREQ
-% POST REQ
+\prerequisites{algebra}
+\outcomes{functions}
 
 
 We'll start off easy, asking you a set of questions that you can
@@ -1111,7 +1111,7 @@ context?
 \begin{hint}
 We want an answer in the context of the problem. 
 \end{hint}
-\answer[free-response]{This value of $t$ are the times when the ball is at 100 meters above sea level.}
+\answer[free-response]{These value of $t$ are the times when the ball is at 100 meters above sea level.}
 \end{solution}
 Finally, if $h$ is a small positive value what is the meaning of
 $f(t+h)$? How does this compare to the meaning of $f(t)+h$?
@@ -1119,7 +1119,7 @@ $f(t+h)$? How does this compare to the meaning of $f(t)+h$?
 \begin{hint}
 We want an answer in the context of the problem. 
 \end{hint}
-\answer[free-response]{The value $f(t+h)$ give the height of the ball
+\answer[free-response]{The value $f(t+h)$ gives the height of the ball
   slightly after time $t$. On the other hand, the value $f(t)+h$ gives
   a height just higher than the ball at time $t$.}
 \end{solution}

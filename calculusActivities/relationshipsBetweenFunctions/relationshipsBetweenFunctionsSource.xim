@@ -1,6 +1,7 @@
 \headline{In this activity we explore relationships between functions.} % A one sentence description of the activity
 \activitytitle{Relationships Between Functions} % the title of the activity
-
+\prerequisites{algebra}
+\outcomes{functions}
 
 
 \begin{exercise}
@@ -9,7 +10,13 @@ Steve's questions
 
 
 \begin{exercise}
-Question from quiz 1
+Suppose that $f(x) = \sqrt{x^2+1}$. Choose $g(x)$ and $h(x)$ below so that $f(x) = (g\circ h)(x)$. The notation $(g\circ h)(x)$ means $g(h(x))$. 
+\begin{multiple-choice}
+\item $g(x) = x^2$ and $h(x) = \sqrt{x+1}$.
+\item $g(x) = x^2 + 1$ and $h(x) = \sqrt{x}$.
+\item $g(x) = \sqrt{x^2 -3}$ and $h(x) = x+2$.
+\item $g(x) = \sqrt{x^2 -2x}$ and $h(x) = x+1$. 
+\end{multiple-choice}
 \end{exercise}
 
 
