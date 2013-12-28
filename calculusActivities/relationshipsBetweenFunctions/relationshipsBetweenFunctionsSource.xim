@@ -11,7 +11,7 @@ Steve's questions
 
 \begin{exercise}
 Suppose that $f(x) = \sqrt{x^2+1}$. Choose $g(x)$ and $h(x)$ below so that $f(x) = (g\circ h)(x)$. The notation $(g\circ h)(x)$ means $g(h(x))$. 
-\begin{multiple-choice}
+\begin{multiple-choice}[4]
 \item $g(x) = x^2$ and $h(x) = \sqrt{x+1}$.
 \item $g(x) = x^2 + 1$ and $h(x) = \sqrt{x}$.
 \item $g(x) = \sqrt{x^2 -3}$ and $h(x) = x+2$.
