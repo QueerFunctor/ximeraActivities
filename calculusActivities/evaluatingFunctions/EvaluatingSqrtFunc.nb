@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     20854,        373]
-NotebookOptionsPosition[     20618,        360]
-NotebookOutlinePosition[     20953,        375]
-CellTagsIndexPosition[     20910,        372]
+NotebookDataLength[     20964,        375]
+NotebookOptionsPosition[     20726,        362]
+NotebookOutlinePosition[     21063,        377]
+CellTagsIndexPosition[     21020,        374]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -87,7 +87,7 @@ Cell[BoxData[{
            RowBox[{"a1", "*", "point"}], "+", "a0"}]}], ";"}]}], 
        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"f", "[", "x_", "]"}], "=", 
+       RowBox[{"ff", "[", "x_", "]"}], "=", 
        RowBox[{"Sqrt", "[", 
         RowBox[{
          RowBox[{"a2", "*", 
@@ -104,7 +104,7 @@ Cell[BoxData[{
         ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+          RowBox[{"ff", "[", "variable", "]"}], "]"}], "]"}], ",", 
         "\"\<$, evaluate $\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
@@ -123,7 +123,7 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"ToString", "[", 
            RowBox[{"TeXForm", "[", 
-            RowBox[{"f", "[", "x", "]"}], "]"}], "]"}], ",", 
+            RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
           RowBox[{"\"\<x\>\"", "\[Rule]", 
            RowBox[{"StringJoin", "[", 
             RowBox[{"\"\<(\>\"", ",", 
@@ -141,7 +141,7 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
         "\"\<\\\\right)=\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "point", "]"}], "]"}], "]"}], ",", 
+          RowBox[{"ff", "[", "point", "]"}], "]"}], "]"}], ",", 
         "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
@@ -151,7 +151,7 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
         ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+          RowBox[{"ff", "[", "variable", "]"}], "]"}], "]"}], ",", 
         "\"\<$, evaluated at $\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
@@ -161,7 +161,7 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
         "\"\<$, is $\\\\answer{\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "point", "]"}], "]"}], "]"}], ",", 
+          RowBox[{"ff", "[", "point", "]"}], "]"}], "]"}], ",", 
         "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
        "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
@@ -356,10 +356,12 @@ answer. However, we can simplify a bit more. \n\\\\end{hint}\n\\\\begin{hint}\
    3.5970692681990213`*^9}, {3.597069334821787*^9, 3.597069395954949*^9}, {
    3.597156483122842*^9, 3.597156547635294*^9}, 3.597157744032864*^9, {
    3.59715788697672*^9, 3.597157911195191*^9}, {3.597158191802544*^9, 
-   3.597158215266971*^9}, {3.597158283273065*^9, 3.597158283682766*^9}}]
+   3.597158215266971*^9}, {3.597158283273065*^9, 3.597158283682766*^9}, {
+   3.5974163102121487`*^9, 3.597416319741673*^9}, {3.597416634843602*^9, 
+   3.597416651199395*^9}}]
 },
-WindowSize->{1366, 708},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1278, 708},
+WindowMargins->{{-9, Automatic}, {Automatic, -8}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
@@ -374,7 +376,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 20057, 338, 715, "Input"]
+Cell[557, 20, 20165, 340, 759, "Input"]
 }
 ]
 *)

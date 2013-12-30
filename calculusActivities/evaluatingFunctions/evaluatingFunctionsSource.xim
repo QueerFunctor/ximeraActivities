@@ -555,264 +555,266 @@ The value of the function $F(u)=4-5 \cos (2 u)$, evaluated at $u=\frac{5 \pi }{6
 
 \begin{shuffle} % sqrt
 \begin{exercise}
-Given that $C(\psi)=\sin ^2(\psi )+3 \sin (2 \psi )+3$, evaluate $C\left(\frac{11 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $a(z)=\sqrt{2 z^2+5}$, evaluate $a\left(\frac{6}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$C\left(\frac{11 \pi }{6}\right)=\sin ^2\left(\frac{11 \pi }{6}\right)+3 \sin \left(2 \frac{11 \pi }{6}\right)+3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$a\left(\frac{6}{5}\right)=\sqrt{2 (\frac{6}{5})^2+5}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$C\left(\frac{11 \pi }{6}\right)=\frac{13}{4}-\frac{3 \sqrt{3}}{2}$.
+$a\left(\frac{6}{5}\right)=\frac{\sqrt{197}}{5}$.
 \end{hint}
-The value of the function $C(\psi)=\sin ^2(\psi )+3 \sin (2 \psi )+3$, evaluated at $\psi=\frac{11 \pi }{6}$, is $\answer{\frac{13}{4}-\frac{3 \sqrt{3}}{2}}$.
+The value of the function $a(z)=\sqrt{2 z^2+5}$, evaluated at $z=\frac{6}{5}$, is $\answer{\frac{\sqrt{197}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $s(w)=2 \sin ^2(w)+3 \cos (2 w)-4$, evaluate $s\left(\frac{3 \pi }{4}\right)$. Express your answer in an exact form.
+Given that $F(\theta)=\sqrt{3 \theta ^2+2 \theta -2}$, evaluate $F\left(-\frac{17}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$s\left(\frac{3 \pi }{4}\right)=2 \sin ^2\left(\frac{3 \pi }{4}\right)+3 \cos \left(2 \frac{3 \pi }{4}\right)-4$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$F\left(-\frac{17}{5}\right)=\sqrt{3 (-\frac{17}{5})^2+2 (-\frac{17}{5})-2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$s\left(\frac{3 \pi }{4}\right)=-3$.
+$F\left(-\frac{17}{5}\right)=\frac{\sqrt{647}}{5}$.
 \end{hint}
-The value of the function $s(w)=2 \sin ^2(w)+3 \cos (2 w)-4$, evaluated at $w=\frac{3 \pi }{4}$, is $\answer{-3}$.
+The value of the function $F(\theta)=\sqrt{3 \theta ^2+2 \theta -2}$, evaluated at $\theta=-\frac{17}{5}$, is $\answer{\frac{\sqrt{647}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $C(v)=-3 \sin (2 v)-5$, evaluate $C\left(\frac{\pi }{4}\right)$. Express your answer in an exact form.
+Given that $F(k)=\sqrt{5 k^2-4 k-1}$, evaluate $F\left(\frac{19}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$C\left(\frac{\pi }{4}\right)=-3 \sin \left(2 \frac{\pi }{4}\right)-5$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$F\left(\frac{19}{10}\right)=\sqrt{5 (\frac{19}{10})^2-4 (\frac{19}{10})-1}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$C\left(\frac{\pi }{4}\right)=-8$.
+$F\left(\frac{19}{10}\right)=\frac{3 \sqrt{\frac{21}{5}}}{2}$.
 \end{hint}
-The value of the function $C(v)=-3 \sin (2 v)-5$, evaluated at $v=\frac{\pi }{4}$, is $\answer{-8}$.
+The value of the function $F(k)=\sqrt{5 k^2-4 k-1}$, evaluated at $k=\frac{19}{10}$, is $\answer{\frac{3 \sqrt{\frac{21}{5}}}{2}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $Y(v)=2-2 \cos (2 v)$, evaluate $Y\left(\frac{\pi }{2}\right)$. Express your answer in an exact form.
+Given that $y(z)=\sqrt{-z^2+4 z+4}$, evaluate $y\left(\frac{4}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$Y\left(\frac{\pi }{2}\right)=2-2 \cos \left(2 \frac{\pi }{2}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$y\left(\frac{4}{5}\right)=\sqrt{-(\frac{4}{5})^2+4 (\frac{4}{5})+4}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$Y\left(\frac{\pi }{2}\right)=4$.
+$y\left(\frac{4}{5}\right)=\frac{2 \sqrt{41}}{5}$.
 \end{hint}
-The value of the function $Y(v)=2-2 \cos (2 v)$, evaluated at $v=\frac{\pi }{2}$, is $\answer{4}$.
+The value of the function $y(z)=\sqrt{-z^2+4 z+4}$, evaluated at $z=\frac{4}{5}$, is $\answer{\frac{2 \sqrt{41}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $F(v)=3 \cos ^2(2 v)-1$, evaluate $F\left(\frac{7 \pi }{4}\right)$. Express your answer in an exact form.
+Given that $G(n)=\sqrt{4 n^2+4 n+1}$, evaluate $G\left(-\frac{31}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$F\left(\frac{7 \pi }{4}\right)=3 \cos ^2\left(2 \frac{7 \pi }{4}\right)-1$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$G\left(-\frac{31}{10}\right)=\sqrt{4 (-\frac{31}{10})^2+4 (-\frac{31}{10})+1}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$F\left(\frac{7 \pi }{4}\right)=-1$.
+$G\left(-\frac{31}{10}\right)=\frac{26}{5}$.
 \end{hint}
-The value of the function $F(v)=3 \cos ^2(2 v)-1$, evaluated at $v=\frac{7 \pi }{4}$, is $\answer{-1}$.
+The value of the function $G(n)=\sqrt{4 n^2+4 n+1}$, evaluated at $n=-\frac{31}{10}$, is $\answer{\frac{26}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $b(z)=\sin ^2(2 z)+2 \cos (z)-3$, evaluate $b\left(\frac{\pi }{2}\right)$. Express your answer in an exact form.
+Given that $R(k)=\sqrt{4 k^2+2 k-1}$, evaluate $R\left(\frac{7}{2}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$b\left(\frac{\pi }{2}\right)=\sin ^2\left(2 \frac{\pi }{2}\right)+2 \cos \left(\frac{\pi }{2}\right)-3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$R\left(\frac{7}{2}\right)=\sqrt{4 (\frac{7}{2})^2+2 (\frac{7}{2})-1}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$b\left(\frac{\pi }{2}\right)=-3$.
+$R\left(\frac{7}{2}\right)=\sqrt{55}$.
 \end{hint}
-The value of the function $b(z)=\sin ^2(2 z)+2 \cos (z)-3$, evaluated at $z=\frac{\pi }{2}$, is $\answer{-3}$.
+The value of the function $R(k)=\sqrt{4 k^2+2 k-1}$, evaluated at $k=\frac{7}{2}$, is $\answer{\sqrt{55}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $P(t)=4 \sin (2 t)-3 \cos ^2(2 t)-3$, evaluate $P\left(\frac{11 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $g(u)=\sqrt{2 u^2+2 u-4}$, evaluate $g\left(\frac{11}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$P\left(\frac{11 \pi }{6}\right)=4 \sin \left(2 \frac{11 \pi }{6}\right)-3 \cos ^2\left(2 \frac{11 \pi }{6}\right)-3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$g\left(\frac{11}{10}\right)=\sqrt{2 (\frac{11}{10})^2+2 (\frac{11}{10})-4}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$P\left(\frac{11 \pi }{6}\right)=-\frac{15}{4}-2 \sqrt{3}$.
+$g\left(\frac{11}{10}\right)=\frac{\sqrt{\frac{31}{2}}}{5}$.
 \end{hint}
-The value of the function $P(t)=4 \sin (2 t)-3 \cos ^2(2 t)-3$, evaluated at $t=\frac{11 \pi }{6}$, is $\answer{-\frac{15}{4}-2 \sqrt{3}}$.
+The value of the function $g(u)=\sqrt{2 u^2+2 u-4}$, evaluated at $u=\frac{11}{10}$, is $\answer{\frac{\sqrt{\frac{31}{2}}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $G(n)=\cos (2 n)+3$, evaluate $G\left(\frac{5 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $y(w)=\sqrt{2 w^2-5 w+2}$, evaluate $y\left(-1\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$G\left(\frac{5 \pi }{6}\right)=\cos \left(2 \frac{5 \pi }{6}\right)+3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$y\left(-1\right)=\sqrt{2 (-1)^2-5 (-1)+2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$G\left(\frac{5 \pi }{6}\right)=\frac{7}{2}$.
+$y\left(-1\right)=3$.
 \end{hint}
-The value of the function $G(n)=\cos (2 n)+3$, evaluated at $n=\frac{5 \pi }{6}$, is $\answer{\frac{7}{2}}$.
+The value of the function $y(w)=\sqrt{2 w^2-5 w+2}$, evaluated at $w=-1$, is $\answer{3}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $G(k)=-4 \cos (k)$, evaluate $G\left(\frac{4 \pi }{3}\right)$. Express your answer in an exact form.
+Given that $A(\theta)=\sqrt{3 \theta ^2+4}$, evaluate $A\left(-\frac{43}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$G\left(\frac{4 \pi }{3}\right)=-4 \cos \left(\frac{4 \pi }{3}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$A\left(-\frac{43}{10}\right)=\sqrt{3 (-\frac{43}{10})^2+4}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$G\left(\frac{4 \pi }{3}\right)=2$.
+$A\left(-\frac{43}{10}\right)=\frac{\sqrt{5947}}{10}$.
 \end{hint}
-The value of the function $G(k)=-4 \cos (k)$, evaluated at $k=\frac{4 \pi }{3}$, is $\answer{2}$.
+The value of the function $A(\theta)=\sqrt{3 \theta ^2+4}$, evaluated at $\theta=-\frac{43}{10}$, is $\answer{\frac{\sqrt{5947}}{10}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $y(x)=-\sin ^2(x)-5 \cos (2 x)-1$, evaluate $y\left(\frac{7 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $a(x)=\sqrt{5 x^2-x+5}$, evaluate $a\left(-\frac{17}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$y\left(\frac{7 \pi }{6}\right)=-\sin ^2\left(\frac{7 \pi }{6}\right)-5 \cos \left(2 \frac{7 \pi }{6}\right)-1$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$a\left(-\frac{17}{10}\right)=\sqrt{5 (-\frac{17}{10})^2-(-\frac{17}{10})+5}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$y\left(\frac{7 \pi }{6}\right)=-\frac{15}{4}$.
+$a\left(-\frac{17}{10}\right)=\frac{3 \sqrt{\frac{47}{5}}}{2}$.
 \end{hint}
-The value of the function $y(x)=-\sin ^2(x)-5 \cos (2 x)-1$, evaluated at $x=\frac{7 \pi }{6}$, is $\answer{-\frac{15}{4}}$.
+The value of the function $a(x)=\sqrt{5 x^2-x+5}$, evaluated at $x=-\frac{17}{10}$, is $\answer{\frac{3 \sqrt{\frac{47}{5}}}{2}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $s(z)=\sin ^2(2 z)+3$, evaluate $s\left(\frac{11 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $A(t)=\sqrt{5 t-2 t^2}$, evaluate $A\left(\frac{11}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$s\left(\frac{11 \pi }{6}\right)=\sin ^2\left(2 \frac{11 \pi }{6}\right)+3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$A\left(\frac{11}{5}\right)=\sqrt{5 (\frac{11}{5})-2 (\frac{11}{5})^2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$s\left(\frac{11 \pi }{6}\right)=\frac{15}{4}$.
+$A\left(\frac{11}{5}\right)=\frac{\sqrt{33}}{5}$.
 \end{hint}
-The value of the function $s(z)=\sin ^2(2 z)+3$, evaluated at $z=\frac{11 \pi }{6}$, is $\answer{\frac{15}{4}}$.
+The value of the function $A(t)=\sqrt{5 t-2 t^2}$, evaluated at $t=\frac{11}{5}$, is $\answer{\frac{\sqrt{33}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $b(t)=3 \cos ^2(2 t)+\cos (t)+5$, evaluate $b\left(\frac{3 \pi }{2}\right)$. Express your answer in an exact form.
+Given that $a(n)=\sqrt{3 n^2-2 n+3}$, evaluate $a\left(\frac{21}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$b\left(\frac{3 \pi }{2}\right)=3 \cos ^2\left(2 \frac{3 \pi }{2}\right)+\cos \left(\frac{3 \pi }{2}\right)+5$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$a\left(\frac{21}{10}\right)=\sqrt{3 (\frac{21}{10})^2-2 (\frac{21}{10})+3}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$b\left(\frac{3 \pi }{2}\right)=8$.
+$a\left(\frac{21}{10}\right)=\frac{\sqrt{1203}}{10}$.
 \end{hint}
-The value of the function $b(t)=3 \cos ^2(2 t)+\cos (t)+5$, evaluated at $t=\frac{3 \pi }{2}$, is $\answer{8}$.
+The value of the function $a(n)=\sqrt{3 n^2-2 n+3}$, evaluated at $n=\frac{21}{10}$, is $\answer{\frac{\sqrt{1203}}{10}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $r(k)=5-5 \sin (2 k)$, evaluate $r\left(\frac{5 \pi }{6}\right)$. Express your answer in an exact form.
+Given that $Y(k)=\sqrt{k^2+4 k+1}$, evaluate $Y\left(5\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$r\left(\frac{5 \pi }{6}\right)=5-5 \sin \left(2 \frac{5 \pi }{6}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$Y\left(5\right)=\sqrt{(5)^2+4 (5)+1}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$r\left(\frac{5 \pi }{6}\right)=5+\frac{5 \sqrt{3}}{2}$.
+$Y\left(5\right)=\sqrt{46}$.
 \end{hint}
-The value of the function $r(k)=5-5 \sin (2 k)$, evaluated at $k=\frac{5 \pi }{6}$, is $\answer{5+\frac{5 \sqrt{3}}{2}}$.
+The value of the function $Y(k)=\sqrt{k^2+4 k+1}$, evaluated at $k=5$, is $\answer{\sqrt{46}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $G(w)=\sin ^2(2 w)-\sin (2 w)-1$, evaluate $G\left(\frac{7 \pi }{4}\right)$. Express your answer in an exact form.
+Given that $s(k)=\sqrt{k^2-2 k-4}$, evaluate $s\left(-\frac{16}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$G\left(\frac{7 \pi }{4}\right)=\sin ^2\left(2 \frac{7 \pi }{4}\right)-\sin \left(2 \frac{7 \pi }{4}\right)-1$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$s\left(-\frac{16}{5}\right)=\sqrt{(-\frac{16}{5})^2-2 (-\frac{16}{5})-4}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$G\left(\frac{7 \pi }{4}\right)=1$.
+$s\left(-\frac{16}{5}\right)=\frac{2 \sqrt{79}}{5}$.
 \end{hint}
-The value of the function $G(w)=\sin ^2(2 w)-\sin (2 w)-1$, evaluated at $w=\frac{7 \pi }{4}$, is $\answer{1}$.
+The value of the function $s(k)=\sqrt{k^2-2 k-4}$, evaluated at $k=-\frac{16}{5}$, is $\answer{\frac{2 \sqrt{79}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $Y(v)=-\sin (v)-4$, evaluate $Y\left(\frac{5 \pi }{3}\right)$. Express your answer in an exact form.
+Given that $G(x)=\sqrt{3 x^2+5 x+2}$, evaluate $G\left(5\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$Y\left(\frac{5 \pi }{3}\right)=-\sin \left(\frac{5 \pi }{3}\right)-4$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$G\left(5\right)=\sqrt{3 (5)^2+5 (5)+2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$Y\left(\frac{5 \pi }{3}\right)=\frac{\sqrt{3}}{2}-4$.
+$G\left(5\right)=\sqrt{102}$.
 \end{hint}
-The value of the function $Y(v)=-\sin (v)-4$, evaluated at $v=\frac{5 \pi }{3}$, is $\answer{\frac{\sqrt{3}}{2}-4}$.
+The value of the function $G(x)=\sqrt{3 x^2+5 x+2}$, evaluated at $x=5$, is $\answer{\sqrt{102}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $y(v)=3 \sin ^2(v)+2$, evaluate $y\left(\frac{\pi }{2}\right)$. Express your answer in an exact form.
+Given that $B(x)=\sqrt{3 x^2+4 x+2}$, evaluate $B\left(-\frac{19}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$y\left(\frac{\pi }{2}\right)=3 \sin ^2\left(\frac{\pi }{2}\right)+2$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$B\left(-\frac{19}{5}\right)=\sqrt{3 (-\frac{19}{5})^2+4 (-\frac{19}{5})+2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$y\left(\frac{\pi }{2}\right)=5$.
+$B\left(-\frac{19}{5}\right)=\frac{\sqrt{753}}{5}$.
 \end{hint}
-The value of the function $y(v)=3 \sin ^2(v)+2$, evaluated at $v=\frac{\pi }{2}$, is $\answer{5}$.
+The value of the function $B(x)=\sqrt{3 x^2+4 x+2}$, evaluated at $x=-\frac{19}{5}$, is $\answer{\frac{\sqrt{753}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $P(w)=-3 \cos ^2(2 w)-5 \cos (2 w)$, evaluate $P\left(\frac{\pi }{6}\right)$. Express your answer in an exact form.
+Given that $y(x)=\sqrt{4 x^2+x}$, evaluate $y\left(\frac{1}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$P\left(\frac{\pi }{6}\right)=-3 \cos ^2\left(2 \frac{\pi }{6}\right)-5 \cos \left(2 \frac{\pi }{6}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$y\left(\frac{1}{10}\right)=\sqrt{4 (\frac{1}{10})^2+(\frac{1}{10})}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$P\left(\frac{\pi }{6}\right)=-\frac{13}{4}$.
+$y\left(\frac{1}{10}\right)=\frac{\sqrt{\frac{7}{2}}}{5}$.
 \end{hint}
-The value of the function $P(w)=-3 \cos ^2(2 w)-5 \cos (2 w)$, evaluated at $w=\frac{\pi }{6}$, is $\answer{-\frac{13}{4}}$.
+The value of the function $y(x)=\sqrt{4 x^2+x}$, evaluated at $x=\frac{1}{10}$, is $\answer{\frac{\sqrt{\frac{7}{2}}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $F(z)=2 \sin ^2(z)+5 \cos (z)$, evaluate $F\left(\frac{\pi }{4}\right)$. Express your answer in an exact form.
+Given that $A(k)=\sqrt{4 k^2+5 k-3}$, evaluate $A\left(\frac{41}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$F\left(\frac{\pi }{4}\right)=2 \sin ^2\left(\frac{\pi }{4}\right)+5 \cos \left(\frac{\pi }{4}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$A\left(\frac{41}{10}\right)=\sqrt{4 (\frac{41}{10})^2+5 (\frac{41}{10})-3}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$F\left(\frac{\pi }{4}\right)=1+\frac{5}{\sqrt{2}}$.
+$A\left(\frac{41}{10}\right)=\frac{\sqrt{\frac{4237}{2}}}{5}$.
 \end{hint}
-The value of the function $F(z)=2 \sin ^2(z)+5 \cos (z)$, evaluated at $z=\frac{\pi }{4}$, is $\answer{1+\frac{5}{\sqrt{2}}}$.
+The value of the function $A(k)=\sqrt{4 k^2+5 k-3}$, evaluated at $k=\frac{41}{10}$, is $\answer{\frac{\sqrt{\frac{4237}{2}}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $a(u)=\cos ^2(2 u)+\cos (u)+3$, evaluate $a\left(\frac{5 \pi }{3}\right)$. Express your answer in an exact form.
+Given that $C(u)=\sqrt{3 u^2-u-4}$, evaluate $C\left(\frac{9}{5}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$a\left(\frac{5 \pi }{3}\right)=\cos ^2\left(2 \frac{5 \pi }{3}\right)+\cos \left(\frac{5 \pi }{3}\right)+3$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$C\left(\frac{9}{5}\right)=\sqrt{3 (\frac{9}{5})^2-(\frac{9}{5})-4}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$a\left(\frac{5 \pi }{3}\right)=\frac{15}{4}$.
+$C\left(\frac{9}{5}\right)=\frac{7 \sqrt{2}}{5}$.
 \end{hint}
-The value of the function $a(u)=\cos ^2(2 u)+\cos (u)+3$, evaluated at $u=\frac{5 \pi }{3}$, is $\answer{\frac{15}{4}}$.
+The value of the function $C(u)=\sqrt{3 u^2-u-4}$, evaluated at $u=\frac{9}{5}$, is $\answer{\frac{7 \sqrt{2}}{5}}$.
 \end{solution}
 \end{exercise}
 
 \begin{exercise}
-Given that $B(z)=5 \cos (z)$, evaluate $B\left(\frac{\pi }{4}\right)$. Express your answer in an exact form.
+Given that $B(v)=\sqrt{4 v^2-3 v-2}$, evaluate $B\left(-\frac{11}{10}\right)$. Express your answer in an exact form.
 \begin{solution}
 \begin{hint}
-$B\left(\frac{\pi }{4}\right)=5 \cos \left(\frac{\pi }{4}\right)$. Note, you could stop here and have a perfectly acceptable answer. However, you could also recall facts about the unit circle and continue on. 
+$B\left(-\frac{11}{10}\right)=\sqrt{4 (-\frac{11}{10})^2-3 (-\frac{11}{10})-2}$. Note, you could stop here and have a perfectly acceptable answer. However, we can simplify a bit more. 
 \end{hint}
 \begin{hint}
-$B\left(\frac{\pi }{4}\right)=\frac{5}{\sqrt{2}}$.
+$B\left(-\frac{11}{10}\right)=\frac{\sqrt{\frac{307}{2}}}{5}$.
 \end{hint}
-The value of the function $B(z)=5 \cos (z)$, evaluated at $z=\frac{\pi }{4}$, is $\answer{\frac{5}{\sqrt{2}}}$.
+The value of the function $B(v)=\sqrt{4 v^2-3 v-2}$, evaluated at $v=-\frac{11}{10}$, is $\answer{\frac{\sqrt{\frac{307}{2}}}{5}}$.
 \end{solution}
 \end{exercise}
+
+
 \end{shuffle}
 
 
@@ -1084,6 +1086,36 @@ The value of the function $a(z+h)-a(z)$, is $\answer{2 h^2+4 h z-4 h}$.
 \end{solution}
 \end{exercise}
 \end{shuffle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Problem
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{question}
+Consider the plot below:
+\[
+PLOT
+\]
+Is $y$ a function of $x$? 
+\begin{solution}
+\end{solution}
+What is $y(x)$?
+\begin{solution}
+\end{solution}
+Is $y^{-1}$ a function of $x$? 
+\begin{solution}
+\end{solution}
+What is $y^{-1}(x)$?
+\begin{solution}
+\end{solution}
+\end{question}
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
