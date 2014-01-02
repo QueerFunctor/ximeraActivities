@@ -14,7 +14,7 @@ probably do.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{shuffle}
-\begin{exercise}
+\begin{exercise}[8in]
 Given that $s(k)=-k^2-4 k+2$, evaluate $s(4.5)$. Express your answer in decimal notation.
 \begin{solution}
 \begin{hint}
