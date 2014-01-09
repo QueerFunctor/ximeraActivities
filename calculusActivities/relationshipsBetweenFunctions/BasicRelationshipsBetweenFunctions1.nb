@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     33049,        599]
-NotebookOptionsPosition[     32713,        582]
-NotebookOutlinePosition[     33069,        598]
-CellTagsIndexPosition[     33026,        595]
+NotebookDataLength[     12029,        274]
+NotebookOptionsPosition[     11792,        261]
+NotebookOutlinePosition[     12127,        276]
+CellTagsIndexPosition[     12084,        273]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"code", ":=", 
@@ -233,7 +231,7 @@ $\>\"", ",",
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
+    RowBox[{"{", "1", "}"}]}], "]"}], "]"}]}], "Input",
  CellChangeTimes->{{3.598015863279645*^9, 3.5980158642910843`*^9}, {
    3.5980159916937637`*^9, 3.598016051460307*^9}, {3.59801673252382*^9, 
    3.598017225661377*^9}, {3.598017272640243*^9, 3.598017290406283*^9}, {
@@ -258,332 +256,12 @@ $\>\"", ",",
    3.598026644549715*^9}, {3.598026680609334*^9, 3.5980267076776037`*^9}, {
    3.598027030092911*^9, 3.598027032048567*^9}, {3.598027157638132*^9, 
    3.598027200940754*^9}, {3.598027232951929*^9, 3.59802723952645*^9}, 
-   3.5980272710409727`*^9, {3.598027320274003*^9, 3.598027322528564*^9}}],
-
-Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $F(-3)=3$ and $a(\\\\psi)=F(4 \
-\\\\cdot \\\\psi)$, what point can you determine on the graph of \
-$a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-3$ into $F$ you get $3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $4 \\\\cdot \\\\psi$ into $F$ so we \
-want to choose our $\\\\psi$ so that $4 \\\\cdot \\\\psi=-3$.\\n\\\\end{hint}\
-\\n\\\\begin{hint}\\nSo we want to choose \
-$\\\\psi=-\\\\frac{3}{4}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this \
-value in our equation relating $F$ and $a$ we get $a(-\\\\frac{3}{4})=F(-3)$.\
-\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$a(-\\\\frac{3}{4}=3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(-\\\\frac{3}{4},-3)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$a$.\\n\\\\end{hint}\\nIf $F(-3)=3$ and $a(\\\\psi)=F(4 \\\\cdot \\\\psi, the \
-point on the graph of $a$ is \
-$\\\\answer{(-\\\\frac{3}{4},-3)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
-n\\n\\\\begin{exercise}\\nIf $G(3)=2$ and $-\\\\frac{43}{5}(k)=G(-1 \\\\cdot \
-k)$, what point can you determine on the graph of \
-$-\\\\frac{43}{5}$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know \
-that when you plug in $3$ into $G$ you get \
-$2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
-plugging $-1 \\\\cdot k$ into $G$ so we want to choose our $k$ so that $-1 \\\
-\\cdot k=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $k=-3$.\
-\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $G$ and $-\\\\frac{43}{5}$ we get \
-$-\\\\frac{43}{5}(-3)=G(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$-\\\\frac{43}{5}(-3=2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(-3,3)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
-\\hspace{1em}of}$ $-\\\\frac{43}{5}$.\\n\\\\end{hint}\\nIf $G(3)=2$ and \
-$-\\\\frac{43}{5}(k)=G(-1 \\\\cdot k, the point on the graph of \
-$-\\\\frac{43}{5}$ is \
-$\\\\answer{(-3,3)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $f(-1)=8$ and $A(w)=f(-8 \\\\cdot w)$, what point can you \
-determine on the graph of $A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
-only know that when you plug in $-1$ into $f$ you get $8$.\\n\\\\end{hint}\\n\
-\\\\begin{hint}\\nIn the equation we are given, we are plugging $-8 \\\\cdot \
-w$ into $f$ so we want to choose our $w$ so that $-8 \\\\cdot \
-w=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$w=\\\\frac{1}{8}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $f$ and $A$ we get \
-$A(\\\\frac{1}{8})=f(-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$A(\\\\frac{1}{8}=8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
-\\\\frac{1}{8},-1)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$A$.\\n\\\\end{hint}\\nIf $f(-1)=8$ and $A(w)=f(-8 \\\\cdot w, the point on \
-the graph of $A$ is $\\\\answer{(\\\\frac{1}{8},-1)}$.\\n\\\\end{solution}\\n\
-\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $y(7)=-10$ and $R(w)=y(-3 \
-\\\\cdot w)$, what point can you determine on the graph of \
-$R$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $7$ into $y$ you get $-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
-the equation we are given, we are plugging $-3 \\\\cdot w$ into $y$ so we \
-want to choose our $w$ so that $-3 \\\\cdot \
-w=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$w=-\\\\frac{7}{3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $y$ and $R$ we get \
-$R(-\\\\frac{7}{3})=y(7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$R(-\\\\frac{7}{3}=-10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(-\\\\frac{7}{3},7)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$R$.\\n\\\\end{hint}\\nIf $y(7)=-10$ and $R(w)=y(-3 \\\\cdot w, the point on \
-the graph of $R$ is $\\\\answer{(-\\\\frac{7}{3},7)}$.\\n\\\\end{solution}\\n\
-\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $f(6)=-9$ and $F(t)=f(3 \
-\\\\cdot t)$, what point can you determine on the graph of \
-$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $6$ into $f$ you get $-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $3 \\\\cdot t$ into $f$ so we want to \
-choose our $t$ so that $3 \\\\cdot \
-t=6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$t=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $f$ and $F$ we get \
-$F(2)=f(6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$F(2=-9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,6)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $F$.\\n\\\\end{hint}\\nIf $f(6)=-9$ and $F(t)=f(3 \\\\cdot t, the \
-point on the graph of $F$ is \
-$\\\\answer{(2,6)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $-\\\\frac{43}{5}(-7)=-1$ and $C(\\\\theta)=-\\\\frac{43}{5}(3 \
-\\\\cdot \\\\theta)$, what point can you determine on the graph of \
-$C$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-7$ into $-\\\\frac{43}{5}$ you get \
-$-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
-are plugging $3 \\\\cdot \\\\theta$ into $-\\\\frac{43}{5}$ so we want to \
-choose our $\\\\theta$ so that $3 \\\\cdot \
-\\\\theta=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$\\\\theta=-\\\\frac{7}{3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this \
-value in our equation relating $-\\\\frac{43}{5}$ and $C$ we get \
-$C(-\\\\frac{7}{3})=-\\\\frac{43}{5}(-7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\\
-nSo $C(-\\\\frac{7}{3}=-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf \
-Thus}$ $(-\\\\frac{7}{3},-7)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$C$.\\n\\\\end{hint}\\nIf $-\\\\frac{43}{5}(-7)=-1$ and \
-$C(\\\\theta)=-\\\\frac{43}{5}(3 \\\\cdot \\\\theta, the point on the graph \
-of $C$ is \
-$\\\\answer{(-\\\\frac{7}{3},-7)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
-n\\n\\\\begin{exercise}\\nIf $y(9)=3$ and $F(\\\\theta)=y(8 \\\\cdot \
-\\\\theta)$, what point can you determine on the graph of \
-$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $9$ into $y$ you get $3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $8 \\\\cdot \\\\theta$ into $y$ so we \
-want to choose our $\\\\theta$ so that $8 \\\\cdot \
-\\\\theta=9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$\\\\theta=\\\\frac{9}{8}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this \
-value in our equation relating $y$ and $F$ we get \
-$F(\\\\frac{9}{8})=y(9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$F(\\\\frac{9}{8}=3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
-\\\\frac{9}{8},9)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$F$.\\n\\\\end{hint}\\nIf $y(9)=3$ and $F(\\\\theta)=y(8 \\\\cdot \\\\theta, \
-the point on the graph of $F$ is \
-$\\\\answer{(\\\\frac{9}{8},9)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\\
-n\\\\begin{exercise}\\nIf $c(-3)=5$ and $b(n)=c(9 \\\\cdot n)$, what point \
-can you determine on the graph of \
-$b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-3$ into $c$ you get $5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $9 \\\\cdot n$ into $c$ so we want to \
-choose our $n$ so that $9 \\\\cdot \
-n=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$n=-\\\\frac{1}{3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $c$ and $b$ we get \
-$b(-\\\\frac{1}{3})=c(-3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$b(-\\\\frac{1}{3}=5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(-\\\\frac{1}{3},-3)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$b$.\\n\\\\end{hint}\\nIf $c(-3)=5$ and $b(n)=c(9 \\\\cdot n, the point on \
-the graph of $b$ is \
-$\\\\answer{(-\\\\frac{1}{3},-3)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
-n\\n\\\\begin{exercise}\\nIf $s(3)=-2$ and $c(z)=s(7 \\\\cdot z)$, what point \
-can you determine on the graph of \
-$c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $3$ into $s$ you get $-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $7 \\\\cdot z$ into $s$ so we want to \
-choose our $z$ so that $7 \\\\cdot \
-z=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$z=\\\\frac{3}{7}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $s$ and $c$ we get \
-$c(\\\\frac{3}{7})=s(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$c(\\\\frac{3}{7}=-2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(\\\\frac{3}{7},3)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$c$.\\n\\\\end{hint}\\nIf $s(3)=-2$ and $c(z)=s(7 \\\\cdot z, the point on \
-the graph of $c$ is \
-$\\\\answer{(\\\\frac{3}{7},3)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\\
-n\\\\begin{exercise}\\nIf $g(0)=7$ and $-\\\\frac{43}{5}(\\\\theta)=g(-9 \
-\\\\cdot \\\\theta)$, what point can you determine on the graph of \
-$-\\\\frac{43}{5}$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know \
-that when you plug in $0$ into $g$ you get \
-$7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
-plugging $-9 \\\\cdot \\\\theta$ into $g$ so we want to choose our \
-$\\\\theta$ so that $-9 \\\\cdot \
-\\\\theta=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$\\\\theta=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
-equation relating $g$ and $-\\\\frac{43}{5}$ we get \
-$-\\\\frac{43}{5}(0)=g(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$-\\\\frac{43}{5}(0=7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(0,0)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$-\\\\frac{43}{5}$.\\n\\\\end{hint}\\nIf $g(0)=7$ and \
-$-\\\\frac{43}{5}(\\\\theta)=g(-9 \\\\cdot \\\\theta, the point on the graph \
-of $-\\\\frac{43}{5}$ is \
-$\\\\answer{(0,0)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $f(3)=10$ and $P(z)=f(10 \\\\cdot z)$, what point can you \
-determine on the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
-only know that when you plug in $3$ into $f$ you get $10$.\\n\\\\end{hint}\\n\
-\\\\begin{hint}\\nIn the equation we are given, we are plugging $10 \\\\cdot \
-z$ into $f$ so we want to choose our $z$ so that $10 \\\\cdot \
-z=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$z=\\\\frac{3}{10}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $f$ and $P$ we get \
-$P(\\\\frac{3}{10})=f(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$P(\\\\frac{3}{10}=10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(\\\\frac{3}{10},3)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$P$.\\n\\\\end{hint}\\nIf $f(3)=10$ and $P(z)=f(10 \\\\cdot z, the point on \
-the graph of $P$ is $\\\\answer{(\\\\frac{3}{10},3)}$.\\n\\\\end{solution}\\n\
-\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $R(10)=1$ and $F(x)=R(5 \
-\\\\cdot x)$, what point can you determine on the graph of \
-$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $10$ into $R$ you get $1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $5 \\\\cdot x$ into $R$ so we want to \
-choose our $x$ so that $5 \\\\cdot \
-x=10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$x=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $R$ and $F$ we get \
-$F(2)=R(10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$F(2=1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,10)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $F$.\\n\\\\end{hint}\\nIf $R(10)=1$ and $F(x)=R(5 \\\\cdot x, the \
-point on the graph of $F$ is \
-$\\\\answer{(2,10)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $g(-10)=6$ and $C(\\\\theta)=g(5 \\\\cdot \\\\theta)$, what \
-point can you determine on the graph of \
-$C$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-10$ into $g$ you get $6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
-the equation we are given, we are plugging $5 \\\\cdot \\\\theta$ into $g$ so \
-we want to choose our $\\\\theta$ so that $5 \\\\cdot \
-\\\\theta=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$\\\\theta=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
-equation relating $g$ and $C$ we get \
-$C(-2)=g(-10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$C(-2=6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-2,-10)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $C$.\\n\\\\end{hint}\\nIf $g(-10)=6$ and $C(\\\\theta)=g(5 \\\\cdot \
-\\\\theta, the point on the graph of $C$ is \
-$\\\\answer{(-2,-10)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
-begin{exercise}\\nIf $C(-8)=-2$ and $P(t)=C(2 \\\\cdot t)$, what point can \
-you determine on the graph of \
-$P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-8$ into $C$ you get $-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
-the equation we are given, we are plugging $2 \\\\cdot t$ into $C$ so we want \
-to choose our $t$ so that $2 \\\\cdot \
-t=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$t=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $C$ and $P$ we get \
-$P(-4)=C(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$P(-4=-2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-4,-8)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $P$.\\n\\\\end{hint}\\nIf $C(-8)=-2$ and $P(t)=C(2 \\\\cdot t, the \
-point on the graph of $P$ is \
-$\\\\answer{(-4,-8)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $-\\\\frac{43}{5}(8)=-4$ and $r(x)=-\\\\frac{43}{5}(7 \\\\cdot \
-x)$, what point can you determine on the graph of \
-$r$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $8$ into $-\\\\frac{43}{5}$ you get \
-$-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
-are plugging $7 \\\\cdot x$ into $-\\\\frac{43}{5}$ so we want to choose our \
-$x$ so that $7 \\\\cdot x=8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want \
-to choose $x=\\\\frac{8}{7}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this \
-value in our equation relating $-\\\\frac{43}{5}$ and $r$ we get \
-$r(\\\\frac{8}{7})=-\\\\frac{43}{5}(8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\\
-nSo $r(\\\\frac{8}{7}=-4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf \
-Thus}$ $(\\\\frac{8}{7},8)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$r$.\\n\\\\end{hint}\\nIf $-\\\\frac{43}{5}(8)=-4$ and \
-$r(x)=-\\\\frac{43}{5}(7 \\\\cdot x, the point on the graph of $r$ is \
-$\\\\answer{(\\\\frac{8}{7},8)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\\
-n\\\\begin{exercise}\\nIf $f(6)=6$ and $r(x)=f(2 \\\\cdot x)$, what point can \
-you determine on the graph of \
-$r$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $6$ into $f$ you get $6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
-equation we are given, we are plugging $2 \\\\cdot x$ into $f$ so we want to \
-choose our $x$ so that $2 \\\\cdot \
-x=6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$x=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $f$ and $r$ we get \
-$r(3)=f(6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $r(3=6)$.\\n\\\\end{hint}\
-\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,6)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$r$.\\n\\\\end{hint}\\nIf $f(6)=6$ and $r(x)=f(2 \\\\cdot x, the point on the \
-graph of $r$ is \
-$\\\\answer{(3,6)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $a(9)=-4$ and $b(t)=a(8 \\\\cdot t)$, what point can you \
-determine on the graph of $b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
-only know that when you plug in $9$ into $a$ you get $-4$.\\n\\\\end{hint}\\n\
-\\\\begin{hint}\\nIn the equation we are given, we are plugging $8 \\\\cdot \
-t$ into $a$ so we want to choose our $t$ so that $8 \\\\cdot \
-t=9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$t=\\\\frac{9}{8}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
-our equation relating $a$ and $b$ we get \
-$b(\\\\frac{9}{8})=a(9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$b(\\\\frac{9}{8}=-4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(\\\\frac{9}{8},9)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$b$.\\n\\\\end{hint}\\nIf $a(9)=-4$ and $b(t)=a(8 \\\\cdot t, the point on \
-the graph of $b$ is \
-$\\\\answer{(\\\\frac{9}{8},9)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\\
-n\\\\begin{exercise}\\nIf $F(-2)=-8$ and $y(u)=F(-1 \\\\cdot u)$, what point \
-can you determine on the graph of \
-$y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-2$ into $F$ you get $-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
-the equation we are given, we are plugging $-1 \\\\cdot u$ into $F$ so we \
-want to choose our $u$ so that $-1 \\\\cdot \
-u=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$u=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $F$ and $y$ we get \
-$y(2)=F(-2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$y(2=-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,-2)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $y$.\\n\\\\end{hint}\\nIf $F(-2)=-8$ and $y(u)=F(-1 \\\\cdot u, the \
-point on the graph of $y$ is \
-$\\\\answer{(2,-2)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $F(-3)=10$ and $a(k)=F(7 \\\\cdot k)$, what point can you \
-determine on the graph of $a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
-only know that when you plug in $-3$ into $F$ you get \
-$10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
-are plugging $7 \\\\cdot k$ into $F$ so we want to choose our $k$ so that $7 \
-\\\\cdot k=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $k=-\
-\\\\frac{3}{7}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
-equation relating $F$ and $a$ we get \
-$a(-\\\\frac{3}{7})=F(-3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$a(-\\\\frac{3}{7}=10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
-$(-\\\\frac{3}{7},-3)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$a$.\\n\\\\end{hint}\\nIf $F(-3)=10$ and $a(k)=F(7 \\\\cdot k, the point on \
-the graph of $a$ is \
-$\\\\answer{(-\\\\frac{3}{7},-3)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
-n\\n\\\\begin{exercise}\\nIf $b(-9)=-9$ and $c(u)=b(-3 \\\\cdot u)$, what \
-point can you determine on the graph of \
-$c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
-plug in $-9$ into $b$ you get $-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
-the equation we are given, we are plugging $-3 \\\\cdot u$ into $b$ so we \
-want to choose our $u$ so that $-3 \\\\cdot \
-u=-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
-$u=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
-relating $b$ and $c$ we get \
-$c(3)=b(-9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$c(3=-9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,-9)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $c$.\\n\\\\end{hint}\\nIf $b(-9)=-9$ and $c(u)=b(-3 \\\\cdot u, the \
-point on the graph of $c$ is \
-$\\\\answer{(3,-9)}$.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>"], \
-"Output",
- CellChangeTimes->{
-  3.598017132453318*^9, 3.598017229670617*^9, 3.5980172950059032`*^9, 
-   3.598017766598556*^9, 3.5980249140053053`*^9, {3.598025160398684*^9, 
-   3.5980251687690763`*^9}, 3.598025250827829*^9, 3.5980252870352182`*^9, 
-   3.5980260132412453`*^9, 3.598026616270851*^9, 3.598026711674405*^9, {
-   3.598027158838069*^9, 3.598027202077791*^9}, {3.598027234088708*^9, 
-   3.598027271858959*^9}, {3.5980273235340357`*^9, 3.598027342379767*^9}}]
-}, Open  ]]
+   3.5980272710409727`*^9, {3.598027320274003*^9, 3.598027322528564*^9}, 
+   3.5981908721073523`*^9}]
 },
-WindowSize->{1173, 674},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
-FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
-2012)",
+WindowSize->{1280, 991},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -597,10 +275,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[CellGroupData[{
-Cell[579, 22, 11204, 238, 845, "Input"],
-Cell[11786, 262, 20911, 317, 8614, "Output"]
-}, Open  ]]
+Cell[557, 20, 11231, 239, 1111, "Input"]
 }
 ]
 *)
