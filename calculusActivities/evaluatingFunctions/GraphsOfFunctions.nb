@@ -1,0 +1,662 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     28521,        653]
+NotebookOptionsPosition[     27843,        625]
+NotebookOutlinePosition[     28199,        641]
+CellTagsIndexPosition[     28156,        638]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"code", ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"func", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
+           "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"variable", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"prePoint", "=", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}], "/", "10"}]}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"a4", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a3", "=", 
+        RowBox[{
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a2", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a1", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a0", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}]}], 
+      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"point", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", "prePoint", "]"}], ",", "prePoint", ",", 
+         RowBox[{"N", "[", "prePoint", "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"f", "[", "x_", "]"}], "=", 
+       RowBox[{
+        RowBox[{"a4", "*", 
+         RowBox[{"x", "^", "4"}]}], "+", 
+        RowBox[{"a3", "*", 
+         RowBox[{"x", "^", "3"}]}], "+", 
+        RowBox[{"a2", "*", 
+         RowBox[{"x", "^", "2"}]}], "+", 
+        RowBox[{"a1", "*", "x"}], "+", "a0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"answer", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"IntegerQ", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}], ",", 
+         RowBox[{"f", "[", "prePoint", "]"}], ",", 
+         RowBox[{"N", "[", 
+          RowBox[{"f", "[", "prePoint", "]"}], "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluate $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", "point", "]"}], ",", 
+        "\"\<)$. Express your answer in decimal notation.\n\
+\\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], "\[Rule]", 
+           RowBox[{"StringJoin", "[", 
+            RowBox[{"\"\<(\>\"", ",", 
+             RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)\>\""}], 
+            "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", "\[IndentingNewLine]", 
+        "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
+        ",", " ", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<$, evaluated at $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", "point", "]"}], ",", 
+        "\"\<$, is $\\\\answer{\>\"", ",", 
+        RowBox[{"ToString", "[", "answer", "]"}], ",", 
+        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"StringJoin", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{"code", ",", 
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.596822797404059*^9, 3.596822804542852*^9}, {
+  3.5968826810601063`*^9, 3.5968826817983427`*^9}, {3.597068159626274*^9, 
+  3.59706815983995*^9}}],
+
+Cell["\<\
+
+
+OK WE MAY NEED AN IF STATMENT TO KNOW IF THE MAX OR MIN IS IN THE DOMAIN. MY \
+WHILE LOOP DOES NOT SEEM TO WORK.
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.5981130211026077`*^9, 3.59811303007064*^9}, {
+  3.598118186912999*^9, 3.598118212539171*^9}}],
+
+Cell[BoxData[
+ RowBox[{"code", ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"func", "=", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", ",",
+           "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", "G", 
+          ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"variable", "=", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", ",",
+           "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}]}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"P1", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"P2", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"P3", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"While", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"P1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+        RowBox[{
+         RowBox[{"P1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+        RowBox[{
+         RowBox[{"P2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"P1", " ", "=", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
+         "\[IndentingNewLine]", 
+        RowBox[{"P2", "=", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
+         "\[IndentingNewLine]", 
+        RowBox[{"P3", "=", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], 
+          "}"}]}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ff", "[", "xx_", "]"}], "=", 
+      RowBox[{"InterpolatingPolynomial", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"P1", ",", "P2", ",", "P3"}], "}"}], ",", "xx"}], "]"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"mm", "=", 
+      RowBox[{"First", "[", 
+       RowBox[{"xx", "/.", 
+        RowBox[{"Solve", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"ff", "'"}], "[", "xx", "]"}], "\[Equal]", "0"}], ",", 
+          "xx"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"\"\<\\\\begin{question}\nIn the plot below, is $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+       "\"\<$ a function of $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+       "\"\<$?\n\\\\[\n\\\\begin{tikzpicture}\n\\\\begin{axis}[\n            \
+clip=false,\n            axis lines =center, xlabel=$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+       "\"\<$, ylabel=$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+       "\"\<$,\n              every axis y label/.style={at=(current \
+axis.above origin),anchor=south},\n              every axis x \
+label/.style={at=(current axis.right of origin),anchor=west},\n            \
+domain=-5:5,\n            grid = major,\n          ]\n          \\\\addplot \
+[very thick, smooth] {\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"InputForm", "[", 
+         RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
+       "\"\<};\n        \\\\end{axis}\n\\\\end{tikzpicture}\n\\\\]\n\
+\\\\begin{multiple-choice}\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
+\\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
+input, how many outputs are there?\n\\\\end{hint}\n\\\\end{solution}\nUse the \
+plot to compute $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$\n\\\\begin{solution}\n\\\\begin{hint}\nTo start, find $\>\"", 
+       ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<$ on the horizontal axis. \n\\\\end{hint}\n\\\\begin{hint}\nNow \
+from this position, move up or down until you reach the curve. The value of $\
+\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$ is the height of the curve at the point $\>\"", ",", " ", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+       ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<$.\n\\\\end{hint}\nThe value of $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$ is \\\\answer{$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+       "\"\<$}.\n\\\\end{solution}\nIs $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+       "\"\<^{-1}$ a function of $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+       "\"\<$ on the domain $[\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"Ceiling", "[", 
+         RowBox[{"MinValue", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"ff", "[", "xx", "]"}], ",", 
+             RowBox[{
+              RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]", 
+              " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
+       "\"\<,\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"Floor", "[", 
+         RowBox[{"MaxValue", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"ff", "[", "xx", "]"}], ",", 
+             RowBox[{
+              RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]", 
+              " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
+       "\"\<]$?\n\\\\begin{multiple-choice}\>\"", ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "5"}], "\[LessEqual]", "mm", "\[LessEqual]", "5"}], 
+         ",", 
+         RowBox[{"StringJoin", "[", "\[IndentingNewLine]", 
+          RowBox[{
+          "\"\<\n\\\\choice{Yes.}\n\\\\choice[correct]{No.}\n\
+\\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
+input of $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
+\\\\end{solution}\nRestrict the domain of $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<$ to \>\"", ",", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"mm", ">", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], ",", " ", 
+             RowBox[{"StringJoin", "[", 
+              RowBox[{"\"\<$[-5,\>\"", ",", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"Floor", "[", "mm", "]"}], "]"}], ",", "\"\<]$\>\""}],
+               "]"}], ",", 
+             RowBox[{"StringJoin", "[", 
+              RowBox[{"\"\<$[\>\"", ",", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"Ceiling", "[", "mm", "]"}], "]"}], ",", 
+               "\"\<,5]$\>\""}], "]"}]}], "]"}], ",", 
+           "\"\< and compute $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}(\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+           "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
+looking at $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}$, now we must find $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+           "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of $\>\"", 
+           ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}(\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+           "\"\<)$ is \\\\answer{$\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+           "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}], 
+         ",", 
+         RowBox[{"StringJoin", "[", 
+          RowBox[{
+          "\"\<\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
+\\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
+input of $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
+\\\\end{solution}\nCompute $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}(\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+           "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
+looking at $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}$, now we must find $\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+           "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of $\>\"", 
+           ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+           "\"\<^{-1}(\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+           "\"\<)$ is \\\\answer{$\>\"", ",", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"P2", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+           "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}]}], 
+        "\n", "]"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.598112582278224*^9, 3.598112602091975*^9}, {
+   3.5981126694973707`*^9, 3.598112679303165*^9}, {3.598112713769826*^9, 
+   3.598112836398057*^9}, {3.598112908954523*^9, 3.598112935446889*^9}, {
+   3.598113001176607*^9, 3.598113003263892*^9}, {3.598113040605562*^9, 
+   3.5981131474412117`*^9}, {3.5981133801435347`*^9, 3.598113426893941*^9}, {
+   3.59811369504626*^9, 3.59811373193602*^9}, {3.598113777958041*^9, 
+   3.598113859527132*^9}, {3.598113891601923*^9, 3.598113935253399*^9}, {
+   3.598113977406464*^9, 3.598113992682344*^9}, {3.598114496574131*^9, 
+   3.598114508361435*^9}, {3.598114809195814*^9, 3.5981148198694887`*^9}, {
+   3.598114853472272*^9, 3.5981149418960743`*^9}, {3.598115008957177*^9, 
+   3.598115012018718*^9}, {3.598115043632379*^9, 3.5981150876644*^9}, 
+   3.5981151544565773`*^9, {3.5981152032734528`*^9, 3.5981152034777737`*^9}, {
+   3.598115354785915*^9, 3.598115356952414*^9}, {3.5982835545056753`*^9, 
+   3.598283578464807*^9}, {3.59828362436027*^9, 3.5982836568825493`*^9}, {
+   3.598283705440967*^9, 3.598283738817132*^9}, 3.598283792881958*^9, {
+   3.5982840042172613`*^9, 3.598284007582128*^9}, {3.598284093875924*^9, 
+   3.598284097792898*^9}, {3.598284140254838*^9, 3.598284169977989*^9}, {
+   3.5982842052099133`*^9, 3.598284252047327*^9}, 3.598284324994225*^9, {
+   3.598284472064413*^9, 3.598284740571666*^9}, {3.5982847932938643`*^9, 
+   3.5982848166102047`*^9}, {3.598284847134804*^9, 3.5982849024465837`*^9}, {
+   3.598285038414216*^9, 3.598285270535515*^9}, {3.5982853395660057`*^9, 
+   3.598285514131774*^9}, {3.598285553696995*^9, 3.598285569885055*^9}, {
+   3.598285611082849*^9, 3.598285624047594*^9}, {3.5982857218207893`*^9, 
+   3.5982857976526423`*^9}, {3.598285883147511*^9, 3.598286032660495*^9}, {
+   3.5982860863082323`*^9, 3.5982861062006893`*^9}, {3.598286154132226*^9, 
+   3.5982863026639967`*^9}, {3.598286363564191*^9, 3.598286366019484*^9}, {
+   3.598286492728746*^9, 3.598286531509922*^9}, {3.598286570952807*^9, 
+   3.598286646420281*^9}, {3.598286719071868*^9, 3.598286812524333*^9}, {
+   3.5982868681812077`*^9, 3.598286871799667*^9}, {3.598287025864119*^9, 
+   3.598287081698373*^9}, {3.5982871264044533`*^9, 3.598287126901002*^9}, {
+   3.5982871683347263`*^9, 3.5982871710959044`*^9}, {3.598287240672961*^9, 
+   3.598287274676816*^9}, 3.598287347680585*^9, {3.5982873916041203`*^9, 
+   3.5982874086422586`*^9}, {3.598287451114109*^9, 3.598287474514018*^9}, {
+   3.5982875880793123`*^9, 3.598287593850408*^9}, {3.598287642648219*^9, 
+   3.598287660069417*^9}, {3.598287712636978*^9, 3.598287771054824*^9}, {
+   3.598287801859667*^9, 3.598287820501639*^9}, {3.5982878855830793`*^9, 
+   3.598287945774222*^9}, {3.5982881458723907`*^9, 3.598288272885358*^9}, {
+   3.59828833892997*^9, 3.5982884872560883`*^9}, {3.598288982964488*^9, 
+   3.598289082505932*^9}, {3.5982891128687963`*^9, 3.598289152532049*^9}, {
+   3.5982891853056726`*^9, 3.598289185943892*^9}, {3.598289298289113*^9, 
+   3.598289328242957*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"code", "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.5981128395325203`*^9, 3.598112839879655*^9}, {
+   3.598113787691965*^9, 3.598113812786015*^9}, 3.598114011935288*^9, 
+   3.598115158273603*^9, 3.5981152112405148`*^9, 3.598284149275033*^9}],
+
+Cell[BoxData["\<\"\\\\begin{question}\\nIn the plot below, is $G$ a function \
+of $x$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+clip=false,\\n            axis lines =center, xlabel=$x$, ylabel=$G$,\\n      \
+        every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n          ]\\n          \\\\addplot [very thick, smooth] {4 + \
+(-1/3 + (17*(-4 + x))/6)*(-1 + x)};\\n        \
+\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
+\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
+begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
+$G(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $1$ on the \
+horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
+move up or down until you reach the curve. The value of $G(1)$ is the height \
+of the curve at the point $x=1$.\\n\\\\end{hint}\\nThe value of $G(1)$ is \
+\\\\answer{$4$}.\\n\\\\end{solution}\\nIs $G^{-1}$ a function of $x$ on the \
+domain $[-2,159]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\\
+choice[correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\\
+begin{hint}\\nFor each input of $G^{-1}$, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $G$ to \
+$[3,5]$ and compute \
+$G^{-1}(4)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
+at $G^{-1}$, now we must find $3$ on the vertical axis. \
+\\n\\\\end{hint}\\nThe value of $G^{-1}(3)$ is \
+\\\\answer{$4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\"\>"], "Output",
+ CellChangeTimes->{
+  3.598115159299973*^9, {3.5981152062609577`*^9, 3.5981152117838497`*^9}, 
+   3.598283525135214*^9, {3.598283581133456*^9, 3.5982835999425297`*^9}, {
+   3.5982836405755033`*^9, 3.598283658823908*^9}, 3.598283798240985*^9, 
+   3.598284100452429*^9, 3.598284150985301*^9, {3.598284507425005*^9, 
+   3.59828454012639*^9}, {3.5982848945909433`*^9, 3.598284912034815*^9}, {
+   3.598285219595076*^9, 3.5982852422764473`*^9}, 3.598285276138934*^9, 
+   3.5982853848616447`*^9, {3.5982854726087837`*^9, 3.5982854998940897`*^9}, 
+   3.59828557285682*^9, 3.598285629370716*^9, 3.598285801515867*^9, {
+   3.5982858966318283`*^9, 3.598285952335128*^9}, {3.598285994318466*^9, 
+   3.598286013080619*^9}, 3.598286059123048*^9, 3.59828631197749*^9, 
+   3.598286371384369*^9, {3.5982864025320663`*^9, 3.598286417747575*^9}, 
+   3.598286672819038*^9, 3.5982868171709146`*^9, {3.5982868927109957`*^9, 
+   3.598286905228096*^9}, 3.598287085320427*^9, 3.598287184905141*^9, 
+   3.5982873036041822`*^9, 3.5982874801020737`*^9, {3.598287664820758*^9, 
+   3.598287679312517*^9}, 3.59828827821804*^9, {3.598288437676857*^9, 
+   3.598288461334193*^9}, 3.598288497152569*^9, 3.598289088839797*^9, {
+   3.598289137375894*^9, 3.598289158283785*^9}, 3.598289197121113*^9, {
+   3.598289304791398*^9, 3.598289333523499*^9}, {3.598289607364647*^9, 
+   3.598289626188025*^9}, {3.598289730130961*^9, 3.598289785139983*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"P1", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.598283957060874*^9, 3.598283969675466*^9}, {
+   3.598284105455353*^9, 3.5982841057538023`*^9}, 3.5982871961877413`*^9, {
+   3.598287487871221*^9, 3.598287488269339*^9}, {3.598287675243348*^9, 
+   3.598287675740705*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "4"}], ",", 
+   RowBox[{"-", "2"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.598283958811943*^9, 3.598283969899658*^9}, 
+   3.598284105859473*^9, {3.598284908178892*^9, 3.598284918047339*^9}, 
+   3.598287111528446*^9, 3.59828719868299*^9, {3.598287484356423*^9, 
+   3.59828748969004*^9}, {3.598287672157484*^9, 3.598287676258556*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "mm", "]"}]], "Input",
+ CellChangeTimes->{{3.598286840133234*^9, 3.598286846651178*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "1.2`"}]], "Output",
+ CellChangeTimes->{{3.598286840991783*^9, 3.5982868469420643`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1366, 708},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 6742, 166, 693, "Input"],
+Cell[7302, 188, 256, 9, 106, "Text"],
+Cell[7561, 199, 15663, 337, 2013, "Input"],
+Cell[CellGroupData[{
+Cell[23249, 540, 300, 4, 77, "Input"],
+Cell[23552, 546, 3262, 45, 1255, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26851, 596, 305, 5, 55, "Input"],
+Cell[27159, 603, 391, 8, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27587, 616, 121, 2, 32, "Input"],
+Cell[27711, 620, 116, 2, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
