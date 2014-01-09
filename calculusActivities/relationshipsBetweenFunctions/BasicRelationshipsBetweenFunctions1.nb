@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     12098,        275]
-NotebookOptionsPosition[     11841,        261]
-NotebookOutlinePosition[     12197,        277]
-CellTagsIndexPosition[     12154,        274]
+NotebookDataLength[     12143,        275]
+NotebookOptionsPosition[     11884,        261]
+NotebookOutlinePosition[     12242,        277]
+CellTagsIndexPosition[     12199,        274]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -188,11 +188,10 @@ equation relating $\>\"", ",", " ",
          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
-          RowBox[{"Point1", "/", "Point3"}], "]"}], "]"}], ",", "\"\<=\>\"", 
+          RowBox[{"Point1", "/", "Point3"}], "]"}], "]"}], ",", "\"\<)=\>\"", 
         ",", 
         RowBox[{"ToString", "[", "Point2", "]"}], ",", 
-        "\"\<)$.\n\\\\end{hint}\n\\\\begin{hint}\n${\\\\bf Thus}$ $(\>\"", 
-        ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\n${\\\\bf Thus}$ $(\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
           RowBox[{"Point1", "/", "Point3"}], "]"}], "]"}], ",", "\"\<,\>\"", 
@@ -257,10 +256,11 @@ $\>\"", ",",
    3.598027030092911*^9, 3.598027032048567*^9}, {3.598027157638132*^9, 
    3.598027200940754*^9}, {3.598027232951929*^9, 3.59802723952645*^9}, 
    3.5980272710409727`*^9, {3.598027320274003*^9, 3.598027322528564*^9}, 
-   3.5981908721073523`*^9, {3.5982851458009863`*^9, 3.598285164879348*^9}}]
+   3.5981908721073523`*^9, {3.5982851458009863`*^9, 3.598285164879348*^9}, {
+   3.598290637595045*^9, 3.5982906396258593`*^9}}]
 },
 WindowSize->{1280, 991},
-WindowMargins->{{Automatic, 0}, {0, Automatic}},
+WindowMargins->{{-11, Automatic}, {Automatic, 0}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
 StyleDefinitions->"Default.nb"
@@ -276,7 +276,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 11280, 239, 845, "Input"]
+Cell[557, 20, 11323, 239, 845, "Input"]
 }
 ]
 *)
