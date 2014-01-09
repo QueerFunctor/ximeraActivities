@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     21134,        392]
-NotebookOptionsPosition[     20839,        377]
-NotebookOutlinePosition[     21175,        392]
-CellTagsIndexPosition[     21132,        389]
+NotebookDataLength[     21203,        393]
+NotebookOptionsPosition[     20887,        377]
+NotebookOutlinePosition[     21244,        393]
+CellTagsIndexPosition[     21201,        390]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -173,7 +173,7 @@ answer. However, we can expand this out.\n\\\\end{hint}\n\\\\begin{hint}\n$\>\
         
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
-        "\"\<)$, is $\\\\answer{\>\"", ",", 
+        "\"\<)$, is \\\\answer{$\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
           RowBox[{"Expand", "[", 
@@ -181,7 +181,7 @@ answer. However, we can expand this out.\n\\\\end{hint}\n\\\\begin{hint}\n$\>\
             RowBox[{"ff", "[", 
              RowBox[{"variable", "+", "h"}], "]"}], "-", 
             RowBox[{"ff", "[", "variable", "]"}]}], "]"}], "]"}], "]"}], ",", 
-        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+        "\"\<$}.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
        "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
@@ -369,7 +369,7 @@ answer. However, we can expand this out.\n\\\\end{hint}\n\\\\begin{hint}\n$\>\
    3.597067591273795*^9, 3.597067754550873*^9}, {3.597067840025021*^9, 
    3.597067973443071*^9}, {3.59706801253485*^9, 3.5970680922450333`*^9}, {
    3.5971583599385223`*^9, 3.597158380056279*^9}, {3.597159021194294*^9, 
-   3.597159053803256*^9}},
+   3.597159053803256*^9}, {3.5982850199285994`*^9, 3.598285036683052*^9}},
  CellID->931296407],
 
 Cell[BoxData[""], "Input",
@@ -377,7 +377,8 @@ Cell[BoxData[""], "Input",
 },
 WindowSize->{740, 652},
 WindowMargins->{{Automatic, -6}, {-9, Automatic}},
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -391,9 +392,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 20181, 352, 891, "Input",
+Cell[557, 20, 20229, 352, 641, "Input",
  CellID->931296407],
-Cell[20741, 374, 94, 1, 32, "Input"]
+Cell[20789, 374, 94, 1, 28, "Input"]
 }
 ]
 *)

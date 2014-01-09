@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     12029,        274]
-NotebookOptionsPosition[     11792,        261]
-NotebookOutlinePosition[     12127,        276]
-CellTagsIndexPosition[     12084,        273]
+NotebookDataLength[     12098,        275]
+NotebookOptionsPosition[     11841,        261]
+NotebookOutlinePosition[     12197,        277]
+CellTagsIndexPosition[     12154,        274]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -225,13 +225,13 @@ $\>\"", ",",
         "\"\<, the point on the graph of $\>\"", ",", " ", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", " ", 
-        "\"\<$ is $\\\\answer{\>\"", ",", "answer", ",", 
-        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+        "\"\<$ is \\\\answer{$\>\"", ",", "answer", ",", 
+        "\"\<$}.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
        "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "1", "}"}]}], "]"}], "]"}]}], "Input",
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
  CellChangeTimes->{{3.598015863279645*^9, 3.5980158642910843`*^9}, {
    3.5980159916937637`*^9, 3.598016051460307*^9}, {3.59801673252382*^9, 
    3.598017225661377*^9}, {3.598017272640243*^9, 3.598017290406283*^9}, {
@@ -257,11 +257,12 @@ $\>\"", ",",
    3.598027030092911*^9, 3.598027032048567*^9}, {3.598027157638132*^9, 
    3.598027200940754*^9}, {3.598027232951929*^9, 3.59802723952645*^9}, 
    3.5980272710409727`*^9, {3.598027320274003*^9, 3.598027322528564*^9}, 
-   3.5981908721073523`*^9}]
+   3.5981908721073523`*^9, {3.5982851458009863`*^9, 3.598285164879348*^9}}]
 },
 WindowSize->{1280, 991},
 WindowMargins->{{Automatic, 0}, {0, Automatic}},
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -275,7 +276,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 11231, 239, 1111, "Input"]
+Cell[557, 20, 11280, 239, 845, "Input"]
 }
 ]
 *)

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     22780,        417]
-NotebookOptionsPosition[     22543,        404]
-NotebookOutlinePosition[     22879,        419]
-CellTagsIndexPosition[     22836,        416]
+NotebookDataLength[     22855,        419]
+NotebookOptionsPosition[     22597,        405]
+NotebookOutlinePosition[     22954,        421]
+CellTagsIndexPosition[     22911,        418]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -200,11 +200,11 @@ continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",",
         ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "point", "]"}], "]"}], ",", 
-        "\"\<$, is $\\\\answer{\>\"", ",", 
+        "\"\<$, is \\\\answer{$\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", 
           RowBox[{"ff", "[", "point", "]"}], "]"}], "]"}], ",", 
-        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+        "\"\<$}.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
        "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
@@ -400,11 +400,13 @@ continue on. \n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",",
    3.5971571212081747`*^9, 3.597157257007186*^9}, {3.5971574041946507`*^9, 
    3.597157427552005*^9}, {3.597157488850322*^9, 3.5971575418494883`*^9}, {
    3.597158687986911*^9, 3.5971586922930117`*^9}, {3.5971587490375443`*^9, 
-   3.5971587695645447`*^9}, {3.597158833277865*^9, 3.5971588841168203`*^9}}]
+   3.5971587695645447`*^9}, {3.597158833277865*^9, 3.5971588841168203`*^9}, {
+   3.5982850768818913`*^9, 3.5982850833112803`*^9}}]
 },
 WindowSize->{896, 654},
 WindowMargins->{{Automatic, -9}, {Automatic, -8}},
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -418,7 +420,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 21982, 382, 979, "Input"]
+Cell[557, 20, 22036, 383, 726, "Input"]
 }
 ]
 *)
