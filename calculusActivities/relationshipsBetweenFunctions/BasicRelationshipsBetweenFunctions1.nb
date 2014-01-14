@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     32173,        580]
-NotebookOptionsPosition[     31834,        563]
-NotebookOutlinePosition[     32193,        579]
-CellTagsIndexPosition[     32150,        576]
+NotebookDataLength[     32174,        579]
+NotebookOptionsPosition[     31834,        562]
+NotebookOutlinePosition[     32194,        578]
+CellTagsIndexPosition[     32151,        575]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -94,12 +94,10 @@ Cell[BoxData[{
          RowBox[{"Point3", "=", 
           RowBox[{"Random", "[", 
            RowBox[{"Integer", ",", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "100"}], ",", "100"}], "}"}], "/", "10"}]}], 
-           "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
-      "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ";"}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
       RowBox[{"answer", "=", 
        RowBox[{"StringJoin", "[", 
         RowBox[{"\"\<(\>\"", ",", 
@@ -259,7 +257,8 @@ $\>\"", ",",
    3.5981908721073523`*^9, {3.5982851458009863`*^9, 3.598285164879348*^9}, {
    3.598290637595045*^9, 3.5982906396258593`*^9}, {3.598698162897674*^9, 
    3.598698196168591*^9}, {3.5986982932701397`*^9, 3.598698337021099*^9}, {
-   3.598698413332896*^9, 3.5986984815698223`*^9}}],
+   3.598698413332896*^9, 3.5986984815698223`*^9}, {3.598698639536687*^9, 
+   3.598698659552322*^9}}],
 
 Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $C(0)=9$ and $g(n)=C(-2 \\\\cdot \
 n)$, what point can you determine on the graph of \
@@ -562,7 +561,7 @@ the graph of $C$ is \\\\answer{$(-\\\\frac{1}{5},2)$}.\\n\\\\end{solution}\\n\
 }, Open  ]]
 },
 WindowSize->{1280, 991},
-WindowMargins->{{225, Automatic}, {Automatic, 32}},
+WindowMargins->{{136, Automatic}, {Automatic, 162}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
 StyleDefinitions->"Default.nb"
@@ -579,8 +578,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 11323, 239, 845, "Input"],
-Cell[11905, 263, 19913, 297, 8563, "Output"]
+Cell[579, 22, 11323, 238, 845, "Input"],
+Cell[11905, 262, 19913, 297, 8529, "Output"]
 }, Open  ]]
 }
 ]
