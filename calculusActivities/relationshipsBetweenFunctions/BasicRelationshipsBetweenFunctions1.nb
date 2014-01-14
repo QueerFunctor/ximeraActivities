@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     12143,        275]
-NotebookOptionsPosition[     11884,        261]
-NotebookOutlinePosition[     12242,        277]
-CellTagsIndexPosition[     12199,        274]
+NotebookDataLength[     32173,        580]
+NotebookOptionsPosition[     31834,        563]
+NotebookOutlinePosition[     32193,        579]
+CellTagsIndexPosition[     32150,        576]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"code", ":=", 
@@ -180,10 +182,9 @@ equation relating $\>\"", ",", " ",
           RowBox[{"Point1", "/", "Point3"}], "]"}], "]"}], ",", "\"\<)=\>\"", 
         ",", 
         RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", "Point1", "]"}], ",", 
-        "\"\<)$.\n\\\\end{hint}\n\\\\begin{hint}\nSo $\>\"", ",", " ", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func", "[", "Point1", "]"}], "]"}], "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nSo $\>\"", ",", " ", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
         RowBox[{"ToString", "[", 
@@ -204,16 +205,15 @@ $\>\"", ",",
          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
         "\"\<$.\n\\\\end{hint}\nIf $\>\"", ",", 
         RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<)=\>\"", ",", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func", "[", "Point1", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
         RowBox[{"ToString", "[", "Point2", "]"}], ",", "\"\<$ and $\>\"", ",",
          " ", 
         RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
-        ",", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
         
@@ -221,7 +221,7 @@ $\>\"", ",",
         ",", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
-        "\"\<, the point on the graph of $\>\"", ",", " ", 
+        "\"\<,)$ the point on the graph of $\>\"", ",", " ", 
         RowBox[{"ToString", "[", 
          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", " ", 
         "\"\<$ is \\\\answer{$\>\"", ",", "answer", ",", 
@@ -257,10 +257,312 @@ $\>\"", ",",
    3.598027200940754*^9}, {3.598027232951929*^9, 3.59802723952645*^9}, 
    3.5980272710409727`*^9, {3.598027320274003*^9, 3.598027322528564*^9}, 
    3.5981908721073523`*^9, {3.5982851458009863`*^9, 3.598285164879348*^9}, {
-   3.598290637595045*^9, 3.5982906396258593`*^9}}]
+   3.598290637595045*^9, 3.5982906396258593`*^9}, {3.598698162897674*^9, 
+   3.598698196168591*^9}, {3.5986982932701397`*^9, 3.598698337021099*^9}, {
+   3.598698413332896*^9, 3.5986984815698223`*^9}}],
+
+Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $C(0)=9$ and $g(n)=C(-2 \\\\cdot \
+n)$, what point can you determine on the graph of \
+$g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $0$ into $C$ you get $9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-2 \\\\cdot n$ into $C$ so we want to \
+choose our $n$ so that $-2 \\\\cdot \
+n=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$n=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $C$ and $g$ we get \
+$g(0)=c_0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$g(0)=9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,0)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $g$.\\n\\\\end{hint}\\nIf $c_0=9$ and $g(n)=C(-2 \\\\cdot n,)$ the \
+point on the graph of $g$ is \
+\\\\answer{$(0,0)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $b(0)=5$ and $c(v)=b(4 \\\\cdot v)$, what point can you \
+determine on the graph of $c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $0$ into $b$ you get \
+$5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $4 \\\\cdot v$ into $b$ so we want to choose our $v$ so that $4 \
+\\\\cdot v=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$v=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $b$ and $c$ we get \
+$c(0)=b(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $c(0)=5$.\\n\\\\end{hint}\
+\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,0)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$c$.\\n\\\\end{hint}\\nIf $b(0)=5$ and $c(v)=b(4 \\\\cdot v,)$ the point on \
+the graph of $c$ is \
+\\\\answer{$(0,0)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $a(-5)=6$ and $G(w)=a(-3 \\\\cdot w)$, what point can you \
+determine on the graph of $G$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $-5$ into $a$ you get $6$.\\n\\\\end{hint}\\n\
+\\\\begin{hint}\\nIn the equation we are given, we are plugging $-3 \\\\cdot \
+w$ into $a$ so we want to choose our $w$ so that $-3 \\\\cdot \
+w=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$w=\\\\frac{5}{3}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $a$ and $G$ we get \
+$G(\\\\frac{5}{3})=a(-5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$G(\\\\frac{5}{3})=6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
+\\\\frac{5}{3},-5)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$G$.\\n\\\\end{hint}\\nIf $a(-5)=6$ and $G(w)=a(-3 \\\\cdot w,)$ the point on \
+the graph of $G$ is \\\\answer{$(\\\\frac{5}{3},-5)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $a(-10)=1$ and $A(u)=a(-8 \
+\\\\cdot u)$, what point can you determine on the graph of \
+$A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-10$ into $a$ you get $1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
+the equation we are given, we are plugging $-8 \\\\cdot u$ into $a$ so we \
+want to choose our $u$ so that $-8 \\\\cdot \
+u=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$u=\\\\frac{5}{4}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $a$ and $A$ we get \
+$A(\\\\frac{5}{4})=a(-10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$A(\\\\frac{5}{4})=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
+\\\\frac{5}{4},-10)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$A$.\\n\\\\end{hint}\\nIf $a(-10)=1$ and $A(u)=a(-8 \\\\cdot u,)$ the point \
+on the graph of $A$ is \
+\\\\answer{$(\\\\frac{5}{4},-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
+n\\n\\\\begin{exercise}\\nIf $C(-10)=-2$ and $s(n)=C(-7 \\\\cdot n)$, what \
+point can you determine on the graph of \
+$s$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-10$ into $C$ you get $-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
+the equation we are given, we are plugging $-7 \\\\cdot n$ into $C$ so we \
+want to choose our $n$ so that $-7 \\\\cdot \
+n=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$n=\\\\frac{10}{7}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $C$ and $s$ we get \
+$s(\\\\frac{10}{7})=c_{-10}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$s(\\\\frac{10}{7})=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(\\\\frac{10}{7},-10)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$s$.\\n\\\\end{hint}\\nIf $c_{-10}=-2$ and $s(n)=C(-7 \\\\cdot n,)$ the point \
+on the graph of $s$ is \
+\\\\answer{$(\\\\frac{10}{7},-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
+n\\n\\\\begin{exercise}\\nIf $F(8)=3$ and $C(z)=F(-8 \\\\cdot z)$, what point \
+can you determine on the graph of \
+$C$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $8$ into $F$ you get $3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-8 \\\\cdot z$ into $F$ so we want to \
+choose our $z$ so that $-8 \\\\cdot \
+z=8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$z=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $F$ and $C$ we get \
+$C(-1)=F(8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$C(-1)=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-1,8)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $C$.\\n\\\\end{hint}\\nIf $F(8)=3$ and $c_z=F(-8 \\\\cdot z,)$ the \
+point on the graph of $C$ is \
+\\\\answer{$(-1,8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $p(-7)=-10$ and $c(n)=p(10 \\\\cdot n)$, what point can you \
+determine on the graph of $c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $-7$ into $p$ you get \
+$-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
+are plugging $10 \\\\cdot n$ into $p$ so we want to choose our $n$ so that \
+$10 \\\\cdot n=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$n=-\\\\frac{7}{10}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $p$ and $c$ we get \
+$c(-\\\\frac{7}{10})=p(-7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$c(-\\\\frac{7}{10})=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf \
+Thus}$ $(-\\\\frac{7}{10},-7)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\
+\\\\hspace{1em}graph\\\\hspace{1em}of}$ $c$.\\n\\\\end{hint}\\nIf $p(-7)=-10$ \
+and $c(n)=p(10 \\\\cdot n,)$ the point on the graph of $c$ is \
+\\\\answer{$(-\\\\frac{7}{10},-7)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\\
+n\\n\\\\begin{exercise}\\nIf $b(0)=8$ and $a(x)=b(9 \\\\cdot x)$, what point \
+can you determine on the graph of \
+$a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $0$ into $b$ you get $8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $9 \\\\cdot x$ into $b$ so we want to \
+choose our $x$ so that $9 \\\\cdot \
+x=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$x=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $b$ and $a$ we get \
+$a(0)=b(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $a(0)=8$.\\n\\\\end{hint}\
+\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,0)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$a$.\\n\\\\end{hint}\\nIf $b(0)=8$ and $a(x)=b(9 \\\\cdot x,)$ the point on \
+the graph of $a$ is \
+\\\\answer{$(0,0)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $g(-4)=-8$ and $C(u)=g(-9 \\\\cdot u)$, what point can you \
+determine on the graph of $C$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $-4$ into $g$ you get \
+$-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
+are plugging $-9 \\\\cdot u$ into $g$ so we want to choose our $u$ so that \
+$-9 \\\\cdot u=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$u=\\\\frac{4}{9}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $g$ and $C$ we get \
+$C(\\\\frac{4}{9})=g(-4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$C(\\\\frac{4}{9})=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(\\\\frac{4}{9},-4)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$C$.\\n\\\\end{hint}\\nIf $g(-4)=-8$ and $c_u=g(-9 \\\\cdot u,)$ the point on \
+the graph of $C$ is \\\\answer{$(\\\\frac{4}{9},-4)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $C(-8)=3$ and $A(k)=C(4 \
+\\\\cdot k)$, what point can you determine on the graph of \
+$A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-8$ into $C$ you get $3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $4 \\\\cdot k$ into $C$ so we want to \
+choose our $k$ so that $4 \\\\cdot \
+k=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$k=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $C$ and $A$ we get $A(-2)=c_{-8}$.\\n\\\\end{hint}\\n\\\\begin{hint}\
+\\nSo $A(-2)=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-2,-8)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$A$.\\n\\\\end{hint}\\nIf $c_{-8}=3$ and $A(k)=C(4 \\\\cdot k,)$ the point on \
+the graph of $A$ is \
+\\\\answer{$(-2,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $A(-1)=-1$ and $R(z)=A(-7 \\\\cdot z)$, what point can you \
+determine on the graph of $R$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $-1$ into $A$ you get \
+$-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
+are plugging $-7 \\\\cdot z$ into $A$ so we want to choose our $z$ so that \
+$-7 \\\\cdot z=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$z=\\\\frac{1}{7}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $A$ and $R$ we get \
+$R(\\\\frac{1}{7})=A(-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$R(\\\\frac{1}{7})=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(\\\\frac{1}{7},-1)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$R$.\\n\\\\end{hint}\\nIf $A(-1)=-1$ and $R(z)=A(-7 \\\\cdot z,)$ the point \
+on the graph of $R$ is \\\\answer{$(\\\\frac{1}{7},-1)$}.\\n\\\\end{solution}\
+\\n\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $G(-6)=-6$ and $F(v)=G(-8 \
+\\\\cdot v)$, what point can you determine on the graph of \
+$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-6$ into $G$ you get $-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
+the equation we are given, we are plugging $-8 \\\\cdot v$ into $G$ so we \
+want to choose our $v$ so that $-8 \\\\cdot \
+v=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$v=\\\\frac{3}{4}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $G$ and $F$ we get \
+$F(\\\\frac{3}{4})=G(-6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$F(\\\\frac{3}{4})=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(\\\\frac{3}{4},-6)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$F$.\\n\\\\end{hint}\\nIf $G(-6)=-6$ and $F(v)=G(-8 \\\\cdot v,)$ the point \
+on the graph of $F$ is \\\\answer{$(\\\\frac{3}{4},-6)$}.\\n\\\\end{solution}\
+\\n\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $B(-4)=-5$ and $p(z)=B(1 \
+\\\\cdot z)$, what point can you determine on the graph of \
+$p$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-4$ into $B$ you get $-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
+the equation we are given, we are plugging $1 \\\\cdot z$ into $B$ so we want \
+to choose our $z$ so that $1 \\\\cdot \
+z=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$z=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $B$ and $p$ we get \
+$p(-4)=B(-4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$p(-4)=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-4,-4)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $p$.\\n\\\\end{hint}\\nIf $B(-4)=-5$ and $p(z)=B(1 \\\\cdot z,)$ the \
+point on the graph of $p$ is \
+\\\\answer{$(-4,-4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $r(-1)=0$ and $y(\\\\psi)=r(-1 \\\\cdot \\\\psi)$, what point \
+can you determine on the graph of \
+$y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-1$ into $r$ you get $0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-1 \\\\cdot \\\\psi$ into $r$ so we \
+want to choose our $\\\\psi$ so that $-1 \\\\cdot \
+\\\\psi=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\psi=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $r$ and $y$ we get \
+$y(1)=r(-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$y(1)=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(1,-1)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $y$.\\n\\\\end{hint}\\nIf $r(-1)=0$ and $y(\\\\psi )=r(-1 \\\\cdot \
+\\\\psi,)$ the point on the graph of $y$ is \
+\\\\answer{$(1,-1)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $Y(5)=4$ and $R(\\\\theta)=Y(-9 \\\\cdot \\\\theta)$, what \
+point can you determine on the graph of \
+$R$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $5$ into $Y$ you get $4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-9 \\\\cdot \\\\theta$ into $Y$ so we \
+want to choose our $\\\\theta$ so that $-9 \\\\cdot \
+\\\\theta=5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\theta=-\\\\frac{5}{9}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this \
+value in our equation relating $Y$ and $R$ we get \
+$R(-\\\\frac{5}{9})=Y(5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$R(-\\\\frac{5}{9})=4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-\\\\frac{5}{9},5)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$R$.\\n\\\\end{hint}\\nIf $Y(5)=4$ and $R(\\\\theta )=Y(-9 \\\\cdot \
+\\\\theta,)$ the point on the graph of $R$ is \
+\\\\answer{$(-\\\\frac{5}{9},5)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\
+\\n\\\\begin{exercise}\\nIf $R(-8)=6$ and $f(z)=R(-5 \\\\cdot z)$, what point \
+can you determine on the graph of \
+$f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-8$ into $R$ you get $6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-5 \\\\cdot z$ into $R$ so we want to \
+choose our $z$ so that $-5 \\\\cdot \
+z=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$z=\\\\frac{8}{5}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $R$ and $f$ we get \
+$f(\\\\frac{8}{5})=R(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$f(\\\\frac{8}{5})=6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
+\\\\frac{8}{5},-8)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$f$.\\n\\\\end{hint}\\nIf $R(-8)=6$ and $f(z)=R(-5 \\\\cdot z,)$ the point on \
+the graph of $f$ is \\\\answer{$(\\\\frac{8}{5},-8)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $R(-2)=0$ and $F(k)=R(-10 \
+\\\\cdot k)$, what point can you determine on the graph of \
+$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $-2$ into $R$ you get $0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-10 \\\\cdot k$ into $R$ so we want \
+to choose our $k$ so that $-10 \\\\cdot \
+k=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$k=\\\\frac{1}{5}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $R$ and $F$ we get \
+$F(\\\\frac{1}{5})=R(-2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$F(\\\\frac{1}{5})=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(\
+\\\\frac{1}{5},-2)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$F$.\\n\\\\end{hint}\\nIf $R(-2)=0$ and $F(k)=R(-10 \\\\cdot k,)$ the point \
+on the graph of $F$ is \\\\answer{$(\\\\frac{1}{5},-2)$}.\\n\\\\end{solution}\
+\\n\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $c(4)=9$ and $y(n)=c(-1 \\\
+\\cdot n)$, what point can you determine on the graph of \
+$y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe only know that when you \
+plug in $4$ into $c$ you get $9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $-1 \\\\cdot n$ into $c$ so we want to \
+choose our $n$ so that $-1 \\\\cdot \
+n=4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$n=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $c$ and $y$ we get \
+$y(-4)=c(4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$y(-4)=9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-4,4)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $y$.\\n\\\\end{hint}\\nIf $c(4)=9$ and $y(n)=c(-1 \\\\cdot n,)$ the \
+point on the graph of $y$ is \
+\\\\answer{$(-4,4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $R(10)=-3$ and $Y(k)=R(1 \\\\cdot k)$, what point can you \
+determine on the graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $10$ into $R$ you get \
+$-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we \
+are plugging $1 \\\\cdot k$ into $R$ so we want to choose our $k$ so that $1 \
+\\\\cdot k=10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$k=10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $R$ and $Y$ we get \
+$Y(10)=R(10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$Y(10)=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(10,10)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $Y$.\\n\\\\end{hint}\\nIf $R(10)=-3$ and $Y(k)=R(1 \\\\cdot k,)$ the \
+point on the graph of $Y$ is \
+\\\\answer{$(10,10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $P(2)=9$ and $C(w)=P(-10 \\\\cdot w)$, what point can you \
+determine on the graph of $C$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+only know that when you plug in $2$ into $P$ you get \
+$9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $-10 \\\\cdot w$ into $P$ so we want to choose our $w$ so that $-10 \
+\\\\cdot w=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$w=-\\\\frac{1}{5}$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $P$ and $C$ we get \
+$C(-\\\\frac{1}{5})=P(2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$C(-\\\\frac{1}{5})=9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-\\\\frac{1}{5},2)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$C$.\\n\\\\end{hint}\\nIf $P(2)=9$ and $c_w=P(-10 \\\\cdot w,)$ the point on \
+the graph of $C$ is \\\\answer{$(-\\\\frac{1}{5},2)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\"\>"], "Output",
+ CellChangeTimes->{3.59869833858524*^9, 3.598698493535906*^9}]
+}, Open  ]]
 },
 WindowSize->{1280, 991},
-WindowMargins->{{-11, Automatic}, {Automatic, 0}},
+WindowMargins->{{225, Automatic}, {Automatic, 32}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
 StyleDefinitions->"Default.nb"
@@ -276,7 +578,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 11323, 239, 845, "Input"]
+Cell[CellGroupData[{
+Cell[579, 22, 11323, 239, 845, "Input"],
+Cell[11905, 263, 19913, 297, 8563, "Output"]
+}, Open  ]]
 }
 ]
 *)
