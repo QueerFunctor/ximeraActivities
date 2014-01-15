@@ -1095,21 +1095,63 @@ The value of the function $a(z+h)-a(z)$, is $\answer{2 h^2+4 h z-4 h}$.
 
 
 \begin{shuffle}
+\begin{question}
+In the plot below, is $P$ a function of $k$?
+\[
+\begin{tikzpicture}
+\begin{axis}[
+            ymin=-5,
+			ymax=5,
+            axis lines =center, xlabel=$k$, ylabel=$P$,
+              every axis y label/.style={at=(current axis.above origin),anchor=south},
+              every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            domain=-5:5,
+            grid = major,
+            xtick={-4,...,4},
+            ytick={-4,...,4},
+          ]
+          \addplot [very thick, smooth] {1 + (3.5 + x)*(-0.5714285714285714 + (-3.5 + x)*(0.16326530612244897 + (-0.3327149041434756 + (-0.20522334808049095 + 0.04019472590901159*(-3 + x))*(-2 + x))*x))};
+        \end{axis}
+\end{tikzpicture}
+\]
+\begin{multiple-choice}
+\choice[correct]{Yes.}
+\choice{No.}
+\end{multiple-choice}
+\begin{solution}
+\begin{hint}
+For each input, how many outputs are there?
+\end{hint}
+\end{solution}
+Use the plot to compute $P(2)$
+\begin{solution}
+\begin{hint}
+To start, find $2$ on the horizontal axis. 
+\end{hint}
+\begin{hint}
+Now from this position, move up or down until you reach the curve. The value of $P(2)$ is the height of the curve at the point $k=2$.
+\end{hint}
+The value of $P(2)$ is \answer{$2$}.
+\end{solution}
+\end{question}
+
 
 \begin{question}
-In the plot below, is $r$ a function of $t$?
+In the plot below, is $R$ a function of $n$?
 \[
 \begin{tikzpicture}
 \begin{axis}[
             ymin=-5,
 			ymax=5,
-            axis lines =center, xlabel=$t$, ylabel=$r$,
+            axis lines =center, xlabel=$n$, ylabel=$R$,
               every axis y label/.style={at=(current axis.above origin),anchor=south},
               every axis x label/.style={at=(current axis.right of origin),anchor=west},
             domain=-5:5,
             grid = major,
+            xtick={-4,...,4},
+            ytick={-4,...,4},
           ]
-          \addplot [very thick, smooth] {4 + (-4 + x)*(3.5 + x)*(0.2857142857142857 + (-0.5 + x)*(-0.19047619047619047 + (-2 + x)*(0.059863945578231284 + 0.07870225013082155*(3 + x))))};
+          \addplot [very thick, smooth] {4 + (-0.42857142857142855 + (-0.05952380952380952 + (0.09163059163059163 + (-0.041447441447441453 - 0.08955488955488956*(-3 + x))*(-2 + x))*(-0.5 + x))*(-3.5 + x))*(3.5 + x)};
         \end{axis}
 \end{tikzpicture}
 \]
@@ -1122,48 +1164,34 @@ In the plot below, is $r$ a function of $t$?
 For each input, how many outputs are there?
 \end{hint}
 \end{solution}
-Use the plot to compute $r(4)$
+Use the plot to compute $R(3)$
 \begin{solution}
 \begin{hint}
-To start, find $4$ on the horizontal axis. 
+To start, find $3$ on the horizontal axis. 
 \end{hint}
 \begin{hint}
-Now from this position, move up or down until you reach the curve. The value of $r(4)$ is the height of the curve at the point $t=4$.
+Now from this position, move up or down until you reach the curve. The value of $R(3)$ is the height of the curve at the point $n=3$.
 \end{hint}
-The value of $r(4)$ is \answer{$4$}.
-\end{solution}
-Is $r^{-1}$ a function of $t$ on the domain $[-28,78]$?
-\begin{multiple-choice}
-\choice{Yes.}
-\choice[correct]{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input of $r^{-1}$, how many outputs are there?
-\end{hint}
-\end{solution}
-Restrict the domain of $r$ to $[-3,5]$ and compute $r^{-1}(2)$.
-\begin{solution}
-\begin{hint}
-Since we are looking at $r^{-1}$, now we must find $4$ on the vertical axis. 
-\end{hint}
-The value of $r^{-1}(4)$ is \answer{$2$}.
+The value of $R(3)$ is \answer{$1$}.
 \end{solution}
 \end{question}
+
 \begin{question}
-In the plot below, is $y$ a function of $v$?
+In the plot below, is $b$ a function of $w$?
 \[
 \begin{tikzpicture}
 \begin{axis}[
             ymin=-5,
 			ymax=5,
-            axis lines =center, xlabel=$v$, ylabel=$y$,
+            axis lines =center, xlabel=$w$, ylabel=$b$,
               every axis y label/.style={at=(current axis.above origin),anchor=south},
               every axis x label/.style={at=(current axis.right of origin),anchor=west},
             domain=-5:5,
             grid = major,
+            xtick={-4,...,4},
+            ytick={-4,...,4},
           ]
-          \addplot [very thick, smooth] {-1 + (3.5 + x)*(0.14285714285714285 + (-3.5 + x)*(0.12244897959183673 + x*(-0.3166357452071738 + (-2 + x)*(-0.09053803339517619 + 0.1527932385075242*(3 + x)))))};
+          \addplot [very thick, smooth] {2 + (3.5 + x)*(0.2857142857142857 + (-3.5 + x)*(0.489795918367347 + x*(0.34013605442176864 + (-0.5850340136054422 - 0.25117739403453676*(-0.5 + x))*(2 + x))))};
         \end{axis}
 \end{tikzpicture}
 \]
@@ -1176,140 +1204,15 @@ In the plot below, is $y$ a function of $v$?
 For each input, how many outputs are there?
 \end{hint}
 \end{solution}
-Use the plot to compute $y(-3)$
+Use the plot to compute $b(-2)$
 \begin{solution}
 \begin{hint}
-To start, find $-3$ on the horizontal axis. 
+To start, find $-2$ on the horizontal axis. 
 \end{hint}
 \begin{hint}
-Now from this position, move up or down until you reach the curve. The value of $y(-3)$ is the height of the curve at the point $v=-3$.
+Now from this position, move up or down until you reach the curve. The value of $b(-2)$ is the height of the curve at the point $w=-2$.
 \end{hint}
-The value of $y(-3)$ is \answer{$0$}.
-\end{solution}
-Is $y^{-1}$ a function of $v$ on the domain $[-156,198]$?
-\begin{multiple-choice}
-\choice{Yes.}
-\choice[correct]{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input of $y^{-1}$, how many outputs are there?
-\end{hint}
-\end{solution}
-Restrict the domain of $y$ to $[-3,5]$ and compute $y^{-1}(2)$.
-\begin{solution}
-\begin{hint}
-Since we are looking at $y^{-1}$, now we must find $4$ on the vertical axis. 
-\end{hint}
-The value of $y^{-1}(4)$ is \answer{$2$}.
-\end{solution}
-\end{question}
-\begin{question}
-In the plot below, is $y$ a function of $n$?
-\[
-\begin{tikzpicture}
-\begin{axis}[
-            ymin=-5,
-			ymax=5,
-            axis lines =center, xlabel=$n$, ylabel=$y$,
-              every axis y label/.style={at=(current axis.above origin),anchor=south},
-              every axis x label/.style={at=(current axis.right of origin),anchor=west},
-            domain=-5:5,
-            grid = major,
-          ]
-          \addplot [very thick, smooth] {-4 + (4 + x)*(1 + (-4 + x)*(0.15873015873015872 + (-0.5 + x)*(0.09682539682539684 + (-0.019143819143819147 + 0.007696007696007697*(-3.5 + x))*(2 + x))))};
-        \end{axis}
-\end{tikzpicture}
-\]
-\begin{multiple-choice}
-\choice[correct]{Yes.}
-\choice{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input, how many outputs are there?
-\end{hint}
-\end{solution}
-Use the plot to compute $y(-4)$
-\begin{solution}
-\begin{hint}
-To start, find $-4$ on the horizontal axis. 
-\end{hint}
-\begin{hint}
-Now from this position, move up or down until you reach the curve. The value of $y(-4)$ is the height of the curve at the point $n=-4$.
-\end{hint}
-The value of $y(-4)$ is \answer{$-4$}.
-\end{solution}
-Is $y^{-1}$ a function of $n$ on the domain $[-20,8]$?
-\begin{multiple-choice}
-\choice{Yes.}
-\choice[correct]{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input of $y^{-1}$, how many outputs are there?
-\end{hint}
-\end{solution}
-Restrict the domain of $y$ to $[-2,5]$ and compute $y^{-1}(-2)$.
-\begin{solution}
-\begin{hint}
-Since we are looking at $y^{-1}$, now we must find $-1$ on the vertical axis. 
-\end{hint}
-The value of $y^{-1}(-1)$ is \answer{$-2$}.
-\end{solution}
-\end{question}
-\begin{question}
-In the plot below, is $R$ a function of $u$?
-\[
-\begin{tikzpicture}
-\begin{axis}[
-            ymin=-5,
-			ymax=5,
-            axis lines =center, xlabel=$u$, ylabel=$R$,
-              every axis y label/.style={at=(current axis.above origin),anchor=south},
-              every axis x label/.style={at=(current axis.right of origin),anchor=west},
-            domain=-5:5,
-            grid = major,
-          ]
-          \addplot [very thick, smooth] {1 + (-4 + x)*(0.4 + (3.5 + x)*(0.1 + x*(0.016666666666666666 + (-0.011193568336425479 - 0.005318491032776748*(-3.5 + x))*(2 + x))))};
-        \end{axis}
-\end{tikzpicture}
-\]
-\begin{multiple-choice}
-\choice[correct]{Yes.}
-\choice{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input, how many outputs are there?
-\end{hint}
-\end{solution}
-Use the plot to compute $R(0)$
-\begin{solution}
-\begin{hint}
-To start, find $0$ on the horizontal axis. 
-\end{hint}
-\begin{hint}
-Now from this position, move up or down until you reach the curve. The value of $R(0)$ is the height of the curve at the point $u=0$.
-\end{hint}
-The value of $R(0)$ is \answer{$-2$}.
-\end{solution}
-Is $R^{-1}$ a function of $u$ on the domain $[-2,4]$?
-\begin{multiple-choice}
-\choice{Yes.}
-\choice[correct]{No.}
-\end{multiple-choice}
-\begin{solution}
-\begin{hint}
-For each input of $R^{-1}$, how many outputs are there?
-\end{hint}
-\end{solution}
-Restrict the domain of $R$ to $[-2,5]$ and compute $R^{-1}(-2)$.
-\begin{solution}
-\begin{hint}
-Since we are looking at $R^{-1}$, now we must find $-2$ on the vertical axis. 
-\end{hint}
-The value of $R^{-1}(-2)$ is \answer{$-2$}.
+The value of $b(-2)$ is \answer{$4$}.
 \end{solution}
 \end{question}
 \end{shuffle}

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     44391,        842]
-NotebookOptionsPosition[     43970,        823]
-NotebookOutlinePosition[     44326,        839]
-CellTagsIndexPosition[     44283,        836]
+NotebookDataLength[     44623,        880]
+NotebookOptionsPosition[     44164,        860]
+NotebookOutlinePosition[     44520,        876]
+CellTagsIndexPosition[     44477,        873]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -145,7 +145,7 @@ Cell[BoxData[
         RowBox[{"{", 
          RowBox[{
          "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], "}"}],
-         ",", "xx"}], "]"}]}], ";", "\[IndentingNewLine]", 
+         ",", "xx"}], "]"}]}], ";", "\n", 
      RowBox[{"mm", "=", 
       RowBox[{"First", "[", 
        RowBox[{"xx", "/.", 
@@ -343,7 +343,7 @@ looking at $\>\"", ",",
             RowBox[{"P2", "[", 
              RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
            "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}]}], 
-        "\n", "]"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+        "\n", "]"}]}], "]"}]}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.598112582278224*^9, 3.598112602091975*^9}, {
    3.5981126694973707`*^9, 3.598112679303165*^9}, {3.598112713769826*^9, 
    3.598112836398057*^9}, {3.598112908954523*^9, 3.598112935446889*^9}, {
@@ -386,439 +386,476 @@ looking at $\>\"", ",",
    3.5982891853056726`*^9, 3.598289185943892*^9}, {3.598289298289113*^9, 
    3.598289328242957*^9}, {3.5987395340199738`*^9, 3.5987396608752737`*^9}, {
    3.598739769194265*^9, 3.598739795730814*^9}, {3.59873986963725*^9, 
-   3.5987398835398903`*^9}}],
+   3.5987398835398903`*^9}, {3.5987787859383307`*^9, 3.598778790554565*^9}, {
+   3.598778821104553*^9, 3.598778823584256*^9}, {3.598779436652259*^9, 
+   3.5987794559562902`*^9}, {3.5987846880135517`*^9, 3.598784741024415*^9}, {
+   3.598784999911028*^9, 3.598785004523638*^9}}],
+
+Cell["\<\
+An Easier problem:
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.5987847574322166`*^9, 3.5987847611530447`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"code", ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"func", "=", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", ",",
+           "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", "G", 
+          ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"variable", "=", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", ",",
+           "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}]}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"P1", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"P2", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"P3", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"P4", "=", 
+      RowBox[{"{", 
+       RowBox[{".5", ",", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"P5", "=", 
+      RowBox[{"{", 
+       RowBox[{"3.5", ",", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"P6", "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "3.5"}], ",", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"While", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"P1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+        RowBox[{
+         RowBox[{"P1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+        RowBox[{
+         RowBox[{"P2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+         RowBox[{"P3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"P1", " ", "=", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
+         "\[IndentingNewLine]", 
+        RowBox[{"P2", "=", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
+         "\[IndentingNewLine]", 
+        RowBox[{"P3", "=", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Random", "[", 
+            RowBox[{"Integer", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}]}]}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ff", "[", "xx_", "]"}], "=", 
+      RowBox[{"InterpolatingPolynomial", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], "}"}],
+         ",", "xx"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"\"\<\\\\begin{question}\nIn the plot below, is $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+       "\"\<$ a function of $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+       "\"\<$?\n\\\\[\n\\\\begin{tikzpicture}\n\\\\begin{axis}[\n            \
+ymin=-5,\n\t\t\tymax=5,\n            axis lines =center, xlabel=$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+       "\"\<$, ylabel=$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+       "\"\<$,\n              every axis y label/.style={at=(current \
+axis.above origin),anchor=south},\n              every axis x \
+label/.style={at=(current axis.right of origin),anchor=west},\n            \
+domain=-5:5,\n            grid = major,\n            %xtick={-4,...,4},\n     \
+       %ytick={-4,...,4},\n          ]\n          \\\\addplot [very thick, \
+smooth] {\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"InputForm", "[", 
+         RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
+       "\"\<};\n        \\\\end{axis}\n\\\\end{tikzpicture}\n\\\\]\n\
+\\\\begin{multiple-choice}\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
+\\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
+input, how many outputs are there?\n\\\\end{hint}\n\\\\end{solution}\nUse the \
+plot to compute $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$\n\\\\begin{solution}\n\\\\begin{hint}\nTo start, find $\>\"", 
+       ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<$ on the horizontal axis. \n\\\\end{hint}\n\\\\begin{hint}\nNow \
+from this position, move up or down until you reach the curve. The value of $\
+\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$ is the height of the curve at the point $\>\"", ",", " ", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+       ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<$.\n\\\\end{hint}\nThe value of $\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+       "\"\<)$ is \\\\answer{$\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"P1", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+       "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\n\>\""}], "]"}]}]}], 
+   "\n", "]"}]}]], "Input",
+ CellChangeTimes->{{3.598112582278224*^9, 3.598112602091975*^9}, {
+   3.5981126694973707`*^9, 3.598112679303165*^9}, {3.598112713769826*^9, 
+   3.598112836398057*^9}, {3.598112908954523*^9, 3.598112935446889*^9}, {
+   3.598113001176607*^9, 3.598113003263892*^9}, {3.598113040605562*^9, 
+   3.5981131474412117`*^9}, {3.5981133801435347`*^9, 3.598113426893941*^9}, {
+   3.59811369504626*^9, 3.59811373193602*^9}, {3.598113777958041*^9, 
+   3.598113859527132*^9}, {3.598113891601923*^9, 3.598113935253399*^9}, {
+   3.598113977406464*^9, 3.598113992682344*^9}, {3.598114496574131*^9, 
+   3.598114508361435*^9}, {3.598114809195814*^9, 3.5981148198694887`*^9}, {
+   3.598114853472272*^9, 3.5981149418960743`*^9}, {3.598115008957177*^9, 
+   3.598115012018718*^9}, {3.598115043632379*^9, 3.5981150876644*^9}, 
+   3.5981151544565773`*^9, {3.5981152032734528`*^9, 3.5981152034777737`*^9}, {
+   3.598115354785915*^9, 3.598115356952414*^9}, {3.5982835545056753`*^9, 
+   3.598283578464807*^9}, {3.59828362436027*^9, 3.5982836568825493`*^9}, {
+   3.598283705440967*^9, 3.598283738817132*^9}, 3.598283792881958*^9, {
+   3.5982840042172613`*^9, 3.598284007582128*^9}, {3.598284093875924*^9, 
+   3.598284097792898*^9}, {3.598284140254838*^9, 3.598284169977989*^9}, {
+   3.5982842052099133`*^9, 3.598284252047327*^9}, 3.598284324994225*^9, {
+   3.598284472064413*^9, 3.598284740571666*^9}, {3.5982847932938643`*^9, 
+   3.5982848166102047`*^9}, {3.598284847134804*^9, 3.5982849024465837`*^9}, {
+   3.598285038414216*^9, 3.598285270535515*^9}, {3.5982853395660057`*^9, 
+   3.598285514131774*^9}, {3.598285553696995*^9, 3.598285569885055*^9}, {
+   3.598285611082849*^9, 3.598285624047594*^9}, {3.5982857218207893`*^9, 
+   3.5982857976526423`*^9}, {3.598285883147511*^9, 3.598286032660495*^9}, {
+   3.5982860863082323`*^9, 3.5982861062006893`*^9}, {3.598286154132226*^9, 
+   3.5982863026639967`*^9}, {3.598286363564191*^9, 3.598286366019484*^9}, {
+   3.598286492728746*^9, 3.598286531509922*^9}, {3.598286570952807*^9, 
+   3.598286646420281*^9}, {3.598286719071868*^9, 3.598286812524333*^9}, {
+   3.5982868681812077`*^9, 3.598286871799667*^9}, {3.598287025864119*^9, 
+   3.598287081698373*^9}, {3.5982871264044533`*^9, 3.598287126901002*^9}, {
+   3.5982871683347263`*^9, 3.5982871710959044`*^9}, {3.598287240672961*^9, 
+   3.598287274676816*^9}, 3.598287347680585*^9, {3.5982873916041203`*^9, 
+   3.5982874086422586`*^9}, {3.598287451114109*^9, 3.598287474514018*^9}, {
+   3.5982875880793123`*^9, 3.598287593850408*^9}, {3.598287642648219*^9, 
+   3.598287660069417*^9}, {3.598287712636978*^9, 3.598287771054824*^9}, {
+   3.598287801859667*^9, 3.598287820501639*^9}, {3.5982878855830793`*^9, 
+   3.598287945774222*^9}, {3.5982881458723907`*^9, 3.598288272885358*^9}, {
+   3.59828833892997*^9, 3.5982884872560883`*^9}, {3.598288982964488*^9, 
+   3.598289082505932*^9}, {3.5982891128687963`*^9, 3.598289152532049*^9}, {
+   3.5982891853056726`*^9, 3.598289185943892*^9}, {3.598289298289113*^9, 
+   3.598289328242957*^9}, {3.5987395340199738`*^9, 3.5987396608752737`*^9}, {
+   3.598739769194265*^9, 3.598739795730814*^9}, {3.59873986963725*^9, 
+   3.5987398835398903`*^9}, {3.5987787859383307`*^9, 3.598778790554565*^9}, {
+   3.598778821104553*^9, 3.598778823584256*^9}, {3.598779436652259*^9, 
+   3.5987794559562902`*^9}, {3.5987846880135517`*^9, 3.598784741024415*^9}, {
+   3.598784917771583*^9, 3.598784919522162*^9}, {3.5987849704476767`*^9, 
+   3.598784978978714*^9}, 3.598785113751367*^9, {3.598785173116312*^9, 
+   3.598785179678982*^9}, {3.598785694689937*^9, 3.5987856982243958`*^9}, {
+   3.598785761566568*^9, 3.5987857709729853`*^9}, {3.598786003249073*^9, 
+   3.598786004555044*^9}}],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", 
-     RowBox[{"i", ",", "1", ",", "4"}], "}"}]}], "]"}], 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"ff", "[", "xx", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"xx", ",", 
-      RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.5981128395325203`*^9, 3.598112839879655*^9}, {
-   3.598113787691965*^9, 3.598113812786015*^9}, 3.598114011935288*^9, 
-   3.598115158273603*^9, 3.5981152112405148`*^9, 3.598284149275033*^9, {
-   3.5987396848832617`*^9, 3.598739695878686*^9}, {3.598739950520845*^9, 
-   3.598739970322628*^9}}],
+    RowBox[{"{", "10", "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.598784955636462*^9, 3.59878495597823*^9}, {
+  3.5987852046868896`*^9, 3.5987852054838953`*^9}, {3.598785242841728*^9, 
+  3.598785273228985*^9}}],
 
 Cell[BoxData["\<\"\\\\begin{question}\\nIn the plot below, is $r$ a function \
-of $t$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$t$, \
+of $w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
 ylabel=$r$,\\n              every axis y label/.style={at=(current axis.above \
 origin),anchor=south},\\n              every axis x label/.style={at=(current \
 axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n          ]\\n          \\\\addplot [very thick, smooth] {4 + \
-(-4 + x)*(3.5 + x)*(0.2857142857142857 + (-0.5 + x)*(-0.19047619047619047 + \
-(-2 + x)*(0.059863945578231284 + 0.07870225013082155*(3 + x))))};\\n        \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{-1 + (3.5 + x)*(-0.42857142857142855 + (-3.5 + x)*(-0.4489795918367347 + \
+x*(0.4553287981859411 + (-1 + x)*(0.04318855747427175 - \
+0.10200593057735911*(3 + x)))))};\\n        \
 \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
 \\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$r(4)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $4$ on the \
+$r(0)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $0$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $r(4)$ is the height \
-of the curve at the point $t=4$.\\n\\\\end{hint}\\nThe value of $r(4)$ is \
-\\\\answer{$4$}.\\n\\\\end{solution}\\nIs $r^{-1}$ a function of $t$ on the \
-domain $[-28,78]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\\
-choice[correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\\
-begin{hint}\\nFor each input of $r^{-1}$, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $r$ to \
-$[-3,5]$ and compute \
-$r^{-1}(2)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
-at $r^{-1}$, now we must find $4$ on the vertical axis. \
-\\n\\\\end{hint}\\nThe value of $r^{-1}(4)$ is \
-\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\\\begin{question}\
-\\nIn the plot below, is $y$ a function of \
+move up or down until you reach the curve. The value of $r(0)$ is the height \
+of the curve at the point $w=0$.\\n\\\\end{hint}\\nThe value of $r(0)$ is \
+\\\\answer{$3$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $a$ a function of $\\\\theta$?\\n\\\\[\\n\\\
+\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, \
+xlabel=$\\\\theta$, ylabel=$a$,\\n              every axis y \
+label/.style={at=(current axis.above origin),anchor=south},\\n              \
+every axis x label/.style={at=(current axis.right of origin),anchor=west},\\n \
+           domain=-5:5,\\n            grid = major,\\n            \
+%xtick={-4,...,4},\\n            %ytick={-4,...,4},\\n          ]\\n          \
+\\\\addplot [very thick, smooth] {-1 + (4 + x)*(-0.4 + (-3.5 + \
+x)*(-0.20740740740740737 + (-0.5 + x)*(0.10529100529100527 + \
+(0.00008140008140009433 + 0.03676027676027677*(-3 + x))*(3.5 + x))))};\\n     \
+   \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\\
+n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
+begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
+$a(3)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $3$ on the \
+horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
+move up or down until you reach the curve. The value of $a(3)$ is the height \
+of the curve at the point $\\\\theta=3$.\\n\\\\end{hint}\\nThe value of \
+$a(3)$ is \
+\\\\answer{$-4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $P$ a function of \
+$k$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$k$, \
+ylabel=$P$,\\n              every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{1 + (3.5 + x)*(-0.5714285714285714 + (-3.5 + x)*(0.16326530612244897 + \
+(-0.3327149041434756 + (-0.20522334808049095 + 0.04019472590901159*(-3 + \
+x))*(-2 + x))*x))};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\
+\\\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\
+\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each \
+input, how many outputs are there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse \
+the plot to compute $P(2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo \
+start, find $2$ on the horizontal axis. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, move up or down \
+until you reach the curve. The value of $P(2)$ is the height of the curve at \
+the point $k=2$.\\n\\\\end{hint}\\nThe value of $P(2)$ is \\\\answer{$2$}.\\n\
+\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{question}\\nIn the plot \
+below, is $y$ a function of \
 $v$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
 ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$v$, \
 ylabel=$y$,\\n              every axis y label/.style={at=(current axis.above \
 origin),anchor=south},\\n              every axis x label/.style={at=(current \
 axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n          ]\\n          \\\\addplot [very thick, smooth] {-1 \
-+ (3.5 + x)*(0.14285714285714285 + (-3.5 + x)*(0.12244897959183673 + \
-x*(-0.3166357452071738 + (-2 + x)*(-0.09053803339517619 + \
-0.1527932385075242*(3 + x)))))};\\n        \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{-2 + (-4 + x)*(-0.6666666666666666 + (3.5 + x)*(0.16666666666666669 + (-0.5 \
++ x)*(0.039999999999999994 + (0.0069841269841269815 + \
+0.13671957671957674*(-3.5 + x))*(1 + x))))};\\n        \
 \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
 \\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$y(-3)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-3$ on the \
+$y(-1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-1$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $y(-3)$ is the height \
-of the curve at the point $v=-3$.\\n\\\\end{hint}\\nThe value of $y(-3)$ is \
-\\\\answer{$0$}.\\n\\\\end{solution}\\nIs $y^{-1}$ a function of $v$ on the \
-domain $[-156,198]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\\
-choice[correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\\
-begin{hint}\\nFor each input of $y^{-1}$, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $y$ to \
-$[-3,5]$ and compute \
-$y^{-1}(2)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
-at $y^{-1}$, now we must find $4$ on the vertical axis. \
-\\n\\\\end{hint}\\nThe value of $y^{-1}(4)$ is \
-\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\\\begin{question}\
-\\nIn the plot below, is $y$ a function of \
-$n$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$n$, \
-ylabel=$y$,\\n              every axis y label/.style={at=(current axis.above \
+move up or down until you reach the curve. The value of $y(-1)$ is the height \
+of the curve at the point $v=-1$.\\n\\\\end{hint}\\nThe value of $y(-1)$ is \
+\\\\answer{$0$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $b$ a function of \
+$z$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$z$, \
+ylabel=$b$,\\n              every axis y label/.style={at=(current axis.above \
 origin),anchor=south},\\n              every axis x label/.style={at=(current \
 axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n          ]\\n          \\\\addplot [very thick, smooth] {-4 \
-+ (4 + x)*(1 + (-4 + x)*(0.15873015873015872 + (-0.5 + \
-x)*(0.09682539682539684 + (-0.019143819143819147 + 0.007696007696007697*(-3.5 \
-+ x))*(2 + x))))};\\n        \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{1 + (4 + x)*(0.26666666666666666 + (-3.5 + x)*(0.23703703703703705 + (-0.5 + \
+x)*(0.18787138787138785 + (-0.06029032695699361 - 0.06119312785979451*(-2 + \
+x))*(3 + x))))};\\n        \
 \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
 \\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$y(-4)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-4$ on the \
+$b(2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $2$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $y(-4)$ is the height \
-of the curve at the point $n=-4$.\\n\\\\end{hint}\\nThe value of $y(-4)$ is \
-\\\\answer{$-4$}.\\n\\\\end{solution}\\nIs $y^{-1}$ a function of $n$ on the \
-domain $[-20,8]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\\
-choice[correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\\
-begin{hint}\\nFor each input of $y^{-1}$, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $y$ to \
-$[-2,5]$ and compute \
-$y^{-1}(-2)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
-at $y^{-1}$, now we must find $-1$ on the vertical axis. \
-\\n\\\\end{hint}\\nThe value of $y^{-1}(-1)$ is \
-\\\\answer{$-2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\\\begin{\
+move up or down until you reach the curve. The value of $b(2)$ is the height \
+of the curve at the point $z=2$.\\n\\\\end{hint}\\nThe value of $b(2)$ is \
+\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
 question}\\nIn the plot below, is $R$ a function of \
-$u$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$u$, \
+$n$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$n$, \
 ylabel=$R$,\\n              every axis y label/.style={at=(current axis.above \
 origin),anchor=south},\\n              every axis x label/.style={at=(current \
 axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n          ]\\n          \\\\addplot [very thick, smooth] {1 + \
-(-4 + x)*(0.4 + (3.5 + x)*(0.1 + x*(0.016666666666666666 + \
-(-0.011193568336425479 - 0.005318491032776748*(-3.5 + x))*(2 + x))))};\\n     \
-   \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\\
-n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{4 + (-0.42857142857142855 + (-0.05952380952380952 + (0.09163059163059163 + \
+(-0.041447441447441453 - 0.08955488955488956*(-3 + x))*(-2 + x))*(-0.5 + \
+x))*(-3.5 + x))*(3.5 + x)};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\
+\\\\]\\n\\\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{\
+No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor \
+each input, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
+$R(3)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $3$ on the \
+horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
+move up or down until you reach the curve. The value of $R(3)$ is the height \
+of the curve at the point $n=3$.\\n\\\\end{hint}\\nThe value of $R(3)$ is \
+\\\\answer{$1$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $b$ a function of \
+$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
+ylabel=$b$,\\n              every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{2 + (3.5 + x)*(0.2857142857142857 + (-3.5 + x)*(0.489795918367347 + \
+x*(0.34013605442176864 + (-0.5850340136054422 - 0.25117739403453676*(-0.5 + \
+x))*(2 + x))))};\\n        \
+\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
+\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$R(0)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $0$ on the \
+$b(-2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-2$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $R(0)$ is the height \
-of the curve at the point $u=0$.\\n\\\\end{hint}\\nThe value of $R(0)$ is \
-\\\\answer{$-2$}.\\n\\\\end{solution}\\nIs $R^{-1}$ a function of $u$ on the \
-domain $[-2,4]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\choice[\
-correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{\
-hint}\\nFor each input of $R^{-1}$, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $R$ to \
-$[-2,5]$ and compute \
-$R^{-1}(-2)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
-at $R^{-1}$, now we must find $-2$ on the vertical axis. \
-\\n\\\\end{hint}\\nThe value of $R^{-1}(-2)$ is \
-\\\\answer{$-2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\"\>"], "Output",
- CellChangeTimes->{
-  3.598115159299973*^9, {3.5981152062609577`*^9, 3.5981152117838497`*^9}, 
-   3.598283525135214*^9, {3.598283581133456*^9, 3.5982835999425297`*^9}, {
-   3.5982836405755033`*^9, 3.598283658823908*^9}, 3.598283798240985*^9, 
-   3.598284100452429*^9, 3.598284150985301*^9, {3.598284507425005*^9, 
-   3.59828454012639*^9}, {3.5982848945909433`*^9, 3.598284912034815*^9}, {
-   3.598285219595076*^9, 3.5982852422764473`*^9}, 3.598285276138934*^9, 
-   3.5982853848616447`*^9, {3.5982854726087837`*^9, 3.5982854998940897`*^9}, 
-   3.59828557285682*^9, 3.598285629370716*^9, 3.598285801515867*^9, {
-   3.5982858966318283`*^9, 3.598285952335128*^9}, {3.598285994318466*^9, 
-   3.598286013080619*^9}, 3.598286059123048*^9, 3.59828631197749*^9, 
-   3.598286371384369*^9, {3.5982864025320663`*^9, 3.598286417747575*^9}, 
-   3.598286672819038*^9, 3.5982868171709146`*^9, {3.5982868927109957`*^9, 
-   3.598286905228096*^9}, 3.598287085320427*^9, 3.598287184905141*^9, 
-   3.5982873036041822`*^9, 3.5982874801020737`*^9, {3.598287664820758*^9, 
-   3.598287679312517*^9}, 3.59828827821804*^9, {3.598288437676857*^9, 
-   3.598288461334193*^9}, 3.598288497152569*^9, 3.598289088839797*^9, {
-   3.598289137375894*^9, 3.598289158283785*^9}, 3.598289197121113*^9, {
-   3.598289304791398*^9, 3.598289333523499*^9}, {3.598289607364647*^9, 
-   3.598289626188025*^9}, {3.598289730130961*^9, 3.598289785139983*^9}, {
-   3.59873966668647*^9, 3.5987397498575783`*^9}, {3.598739800750211*^9, 
-   3.598739822061184*^9}, 3.5987398943181677`*^9, {3.598739959594166*^9, 
-   3.598739972931521*^9}}],
+move up or down until you reach the curve. The value of $b(-2)$ is the height \
+of the curve at the point $w=-2$.\\n\\\\end{hint}\\nThe value of $b(-2)$ is \
+\\\\answer{$4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $r$ a function of \
+$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
+ylabel=$r$,\\n              every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{-2 + (-4 + x)*(3.5 + x)*(-0.14285714285714285 + (-0.5 + \
+x)*(0.031746031746031744 + (-0.06637806637806637 - 0.09991983325316657*(-3.5 \
++ x))*(2 + x)))};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\
+\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\\
+end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each \
+input, how many outputs are there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse \
+the plot to compute $r(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo \
+start, find $1$ on the horizontal axis. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, move up or down \
+until you reach the curve. The value of $r(1)$ is the height of the curve at \
+the point $w=1$.\\n\\\\end{hint}\\nThe value of $r(1)$ is \
+\\\\answer{$-4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $B$ a function of \
+$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
+ylabel=$B$,\\n              every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{2 + (3.5 + x)*(0.2857142857142857 + (-3.5 + x)*(0.5952380952380952 + (-0.5 + \
+x)*(0.23597883597883595 + (0.00016280016280015083 + 0.2995522995522995*(-3 + \
+x))*(1 + x))))};\\n        \
+\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
+\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
+begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
+$B(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $1$ on the \
+horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
+move up or down until you reach the curve. The value of $B(1)$ is the height \
+of the curve at the point $w=1$.\\n\\\\end{hint}\\nThe value of $B(1)$ is \
+\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
+question}\\nIn the plot below, is $A$ a function of \
+$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
+ylabel=$A$,\\n              every axis y label/.style={at=(current axis.above \
+origin),anchor=south},\\n              every axis x label/.style={at=(current \
+axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
+grid = major,\\n            %xtick={-4,...,4},\\n            \
+%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
+{1 + (4 + x)*(-0.6666666666666666 + (-3.5 + x)*(-0.4444444444444444 + (-0.5 + \
+x)*(-0.4444444444444444 + (0.10774410774410775 - 0.03447811447811448*(-2 + \
+x))*(3.5 + x))))};\\n        \
+\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
+\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
+begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
+$A(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $1$ on the \
+horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
+move up or down until you reach the curve. The value of $A(1)$ is the height \
+of the curve at the point $w=1$.\\n\\\\end{hint}\\nThe value of $A(1)$ is \
+\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\"\>"], "Output",\
 
-Cell[BoxData[
- GraphicsBox[{{}, {}, 
-   {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
-1: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
-nDteD////wcTvJ/mFEgkJvg/W6xg4Q==
-     "]]}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->True,
-  AxesLabel->{None, None},
-  AxesOrigin->{0, 0},
-  Method->{},
-  PlotRange->{{-4, 4}, {-2.221887080112794, 1.0951705719009468`}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{
-    Scaled[0.02], 
-    Scaled[0.02]}]], "Output",
- CellChangeTimes->{
-  3.598115159299973*^9, {3.5981152062609577`*^9, 3.5981152117838497`*^9}, 
-   3.598283525135214*^9, {3.598283581133456*^9, 3.5982835999425297`*^9}, {
-   3.5982836405755033`*^9, 3.598283658823908*^9}, 3.598283798240985*^9, 
-   3.598284100452429*^9, 3.598284150985301*^9, {3.598284507425005*^9, 
-   3.59828454012639*^9}, {3.5982848945909433`*^9, 3.598284912034815*^9}, {
-   3.598285219595076*^9, 3.5982852422764473`*^9}, 3.598285276138934*^9, 
-   3.5982853848616447`*^9, {3.5982854726087837`*^9, 3.5982854998940897`*^9}, 
-   3.59828557285682*^9, 3.598285629370716*^9, 3.598285801515867*^9, {
-   3.5982858966318283`*^9, 3.598285952335128*^9}, {3.598285994318466*^9, 
-   3.598286013080619*^9}, 3.598286059123048*^9, 3.59828631197749*^9, 
-   3.598286371384369*^9, {3.5982864025320663`*^9, 3.598286417747575*^9}, 
-   3.598286672819038*^9, 3.5982868171709146`*^9, {3.5982868927109957`*^9, 
-   3.598286905228096*^9}, 3.598287085320427*^9, 3.598287184905141*^9, 
-   3.5982873036041822`*^9, 3.5982874801020737`*^9, {3.598287664820758*^9, 
-   3.598287679312517*^9}, 3.59828827821804*^9, {3.598288437676857*^9, 
-   3.598288461334193*^9}, 3.598288497152569*^9, 3.598289088839797*^9, {
-   3.598289137375894*^9, 3.598289158283785*^9}, 3.598289197121113*^9, {
-   3.598289304791398*^9, 3.598289333523499*^9}, {3.598289607364647*^9, 
-   3.598289626188025*^9}, {3.598289730130961*^9, 3.598289785139983*^9}, {
-   3.59873966668647*^9, 3.5987397498575783`*^9}, {3.598739800750211*^9, 
-   3.598739822061184*^9}, 3.5987398943181677`*^9, {3.598739959594166*^9, 
-   3.59873997295929*^9}}]
+ CellChangeTimes->{3.598785779052681*^9, 3.5987860204036303`*^9}]
 }, Open  ]]
 },
 WindowSize->{1366, 708},
@@ -838,11 +875,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 16754, 368, 2109, "Input"],
+Cell[557, 20, 16962, 371, 2085, "Input"],
+Cell[17522, 393, 114, 5, 69, "Text"],
+Cell[17639, 400, 11454, 242, 1295, "Input"],
 Cell[CellGroupData[{
-Cell[17336, 392, 762, 19, 99, "Input"],
-Cell[18101, 413, 9434, 132, 4873, "Output"],
-Cell[27538, 547, 16416, 273, 238, "Output"]
+Cell[29118, 646, 315, 7, 32, "Input"],
+Cell[29436, 655, 14712, 202, 9107, "Output"]
 }, Open  ]]
 }
 ]
