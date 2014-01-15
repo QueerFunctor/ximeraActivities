@@ -10,193 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     28521,        653]
-NotebookOptionsPosition[     27843,        625]
-NotebookOutlinePosition[     28199,        641]
-CellTagsIndexPosition[     28156,        638]
+NotebookDataLength[     20200,        433]
+NotebookOptionsPosition[     19826,        415]
+NotebookOutlinePosition[     20182,        431]
+CellTagsIndexPosition[     20139,        428]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"code", ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"func", "=", 
-        RowBox[{"RandomChoice", "[", 
-         RowBox[{"{", 
-          RowBox[{
-          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
-           ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
-           "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"variable", "=", 
-        RowBox[{"RandomChoice", "[", 
-         RowBox[{"{", 
-          RowBox[{
-          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
-           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"prePoint", "=", 
-        RowBox[{
-         RowBox[{"Random", "[", 
-          RowBox[{"Integer", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}], "/", "10"}]}], 
-       ",", "\[IndentingNewLine]", 
-       RowBox[{"a4", " ", "=", " ", 
-        RowBox[{
-         RowBox[{"Random", "[", 
-          RowBox[{"Integer", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*", 
-         RowBox[{"Random", "[", 
-          RowBox[{"Integer", ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"a3", "=", 
-        RowBox[{
-         RowBox[{"Random", "[", 
-          RowBox[{"Integer", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], "*", 
-         RowBox[{"Random", "[", 
-          RowBox[{"Integer", ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"a2", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"a1", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"a0", "=", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}]}], 
-      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"point", "=", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{"IntegerQ", "[", "prePoint", "]"}], ",", "prePoint", ",", 
-         RowBox[{"N", "[", "prePoint", "]"}]}], "]"}]}], ";", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"f", "[", "x_", "]"}], "=", 
-       RowBox[{
-        RowBox[{"a4", "*", 
-         RowBox[{"x", "^", "4"}]}], "+", 
-        RowBox[{"a3", "*", 
-         RowBox[{"x", "^", "3"}]}], "+", 
-        RowBox[{"a2", "*", 
-         RowBox[{"x", "^", "2"}]}], "+", 
-        RowBox[{"a1", "*", "x"}], "+", "a0"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"answer", "=", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{"IntegerQ", "[", 
-          RowBox[{"f", "[", "prePoint", "]"}], "]"}], ",", 
-         RowBox[{"f", "[", "prePoint", "]"}], ",", 
-         RowBox[{"N", "[", 
-          RowBox[{"f", "[", "prePoint", "]"}], "]"}]}], "]"}]}], ";", 
-      "\[IndentingNewLine]", 
-      RowBox[{"StringJoin", "[", 
-       RowBox[{"\"\<\\\\begin{exercise}\nGiven that $\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
-        ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
-        "\"\<$, evaluate $\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", "point", "]"}], ",", 
-        "\"\<)$. Express your answer in decimal notation.\n\
-\\\\begin{solution}\n\\\\begin{hint}\n$\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
-        RowBox[{"StringReplace", "[", 
-         RowBox[{
-          RowBox[{"ToString", "[", 
-           RowBox[{"TeXForm", "[", 
-            RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
-          RowBox[{
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], "\[Rule]", 
-           RowBox[{"StringJoin", "[", 
-            RowBox[{"\"\<(\>\"", ",", 
-             RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)\>\""}], 
-            "]"}]}]}], "]"}], ",", "\"\<$.\>\"", ",", "\[IndentingNewLine]", 
-        "\"\<\n\\\\end{hint}\n\\\\begin{hint}\n$\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", "point", "]"}], ",", "\"\<)=\>\"", ",", 
-        RowBox[{"ToString", "[", "answer", "]"}], ",", 
-        "\"\<$.\n\\\\end{hint}\nThe value of the function $\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-        
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<)=\>\"", 
-        ",", " ", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", 
-          RowBox[{"f", "[", "variable", "]"}], "]"}], "]"}], ",", 
-        "\"\<$, evaluated at $\>\"", ",", 
-        RowBox[{"ToString", "[", 
-         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
-        ",", 
-        RowBox[{"ToString", "[", "point", "]"}], ",", 
-        "\"\<$, is $\\\\answer{\>\"", ",", 
-        RowBox[{"ToString", "[", "answer", "]"}], ",", 
-        "\"\<}$.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
-       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{"StringJoin", "[", 
-  RowBox[{"Table", "[", 
-   RowBox[{"code", ",", 
-    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
- CellChangeTimes->{{3.596822797404059*^9, 3.596822804542852*^9}, {
-  3.5968826810601063`*^9, 3.5968826817983427`*^9}, {3.597068159626274*^9, 
-  3.59706815983995*^9}}],
-
-Cell["\<\
-
-
-OK WE MAY NEED AN IF STATMENT TO KNOW IF THE MAX OR MIN IS IN THE DOMAIN. MY \
-WHILE LOOP DOES NOT SEEM TO WORK.
-
-\
-\>", "Text",
- CellChangeTimes->{{3.5981130211026077`*^9, 3.59811303007064*^9}, {
-  3.598118186912999*^9, 3.598118212539171*^9}}],
-
 Cell[BoxData[
  RowBox[{"code", ":=", 
   RowBox[{"Module", "[", 
@@ -590,37 +411,6 @@ at $G^{-1}$, now we must find $3$ on the vertical axis. \
    3.598289137375894*^9, 3.598289158283785*^9}, 3.598289197121113*^9, {
    3.598289304791398*^9, 3.598289333523499*^9}, {3.598289607364647*^9, 
    3.598289626188025*^9}, {3.598289730130961*^9, 3.598289785139983*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"P1", "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.598283957060874*^9, 3.598283969675466*^9}, {
-   3.598284105455353*^9, 3.5982841057538023`*^9}, 3.5982871961877413`*^9, {
-   3.598287487871221*^9, 3.598287488269339*^9}, {3.598287675243348*^9, 
-   3.598287675740705*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"-", "4"}], ",", 
-   RowBox[{"-", "2"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.598283958811943*^9, 3.598283969899658*^9}, 
-   3.598284105859473*^9, {3.598284908178892*^9, 3.598284918047339*^9}, 
-   3.598287111528446*^9, 3.59828719868299*^9, {3.598287484356423*^9, 
-   3.59828748969004*^9}, {3.598287672157484*^9, 3.598287676258556*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"N", "[", "mm", "]"}]], "Input",
- CellChangeTimes->{{3.598286840133234*^9, 3.598286846651178*^9}}],
-
-Cell[BoxData[
- RowBox[{"-", "1.2`"}]], "Output",
- CellChangeTimes->{{3.598286840991783*^9, 3.5982868469420643`*^9}}]
 }, Open  ]]
 },
 WindowSize->{1366, 708},
@@ -640,20 +430,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 6742, 166, 693, "Input"],
-Cell[7302, 188, 256, 9, 106, "Text"],
-Cell[7561, 199, 15663, 337, 2013, "Input"],
+Cell[557, 20, 15663, 337, 2013, "Input"],
 Cell[CellGroupData[{
-Cell[23249, 540, 300, 4, 77, "Input"],
-Cell[23552, 546, 3262, 45, 1255, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26851, 596, 305, 5, 55, "Input"],
-Cell[27159, 603, 391, 8, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[27587, 616, 121, 2, 32, "Input"],
-Cell[27711, 620, 116, 2, 32, "Output"]
+Cell[16245, 361, 300, 4, 77, "Input"],
+Cell[16548, 367, 3262, 45, 1199, "Output"]
 }, Open  ]]
 }
 ]
