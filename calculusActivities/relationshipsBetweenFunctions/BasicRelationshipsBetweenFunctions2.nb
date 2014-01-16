@@ -1,0 +1,579 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[     30021,        578]
+NotebookOptionsPosition[     29418,        550]
+NotebookOutlinePosition[     29773,        566]
+CellTagsIndexPosition[     29730,        563]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", 
+      RowBox[{"(", "p0", ")"}]}], "=", "p1"}], ",", 
+    RowBox[{
+     RowBox[{"g", 
+      RowBox[{"(", "v", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"v", "+", 
+           RowBox[{"-", "p2"}]}], ")"}], "--"}], "v"}], "+", 
+       RowBox[{"-", "p2"}]}], "=", 
+      RowBox[{
+       RowBox[{"p0", "\\", "impliesf"}], 
+       RowBox[{"(", "n", ")"}]}]}]}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+      "find", " ", "p3", " ", "program", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", "v"}], "+", 
+      RowBox[{"-", "p2"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"p0", "\[IndentingNewLine]", "p0"}], "+", 
+       RowBox[{"-", "p2"}]}], "=", 
+      RowBox[{"v", "\[IndentingNewLine]", 
+       RowBox[{"(", 
+        RowBox[{"v", ",", "p1"}], ")"}]}]}]}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"exclude", " ", 
+    RowBox[{"0", "/", "placeholder"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"code", ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"func", "=", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+           "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+            ",", "r", ",", "y", ",", "A", ",", "B", ",", "F", ",", "G", ",", 
+            "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"func2", "=", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+           "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+            ",", "r", ",", "y", ",", "A", ",", "B", ",", "F", ",", "G", ",", 
+            "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"variable", "=", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+           "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+            ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Point0", "=", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Point1", "=", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Point2", "=", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}]}], 
+       "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"ToString", "[", "func", "]"}], "\[Equal]", 
+          RowBox[{"ToString", "[", "func2", "]"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"func2", "=", 
+           RowBox[{"RandomChoice", "[", 
+            RowBox[{"{", 
+             RowBox[{
+             "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+              ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",",
+               "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{"Point2", "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Point2", "=", 
+          RowBox[{"Random", "[", 
+           RowBox[{"Integer", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"answer", "=", 
+        RowBox[{"StringJoin", "[", 
+         RowBox[{"\"\<(\>\"", ",", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"Point0", "-", "Point2"}], "]"}], "]"}], ",", "\"\<,\>\"",
+           ",", 
+          RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<)\>\""}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<\\\\begin{exercise}\nIf $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<$ and $\>\"", 
+         ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func2", "[", "variable", "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func", "[", 
+            RowBox[{"variable", "+", "Point2"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<$, what point can you determine on the graph of $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+         "\"\<$?\n\\\\begin{solution}\n\\\\begin{hint}\nWe know that when you \
+plug in $\>\"", ",", 
+         RowBox[{"ToString", "[", "Point0", "]"}], ",", "\"\<$ into $\>\"", 
+         ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<$ you get $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", "Point1", "]"}], ",", 
+         "\"\<$. \n\\\\end{hint}\n\\\\begin{hint}\nIn the equation we are \
+given, we are plugging $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"variable", "+", "Point2"}], "]"}], "]"}], ",", 
+         "\"\<$ into $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<$ so we want to choose our $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+         "\"\<$ so that $\>\"", " ", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"variable", "+", "Point2"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", "Point0", "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nSo we want to choose $\>\"",
+          ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+         ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Point0", "-", "Point2"}], "]"}], "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nUsing this value in our \
+equation relating $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<$ and $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+         "\"\<$ we get $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func2", "[", 
+            RowBox[{"Point0", "-", "Point2"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nSo $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func2", "[", 
+            RowBox[{"Point0", "-", "Point2"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "Point1", "]"}], "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\n${\\\\bf Thus}$ $(\>\"", 
+         ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Point0", "-", "Point2"}], "]"}], "]"}], ",", "\"\<,\>\"", 
+         ",", 
+         RowBox[{"ToString", "[", "Point1", "]"}], ",", 
+         "\"\<)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\nIf $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func", "[", "Point1", "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", "Point2", "]"}], ",", "\"\<$ and $\>\"", 
+         ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func2", "[", "variable", "]"}], "]"}], "]"}], ",", 
+         "\"\<=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"func", "[", 
+            RowBox[{"variable", "+", "Point2"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<$ the point on the graph of $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+         "\"\<$ is \\\\answer{$\>\"", ",", "answer", ",", 
+         "\"\<$}.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+        "]"}]}]}], "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{"code", ",", 
+      RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQBGIQ/dMrSfTn+VeOHWtXg+kzn36rgehvr6V0QHQFz1wD
+EO2/UdwdRDfVbfcH0WUXjQJA9IdJLrEgullsFZjWnRaWAaIPLZlTDqIfBiVU
+g+hLT0SaQPST6ffWguhJXRv3g+iiKaLHQfTEORlnQLQTq+4FED1tsdENEF1Q
+ePE+iN5x5d8rEJ1y/OEfEO2lEfkXROc9fHbS58IrxxWzPoBpOfvvF0D0vsii
+KyB6Qkr8bRD9z/knmD7Qevw/iPY5IcXjC9KXqykFolctnyoLoh+anlAE0VqW
+x5XB4rOOaYDofyr7tUH0rjIfQxAd8N7MGkRv05/gCKITwi08QfQ1/qwQEN3i
+yRIOok8EK8WB6BsCu9JA9C/Vu1UgOq60vw5E3+LvbAXRORkPukA0AB2/634=
+
+  "]],
+
+Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $G(-1)=-2$ and $r(u)=G(u-2)$, what \
+point can you determine on the graph of \
+$r$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when you plug in \
+$-1$ into $G$ you get $-2$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $u-2$ into $G$ so we want to choose \
+our $u$ so that $u-2=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to \
+choose $u=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $G$ and $r$ we get \
+$r(1)=G(-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$r(1)=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(1,-2)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $r$.\\n\\\\end{hint}\\nIf $G(-2)=-2$ and $r(u)=G(u-2)$ the point on \
+the graph of $r$ is \
+\\\\answer{$(1,-2)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $A(1)=4$ and $p(\\\\theta )=A(\\\\theta +2)$, what point can \
+you determine on the graph of \
+$p$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when you plug in \
+$1$ into $A$ you get $4$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $\\\\theta +2$ into $A$ so we want to \
+choose our $\\\\theta$ so that $\\\\theta \
++2=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\theta=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $A$ and $p$ we get \
+$p(-1)=A(1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$p(-1)=4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-1,4)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $p$.\\n\\\\end{hint}\\nIf $A(4)=2$ and $p(\\\\theta )=A(\\\\theta \
++2)$ the point on the graph of $p$ is \
+\\\\answer{$(-1,4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $G(7)=3$ and $B(u)=G(u+5)$, what point can you determine on \
+the graph of $B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $7$ into $G$ you get $3$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn \
+the equation we are given, we are plugging $u+5$ into $G$ so we want to \
+choose our $u$ so that $u+5=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we \
+want to choose $u=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in \
+our equation relating $G$ and $B$ we get \
+$B(2)=G(7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $B(2)=3$.\\n\\\\end{hint}\
+\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,3)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$B$.\\n\\\\end{hint}\\nIf $G(3)=5$ and $B(u)=G(u+5)$ the point on the graph \
+of $B$ is \
+\\\\answer{$(2,3)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $R(-8)=3$ and $F(v)=R(v+10)$, what point can you determine on \
+the graph of $F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $-8$ into $R$ you get $3$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $v+10$ into $R$ so we want to choose our $v$ so that $v+10=-8$.\\n\\\
+\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $v=-18$.\\n\\\\end{hint}\
+\\n\\\\begin{hint}\\nUsing this value in our equation relating $R$ and $F$ we \
+get $F(-18)=R(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$F(-18)=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-18,3)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $F$.\\n\\\\end{hint}\\nIf $R(3)=10$ and $F(v)=R(v+10)$ the point on \
+the graph of $F$ is \
+\\\\answer{$(-18,3)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $a(3)=-4$ and $P(z)=a(z+10)$, what point can you determine on \
+the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $3$ into $a$ you get $-4$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $z+10$ into $a$ so we want to choose our $z$ so that \
+$z+10=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $z=-7$.\\n\
+\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation relating \
+$a$ and $P$ we get $P(-7)=a(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$P(-7)=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-7,-4)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $P$.\\n\\\\end{hint}\\nIf $a(-4)=10$ and $P(z)=a(z+10)$ the point on \
+the graph of $P$ is \
+\\\\answer{$(-7,-4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $9(1)=-10$ and $a(n)=9(n+8)$, what point can you determine on \
+the graph of $a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $1$ into $9$ you get $-10$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $n+8$ into $9$ so we want to choose our $n$ so that \
+$n+8=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$n=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $9$ and $a$ we get \
+$a(-7)=9(1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$a(-7)=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-7,-10)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $a$.\\n\\\\end{hint}\\nIf $9(-10)=8$ and $a(n)=9(n+8)$ the point on \
+the graph of $a$ is \
+\\\\answer{$(-7,-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $b(0)=-1$ and $g(\\\\psi )=b(\\\\psi +10)$, what point \
+can you determine on the graph of \
+$g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when you plug in \
+$0$ into $b$ you get $-1$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $\\\\psi +10$ into $b$ so we want to \
+choose our $\\\\psi$ so that $\\\\psi \
++10=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\psi=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $b$ and $g$ we get \
+$g(-10)=b(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$g(-10)=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-10,-1)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $g$.\\n\\\\end{hint}\\nIf $b(-1)=10$ and $g(\\\\psi )=b(\\\\psi \
++10)$ the point on the graph of $g$ is \
+\\\\answer{$(-10,-1)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $R(3)=-10$ and $P(u)=R(u+10)$, what point can you \
+determine on the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+know that when you plug in $3$ into $R$ you get $-10$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $u+10$ into $R$ so we want to choose our $u$ so that \
+$u+10=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $u=-7$.\\n\
+\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation relating \
+$R$ and $P$ we get $P(-7)=R(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$P(-7)=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-7,-10)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $P$.\\n\\\\end{hint}\\nIf $R(-10)=10$ and $P(u)=R(u+10)$ the point \
+on the graph of $P$ is \
+\\\\answer{$(-7,-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $B(-6)=-10$ and $F(t)=B(t+4)$, what point can you \
+determine on the graph of $F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+know that when you plug in $-6$ into $B$ you get $-10$. \\n\\\\end{hint}\\n\\\
+\\begin{hint}\\nIn the equation we are given, we are plugging $t+4$ into $B$ \
+so we want to choose our $t$ so that \
+$t+4=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$t=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $B$ and $F$ we get $F(-10)=B(-6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\
+\\nSo $F(-10)=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-10,-10)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$F$.\\n\\\\end{hint}\\nIf $B(-10)=4$ and $F(t)=B(t+4)$ the point on the graph \
+of $F$ is \\\\answer{$(-10,-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\
+\\n\\\\begin{exercise}\\nIf $r(-6)=-4$ and $P(k)=r(k-8)$, what point can you \
+determine on the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+know that when you plug in $-6$ into $r$ you get $-4$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $k-8$ into $r$ so we want to choose our $k$ so that \
+$k-8=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$k=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $r$ and $P$ we get \
+$P(2)=r(-6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$P(2)=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,-4)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $P$.\\n\\\\end{hint}\\nIf $r(-4)=-8$ and $P(k)=r(k-8)$ the point on \
+the graph of $P$ is \
+\\\\answer{$(2,-4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $R(-8)=-7$ and $g(z)=R(z-8)$, what point can you determine on \
+the graph of $g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $-8$ into $R$ you get $-7$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $z-8$ into $R$ so we want to choose our $z$ so that \
+$z-8=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$z=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $R$ and $g$ we get \
+$g(0)=R(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$g(0)=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,-7)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $g$.\\n\\\\end{hint}\\nIf $R(-7)=-8$ and $g(z)=R(z-8)$ the point on \
+the graph of $g$ is \
+\\\\answer{$(0,-7)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $a(5)=-9$ and $f(n)=a(n-2)$, what point can you determine on \
+the graph of $f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $5$ into $a$ you get $-9$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $n-2$ into $a$ so we want to choose our $n$ so that \
+$n-2=5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $n=7$.\\n\\\
+\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation relating $a$ \
+and $f$ we get $f(7)=a(5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $f(7)=-9$.\
+\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(7,-9)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$f$.\\n\\\\end{hint}\\nIf $a(-9)=-2$ and $f(n)=a(n-2)$ the point on the graph \
+of $f$ is \\\\answer{$(7,-9)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\
+\\\\begin{exercise}\\nIf $G(1)=2$ and $f(v)=G(v+4)$, what point can you \
+determine on the graph of $f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+know that when you plug in $1$ into $G$ you get $2$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $v+4$ into $G$ so we want to choose our $v$ so that \
+$v+4=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$v=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $G$ and $f$ we get \
+$f(-3)=G(1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$f(-3)=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-3,2)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $f$.\\n\\\\end{hint}\\nIf $G(2)=4$ and $f(v)=G(v+4)$ the point on \
+the graph of $f$ is \
+\\\\answer{$(-3,2)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $B(4)=-8$ and $g(x)=B(x-10)$, what point can you determine on \
+the graph of $g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $4$ into $B$ you get $-8$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $x-10$ into $B$ so we want to choose our $x$ so that \
+$x-10=4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose $x=14$.\\n\
+\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation relating \
+$B$ and $g$ we get $g(14)=B(4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$g(14)=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(14,-8)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $g$.\\n\\\\end{hint}\\nIf $B(-8)=-10$ and $g(x)=B(x-10)$ the point \
+on the graph of $g$ is \
+\\\\answer{$(14,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $g(-6)=8$ and $G(t)=g(t-9)$, what point can you determine on \
+the graph of $G$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $-6$ into $g$ you get $8$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $t-9$ into $g$ so we want to choose our $t$ so that \
+$t-9=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$t=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $g$ and $G$ we get \
+$G(3)=g(-6)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$G(3)=8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,8)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $G$.\\n\\\\end{hint}\\nIf $g(8)=-9$ and $G(t)=g(t-9)$ the point on \
+the graph of $G$ is \
+\\\\answer{$(3,8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $Y(0)=-2$ and $g(\\\\psi )=Y(\\\\psi -7)$, what point can you \
+determine on the graph of $g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe \
+know that when you plug in $0$ into $Y$ you get $-2$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $\\\\psi -7$ into $Y$ so we want to choose our $\\\\psi$ so that $\\\
+\\psi -7=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\psi=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $Y$ and $g$ we get \
+$g(7)=Y(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$g(7)=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(7,-2)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $g$.\\n\\\\end{hint}\\nIf $Y(-2)=-7$ and $g(\\\\psi )=Y(\\\\psi -7)$ \
+the point on the graph of $g$ is \\\\answer{$(7,-2)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $b(-2)=2$ and $R(v)=b(v+5)$, \
+what point can you determine on the graph of \
+$R$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when you plug in \
+$-2$ into $b$ you get $2$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $v+5$ into $b$ so we want to choose \
+our $v$ so that $v+5=-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to \
+choose $v=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $b$ and $R$ we get \
+$R(-7)=b(-2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$R(-7)=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-7,2)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $R$.\\n\\\\end{hint}\\nIf $b(2)=5$ and $R(v)=b(v+5)$ the point on \
+the graph of $R$ is \
+\\\\answer{$(-7,2)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $P(-10)=-9$ and $R(k)=P(k-2)$, what point can you determine on \
+the graph of $R$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $-10$ into $P$ you get $-9$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $k-2$ into $P$ so we want to choose our $k$ so that \
+$k-2=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$k=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $P$ and $R$ we get $R(-8)=P(-10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\
+\\nSo $R(-8)=-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-8,-9)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$R$.\\n\\\\end{hint}\\nIf $P(-9)=-2$ and $R(k)=P(k-2)$ the point on the graph \
+of $R$ is \
+\\\\answer{$(-8,-9)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $F(-8)=1$ and $Y(u)=F(u+4)$, what point can you determine on \
+the graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when \
+you plug in $-8$ into $F$ you get $1$. \
+\\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the equation we are given, we are \
+plugging $u+4$ into $F$ so we want to choose our $u$ so that \
+$u+4=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$u=-12$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our equation \
+relating $F$ and $Y$ we get $Y(-12)=F(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\
+\\nSo $Y(-12)=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-12,1)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$Y$.\\n\\\\end{hint}\\nIf $F(1)=4$ and $Y(u)=F(u+4)$ the point on the graph \
+of $Y$ is \
+\\\\answer{$(-12,1)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $y(7)=-9$ and $b(\\\\theta )=y(\\\\theta -10)$, what point can \
+you determine on the graph of \
+$b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nWe know that when you plug in \
+$7$ into $y$ you get $-9$. \\n\\\\end{hint}\\n\\\\begin{hint}\\nIn the \
+equation we are given, we are plugging $\\\\theta -10$ into $y$ so we want to \
+choose our $\\\\theta$ so that $\\\\theta \
+-10=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo we want to choose \
+$\\\\theta=17$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nUsing this value in our \
+equation relating $y$ and $b$ we get \
+$b(17)=y(7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
+$b(17)=-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(17,-9)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $b$.\\n\\\\end{hint}\\nIf $y(-9)=-10$ and $b(\\\\theta )=y(\\\\theta \
+-10)$ the point on the graph of $b$ is \
+\\\\answer{$(17,-9)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>"], \
+"Output",
+ CellChangeTimes->{3.598871639958111*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["c"], "Input",
+ CellChangeTimes->{3.598870183274931*^9}],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{3.598870183641864*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 10345, 246, 1219, "Input"],
+Cell[10770, 263, 18453, 275, 9923, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29260, 543, 69, 1, 28, "Input"],
+Cell[29332, 546, 70, 1, 28, "Output"]
+}, Open  ]]
+}
+]
+*)
+
