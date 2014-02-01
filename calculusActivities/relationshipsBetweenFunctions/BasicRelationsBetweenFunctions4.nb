@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     28139,        512]
-NotebookOptionsPosition[     27801,        495]
-NotebookOutlinePosition[     28158,        511]
-CellTagsIndexPosition[     28115,        508]
+NotebookDataLength[     12542,        279]
+NotebookOptionsPosition[     12283,        265]
+NotebookOutlinePosition[     12640,        281]
+CellTagsIndexPosition[     12597,        278]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{"code", ":=", 
   RowBox[{"Module", "[", 
@@ -263,235 +261,7 @@ $\>\"", ",",
    3.600220923636753*^9, 3.600221012290461*^9}, {3.600221055415113*^9, 
    3.600221092516927*^9}, {3.600221159687626*^9, 3.600221163399715*^9}, {
    3.600221337674088*^9, 3.600221341484317*^9}, {3.6002213957740307`*^9, 
-   3.600221583952754*^9}, {3.6002216150537043`*^9, 3.600221715908567*^9}}],
-
-Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $F(-9)=6$ and $Y(t)=3 \\\\cdot \
-F(t)$, what point can you determine on the graph of \
-$Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $t=-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $Y(-9)=3 \\\\cdot \
-F(-9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $F(-9)=6$ we have \
-$Y(-9)=6 \\\\cdot 3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $Y(-9)=18$.\\n\\\
-\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-9,18)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$Y$.\\n\\\\end{hint}\\nIf $F(-9)=6$ and $Y(t)=3 \\\\cdot F(t)$ the point on \
-the graph of $Y$ is \
-\\\\answer{$(-9,18)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $R(-5)=9$ and $p(z)=-7 \\\\cdot R(z)$, what point can you \
-determine on the graph of $p$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$z=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $p(-5)=-7 \
-\\\\cdot R(-5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $R(-5)=9$ \
-we have $p(-5)=9 \\\\cdot -7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$p(-5)=-63$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-5,-63)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $p$.\\n\\\\end{hint}\\nIf $R(-5)=9$ and $p(z)=-7 \\\\cdot R(z)$ the \
-point on the graph of $p$ is \\\\answer{$(-5,-63)$}.\\n\\\\end{solution}\\n\\\
-\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $b(3)=-3$ and $F(t)=-2 \\\\cdot \
-b(t)$, what point can you determine on the graph of \
-$F$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $t=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $F(3)=-2 \\\\cdot \
-b(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $b(3)=-3$ we have \
-$F(3)=-3 \\\\cdot -2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$F(3)=6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,6)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $F$.\\n\\\\end{hint}\\nIf $b(3)=-3$ and $F(t)=-2 \\\\cdot b(t)$ the \
-point on the graph of $F$ is \
-\\\\answer{$(3,6)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $s(0)=-10$ and $A(v)=10 \\\\cdot s(v)$, what point can you \
-determine on the graph of $A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$v=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $A(0)=10 \
-\\\\cdot s(0)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $s(0)=-10$ \
-we have $A(0)=-10 \\\\cdot 10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$A(0)=-100$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,-100)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $A$.\\n\\\\end{hint}\\nIf $s(0)=-10$ and $A(v)=10 \\\\cdot s(v)$ the \
-point on the graph of $A$ is \\\\answer{$(0,-100)$}.\\n\\\\end{solution}\\n\\\
-\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $y(-10)=5$ and $b(z)=-6 \
-\\\\cdot y(z)$, what point can you determine on the graph of \
-$b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $z=-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this \
-point we have $b(-10)=-6 \\\\cdot \
-y(-10)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $y(-10)=5$ we have \
-$b(-10)=5 \\\\cdot -6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$b(-10)=-30$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-10,-30)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $b$.\\n\\\\end{hint}\\nIf $y(-10)=5$ and $b(z)=-6 \\\\cdot y(z)$ the \
-point on the graph of $b$ is \
-\\\\answer{$(-10,-30)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
-begin{exercise}\\nIf $s(-1)=5$ and $A(u)=-5 \\\\cdot s(u)$, what point can \
-you determine on the graph of \
-$A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $u=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $A(-1)=-5 \\\\cdot \
-s(-1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $s(-1)=5$ we have \
-$A(-1)=5 \\\\cdot -5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $A(-1)=-25$.\\n\
-\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-1,-25)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$A$.\\n\\\\end{hint}\\nIf $s(-1)=5$ and $A(u)=-5 \\\\cdot s(u)$ the point on \
-the graph of $A$ is \
-\\\\answer{$(-1,-25)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
-begin{exercise}\\nIf $G(-5)=-10$ and $f(n)=-7 \\\\cdot G(n)$, what point can \
-you determine on the graph of \
-$f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $n=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $f(-5)=-7 \\\\cdot \
-G(-5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $G(-5)=-10$ we have \
-$f(-5)=-10 \\\\cdot -7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$f(-5)=70$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-5,70)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $f$.\\n\\\\end{hint}\\nIf $G(-5)=-10$ and $f(n)=-7 \\\\cdot G(n)$ \
-the point on the graph of $f$ is \
-\\\\answer{$(-5,70)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $s(7)=-8$ and $Y(w)=s(w)$, what point can you determine on the \
-graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
-information about a point where $w=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
-this point we have \
-$Y(7)=s(7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $s(7)=-8$ we \
-have $Y(7)=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $Y(7)=-8 \
-$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(7,-8)$ ${\\\\bf is\\\
-\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ $Y$.\
-\\n\\\\end{hint}\\nIf $s(7)=-8$ and $Y(w)=s(w)$ the point on the graph of $Y$ \
-is \\\\answer{$(7,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
-begin{exercise}\\nIf $Y(8)=7$ and $B(w)=-9 \\\\cdot Y(w)$, what point can you \
-determine on the graph of $B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$w=8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $B(8)=-9 \
-\\\\cdot Y(8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $Y(8)=7$ we \
-have $B(8)=7 \\\\cdot -9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $B(8)=-63$.\
-\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(8,-63)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$B$.\\n\\\\end{hint}\\nIf $Y(8)=7$ and $B(w)=-9 \\\\cdot Y(w)$ the point on \
-the graph of $B$ is \
-\\\\answer{$(8,-63)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $R(2)=10$ and $Y(z)=2 \\\\cdot R(z)$, what point can you \
-determine on the graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$z=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $Y(2)=2 \
-\\\\cdot R(2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $R(2)=10$ we \
-have $Y(2)=10 \\\\cdot 2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$Y(2)=20$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,20)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $Y$.\\n\\\\end{hint}\\nIf $R(2)=10$ and $Y(z)=2 \\\\cdot R(z)$ the \
-point on the graph of $Y$ is \
-\\\\answer{$(2,20)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $r(2)=-7$ and $b(t)=-4 \\\\cdot r(t)$, what point can you \
-determine on the graph of $b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$t=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $b(2)=-4 \
-\\\\cdot r(2)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $r(2)=-7$ we \
-have $b(2)=-7 \\\\cdot -4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $b(2)=28$.\
-\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,28)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$b$.\\n\\\\end{hint}\\nIf $r(2)=-7$ and $b(t)=-4 \\\\cdot r(t)$ the point on \
-the graph of $b$ is \
-\\\\answer{$(2,28)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $A(5)=-10$ and $P(w)=7 \\\\cdot A(w)$, what point can you \
-determine on the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$w=5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $P(5)=7 \
-\\\\cdot A(5)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $A(5)=-10$ \
-we have $P(5)=-10 \\\\cdot 7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$P(5)=-70$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(5,-70)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $P$.\\n\\\\end{hint}\\nIf $A(5)=-10$ and $P(w)=7 \\\\cdot A(w)$ the \
-point on the graph of $P$ is \
-\\\\answer{$(5,-70)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $P(3)=-4$ and $s(w)=2 \\\\cdot P(w)$, what point can you \
-determine on the graph of $s$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$w=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $s(3)=2 \
-\\\\cdot P(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $P(3)=-4$ we \
-have $s(3)=-4 \\\\cdot 2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$s(3)=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,-8)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $s$.\\n\\\\end{hint}\\nIf $P(3)=-4$ and $s(w)=2 \\\\cdot P(w)$ the \
-point on the graph of $s$ is \
-\\\\answer{$(3,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $p(-8)=-9$ and $B(z)=10 \\\\cdot p(z)$, what point can you \
-determine on the graph of $B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$z=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $B(-8)=10 \
-\\\\cdot p(-8)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $p(-8)=-9$ \
-we have $B(-8)=-9 \\\\cdot 10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$B(-8)=-90$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-8,-90)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $B$.\\n\\\\end{hint}\\nIf $p(-8)=-9$ and $B(z)=10 \\\\cdot p(z)$ the \
-point on the graph of $B$ is \\\\answer{$(-8,-90)$}.\\n\\\\end{solution}\\n\\\
-\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $B(1)=-7$ and $f(t)=8 \\\\cdot \
-B(t)$, what point can you determine on the graph of \
-$f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $t=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $f(1)=8 \\\\cdot \
-B(1)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $B(1)=-7$ we have \
-$f(1)=-7 \\\\cdot 8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $f(1)=-56$.\\n\\\
-\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(1,-56)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$f$.\\n\\\\end{hint}\\nIf $B(1)=-7$ and $f(t)=8 \\\\cdot B(t)$ the point on \
-the graph of $f$ is \
-\\\\answer{$(1,-56)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $g(-9)=6$ and $c(n)=-4 \\\\cdot g(n)$, what point can you \
-determine on the graph of $c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$n=-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $c(-9)=-4 \
-\\\\cdot g(-9)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $g(-9)=6$ \
-we have $c(-9)=6 \\\\cdot -4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$c(-9)=-24$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-9,-24)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $c$.\\n\\\\end{hint}\\nIf $g(-9)=6$ and $c(n)=-4 \\\\cdot g(n)$ the \
-point on the graph of $c$ is \\\\answer{$(-9,-24)$}.\\n\\\\end{solution}\\n\\\
-\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $F(3)=-7$ and $P(n)=4 \\\\cdot \
-F(n)$, what point can you determine on the graph of \
-$P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $n=3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $P(3)=4 \\\\cdot \
-F(3)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $F(3)=-7$ we have \
-$P(3)=-7 \\\\cdot 4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $P(3)=-28$.\\n\\\
-\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(3,-28)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$P$.\\n\\\\end{hint}\\nIf $F(3)=-7$ and $P(n)=4 \\\\cdot F(n)$ the point on \
-the graph of $P$ is \
-\\\\answer{$(3,-28)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $f(-7)=-8$ and $B(\\\\psi )=7 \\\\cdot f(\\\\psi )$, what \
-point can you determine on the graph of \
-$B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $\\\\psi=-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this \
-point we have $B(-7)=7 \\\\cdot \
-f(-7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $f(-7)=-8$ we have \
-$B(-7)=-8 \\\\cdot 7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $B(-7)=-56$.\\n\
-\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-7,-56)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$B$.\\n\\\\end{hint}\\nIf $f(-7)=-8$ and $B(\\\\psi )=7 \\\\cdot f(\\\\psi )$ \
-the point on the graph of $B$ is \
-\\\\answer{$(-7,-56)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
-begin{exercise}\\nIf $f(-4)=-2$ and $a(x)=-8 \\\\cdot f(x)$, what point can \
-you determine on the graph of \
-$a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
-about a point where $x=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
-we have $a(-4)=-8 \\\\cdot \
-f(-4)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $f(-4)=-2$ we have \
-$a(-4)=-2 \\\\cdot -8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo $a(-4)=16$.\\n\
-\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(-4,16)$ ${\\\\bf \
-is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
-$a$.\\n\\\\end{hint}\\nIf $f(-4)=-2$ and $a(x)=-8 \\\\cdot f(x)$ the point on \
-the graph of $a$ is \
-\\\\answer{$(-4,16)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
-exercise}\\nIf $c(7)=8$ and $G(w)=8 \\\\cdot c(w)$, what point can you \
-determine on the graph of $G$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
-only have information about a point where \
-$w=7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have $G(7)=8 \
-\\\\cdot c(7)$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $c(7)=8$ we \
-have $G(7)=8 \\\\cdot 8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSo \
-$G(7)=64$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(7,64)$ \
-${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
-1em}of}$ $G$.\\n\\\\end{hint}\\nIf $c(7)=8$ and $G(w)=8 \\\\cdot c(w)$ the \
-point on the graph of $G$ is \
-\\\\answer{$(7,64)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>"], \
-"Output",
- CellChangeTimes->{{3.600221684094839*^9, 3.600221716688086*^9}}]
-}, Open  ]]
+   3.600221583952754*^9}, {3.6002216150537043`*^9, 3.600221715908567*^9}}]
 },
 WindowSize->{740, 652},
 WindowMargins->{{-3, Automatic}, {19, Automatic}},
@@ -510,10 +280,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[CellGroupData[{
-Cell[579, 22, 11722, 243, 1049, "Input"],
-Cell[12304, 267, 15481, 225, 8512, "Output"]
-}, Open  ]]
+Cell[557, 20, 11722, 243, 1066, "Input"]
 }
 ]
 *)
