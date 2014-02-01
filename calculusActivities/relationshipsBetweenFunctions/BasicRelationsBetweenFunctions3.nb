@@ -1,0 +1,473 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     24561,        464]
+NotebookOptionsPosition[     24224,        447]
+NotebookOutlinePosition[     24582,        463]
+CellTagsIndexPosition[     24539,        460]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"code", ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"func", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "F", ",", "G", ",", 
+           "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"func2", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+           ",", "r", ",", "y", ",", "A", ",", "B", ",", "F", ",", "G", ",", 
+           "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"variable", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+          "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+           ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Point0", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Point1", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Point2", "=", 
+        RowBox[{"Random", "[", 
+         RowBox[{"Integer", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", "Placeholder"}], "\[IndentingNewLine]", "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"While", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ToString", "[", "func", "]"}], "\[Equal]", 
+         RowBox[{"ToString", "[", "func2", "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"func2", "=", 
+          RowBox[{"RandomChoice", "[", 
+           RowBox[{"{", 
+            RowBox[{
+            "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+             ",", "r", ",", "y", ",", "A", ",", "B", ",", "F", ",", "G", ",", 
+             "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ";"}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"While", "[", 
+       RowBox[{
+        RowBox[{"Point2", "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Point2", "=", 
+         RowBox[{"Random", "[", 
+          RowBox[{"Integer", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"Point2", "<", "0"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"PlaceHolder", "=", "\"\<\>\""}], ";"}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"Point2", ">", "0"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"PlaceHolder", "=", "\"\<+\>\""}], ";"}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"answer", "=", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<(\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "Point0", "]"}], "]"}], ",", "\"\<,\>\"", 
+         ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Point1", "+", "Point2"}], "]"}], ",", "\"\<)\>\""}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<\\\\begin{exercise}\nIf $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<$ and $\>\"", ",",
+         " ", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{
+           RowBox[{"func", "[", "variable", "]"}], "+", "Point2"}], "]"}], 
+         "]"}], ",", 
+        "\"\<$, what point can you determine on the graph of $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+        "\"\<$?\n\\\\begin{solution}\n\\\\begin{hint}\nYou only have \
+information about a point where $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", "Point0", "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nAt this point we have $\>\"",
+         ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{
+           RowBox[{"func", "[", "Point0", "]"}], "+", "Point2"}], "]"}], 
+         "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nSubstituting $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<$ we have $\>\"", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", "Point1", "]"}], ",", "PlaceHolder", ",", 
+        RowBox[{"ToString", "[", "Point2", "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\n${\\\\bf Thus}$ $\>\"", ",", 
+        "answer", ",", 
+        "\"\<$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\nIf $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", "Point1", "]"}], ",", "\"\<$ and $\>\"", ",",
+         " ", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "variable", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{
+           RowBox[{"func", "[", "variable", "]"}], "+", "Point2"}], "]"}], 
+         "]"}], ",", "\"\<$ the point on the graph of $\>\"", ",", " ", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "func2", "]"}], "]"}], ",", 
+        "\"\<$ is \\\\answer{$\>\"", ",", "answer", ",", 
+        "\"\<$}.\n\\\\end{solution}\n\\\\end{exercise}\\n\\n\>\""}], 
+       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"StringJoin", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{"code", ",", 
+    RowBox[{"{", "20", "}"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.598698667071652*^9, 3.598698669364933*^9}, {
+   3.5986988078733883`*^9, 3.598698848841304*^9}, {3.598698884907772*^9, 
+   3.598699064740394*^9}, {3.598699133734193*^9, 3.598699137588069*^9}, {
+   3.5986992421429367`*^9, 3.598699245315248*^9}, {3.598699330705832*^9, 
+   3.598699452895112*^9}, {3.598699483010117*^9, 3.598699536652932*^9}, {
+   3.5986998869560413`*^9, 3.5987000295481653`*^9}, {3.598700088674371*^9, 
+   3.598700131269112*^9}, {3.598700161406892*^9, 3.598700225582469*^9}, {
+   3.5987002865450974`*^9, 3.5987003759634666`*^9}, {3.5987005190555897`*^9, 
+   3.598700522786168*^9}, {3.5988700952150183`*^9, 3.598870095518879*^9}, {
+   3.5988701517264547`*^9, 3.598870179573455*^9}, {3.5988702349810257`*^9, 
+   3.59887023978955*^9}, {3.598870526235077*^9, 3.5988706248369503`*^9}, {
+   3.598870737294636*^9, 3.598870764676717*^9}, {3.598870798256577*^9, 
+   3.598870814225728*^9}, {3.59887085420638*^9, 3.5988708779732656`*^9}, {
+   3.598870922389493*^9, 3.598871001716713*^9}, {3.598871052505824*^9, 
+   3.598871113760666*^9}, {3.598871203314433*^9, 3.598871224133974*^9}, {
+   3.598871281072727*^9, 3.598871349814556*^9}, {3.598871510910886*^9, 
+   3.598871540483077*^9}, {3.598871596283185*^9, 3.598871639012747*^9}, {
+   3.598871781858054*^9, 3.598871782798337*^9}, {3.6002160768057528`*^9, 
+   3.600216077116108*^9}, {3.600216274323567*^9, 3.600216275894938*^9}, {
+   3.600216362408589*^9, 3.60021638942248*^9}, {3.600216521925915*^9, 
+   3.600216755188684*^9}, 3.600216787105473*^9, {3.600216892354486*^9, 
+   3.60021697699061*^9}, {3.600217016998542*^9, 3.60021713910261*^9}, {
+   3.600217177515833*^9, 3.6002172124962378`*^9}, {3.600217263473111*^9, 
+   3.600217265801077*^9}, {3.600217388236352*^9, 3.600217395212109*^9}, {
+   3.600217516368785*^9, 3.6002176174536543`*^9}, {3.600217759316299*^9, 
+   3.600217761931499*^9}, {3.6002178428268833`*^9, 3.6002179614142723`*^9}, {
+   3.6002180387797203`*^9, 3.6002180601859093`*^9}, {3.600218121906109*^9, 
+   3.600218128679833*^9}, {3.600218471873762*^9, 3.600218530748249*^9}}],
+
+Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $R(-3)=5$ and $b(t)=R(t)+10$, what \
+point can you determine on the graph of \
+$b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
+about a point where $t=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
+we have $b(-3)=R(-3)+10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting \
+$R(-3)=5$ we have $b(-3)=5+10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf \
+Thus}$ $(-3,15)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$b$.\\n\\\\end{hint}\\nIf $R(-3)=5$ and $b(t)=R(t)+10$ the point on the graph \
+of $b$ is \
+\\\\answer{$(-3,15)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $y(-1)=-9$ and $B(x)=y(x)-7$, what point can you determine on \
+the graph of $B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$x=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$B(-1)=y(-1)-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $y(-1)=-9$ \
+we have $B(-1)=-9-7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-1,-16)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\
+\\\\hspace{1em}of}$ $B$.\\n\\\\end{hint}\\nIf $y(-1)=-9$ and $B(x)=y(x)-7$ \
+the point on the graph of $B$ is \
+\\\\answer{$(-1,-16)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $B(-8)=-3$ and $G(w)=B(w)-1$, what point can you \
+determine on the graph of $G$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
+only have information about a point where \
+$w=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$G(-8)=B(-8)-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $B(-8)=-3$ \
+we have $G(-8)=-3-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-8,-4)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$G$.\\n\\\\end{hint}\\nIf $B(-8)=-3$ and $G(w)=B(w)-1$ the point on the graph \
+of $G$ is \
+\\\\answer{$(-8,-4)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $y(-1)=5$ and $Y(n)=y(n)+2$, what point can you determine on \
+the graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$n=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$Y(-1)=y(-1)+2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $y(-1)=5$ \
+we have $Y(-1)=5+2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-1,7)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $Y$.\\n\\\\end{hint}\\nIf $y(-1)=5$ and $Y(n)=y(n)+2$ the \
+point on the graph of $Y$ is \
+\\\\answer{$(-1,7)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $p(-5)=7$ and $b(k)=p(k)+7$, what point can you determine on \
+the graph of $b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$k=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$b(-5)=p(-5)+7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $p(-5)=7$ \
+we have $b(-5)=7+7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-5,14)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$b$.\\n\\\\end{hint}\\nIf $p(-5)=7$ and $b(k)=p(k)+7$ the point on the graph \
+of $b$ is \
+\\\\answer{$(-5,14)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $P(-6)=-3$ and $a(\\\\theta )=P(\\\\theta )-6$, what point can \
+you determine on the graph of \
+$a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
+about a point where $\\\\theta=-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
+this point we have \
+$a(-6)=P(-6)-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $P(-6)=-3$ \
+we have $a(-6)=-3-6$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-6,-9)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$a$.\\n\\\\end{hint}\\nIf $P(-6)=-3$ and $a(\\\\theta )=P(\\\\theta )-6$ the \
+point on the graph of $a$ is \
+\\\\answer{$(-6,-9)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $G(-5)=-9$ and $g(v)=G(v)+8$, what point can you determine on \
+the graph of $g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$v=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$g(-5)=G(-5)+8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $G(-5)=-9$ \
+we have $g(-5)=-9+8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-5,-1)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$g$.\\n\\\\end{hint}\\nIf $G(-5)=-9$ and $g(v)=G(v)+8$ the point on the graph \
+of $g$ is \
+\\\\answer{$(-5,-1)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $b(-8)=3$ and $P(\\\\psi )=b(\\\\psi )+5$, what point can you \
+determine on the graph of $P$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
+only have information about a point where \
+$\\\\psi=-8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$P(-8)=b(-8)+5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $b(-8)=3$ \
+we have $P(-8)=3+5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-8,8)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $P$.\\n\\\\end{hint}\\nIf $b(-8)=3$ and $P(\\\\psi \
+)=b(\\\\psi )+5$ the point on the graph of $P$ is \
+\\\\answer{$(-8,8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $B(0)=4$ and $a(\\\\psi )=B(\\\\psi )+8$, what point can you \
+determine on the graph of $a$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
+only have information about a point where \
+$\\\\psi=0$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$a(0)=B(0)+8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $B(0)=4$ we \
+have $a(0)=4+8$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(0,12)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $a$.\\n\\\\end{hint}\\nIf $B(0)=4$ and $a(\\\\psi )=B(\\\\psi )+8$ \
+the point on the graph of $a$ is \\\\answer{$(0,12)$}.\\n\\\\end{solution}\\n\
+\\\\end{exercise}\\n\\n\\\\begin{exercise}\\nIf $c(2)=-1$ and $y(w)=c(w)-9$, \
+what point can you determine on the graph of \
+$y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
+about a point where $w=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point \
+we have $y(2)=c(2)-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting \
+$c(2)=-1$ we have $y(2)=-1-9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf \
+Thus}$ $(2,-10)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$y$.\\n\\\\end{hint}\\nIf $c(2)=-1$ and $y(w)=c(w)-9$ the point on the graph \
+of $y$ is \
+\\\\answer{$(2,-10)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $B(-5)=-3$ and $A(w)=B(w)+3$, what point can you determine on \
+the graph of $A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$w=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$A(-5)=B(-5)+3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $B(-5)=-3$ \
+we have $A(-5)=-3+3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-5,0)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $A$.\\n\\\\end{hint}\\nIf $B(-5)=-3$ and $A(w)=B(w)+3$ the \
+point on the graph of $A$ is \
+\\\\answer{$(-5,0)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $s(5)=-10$ and $b(x)=s(x)+2$, what point can you determine on \
+the graph of $b$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where $x=5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
+this point we have \
+$b(5)=s(5)+2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $s(5)=-10$ we \
+have $b(5)=-10+2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(5,-8)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $b$.\\n\\\\end{hint}\\nIf $s(5)=-10$ and $b(x)=s(x)+2$ the \
+point on the graph of $b$ is \
+\\\\answer{$(5,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $s(4)=8$ and $c(\\\\theta )=s(\\\\theta )+9$, what point can \
+you determine on the graph of \
+$c$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
+about a point where $\\\\theta=4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
+this point we have \
+$c(4)=s(4)+9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $s(4)=8$ we \
+have $c(4)=8+9$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(4,17)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $c$.\\n\\\\end{hint}\\nIf $s(4)=8$ and $c(\\\\theta )=s(\\\\theta \
+)+9$ the point on the graph of $c$ is \
+\\\\answer{$(4,17)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $G(-1)=2$ and $f(z)=G(z)-10$, what point can you determine on \
+the graph of $f$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$z=-1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$f(-1)=G(-1)-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $G(-1)=2$ \
+we have $f(-1)=2-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-1,-8)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$f$.\\n\\\\end{hint}\\nIf $G(-1)=2$ and $f(z)=G(z)-10$ the point on the graph \
+of $f$ is \
+\\\\answer{$(-1,-8)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $P(-4)=-7$ and $G(x)=P(x)-10$, what point can you determine on \
+the graph of $G$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$x=-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$G(-4)=P(-4)-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $P(-4)=-7$ \
+we have $G(-4)=-7-10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-4,-17)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\
+\\\\hspace{1em}of}$ $G$.\\n\\\\end{hint}\\nIf $P(-4)=-7$ and $G(x)=P(x)-10$ \
+the point on the graph of $G$ is \
+\\\\answer{$(-4,-17)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $c(2)=-3$ and $y(\\\\theta )=c(\\\\theta )+4$, what \
+point can you determine on the graph of \
+$y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have information \
+about a point where $\\\\theta=2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
+this point we have \
+$y(2)=c(2)+4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $c(2)=-3$ we \
+have $y(2)=-3+4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ $(2,1)$ \
+${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{\
+1em}of}$ $y$.\\n\\\\end{hint}\\nIf $c(2)=-3$ and $y(\\\\theta )=c(\\\\theta \
+)+4$ the point on the graph of $y$ is \
+\\\\answer{$(2,1)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $y(1)=-2$ and $A(t)=y(t)-4$, what point can you determine on \
+the graph of $A$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where $t=1$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt \
+this point we have \
+$A(1)=y(1)-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $y(1)=-2$ we \
+have $A(1)=-2-4$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(1,-6)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $A$.\\n\\\\end{hint}\\nIf $y(1)=-2$ and $A(t)=y(t)-4$ the \
+point on the graph of $A$ is \
+\\\\answer{$(1,-6)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $Y(-5)=-2$ and $B(n)=Y(n)+7$, what point can you determine on \
+the graph of $B$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$n=-5$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$B(-5)=Y(-5)+7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $Y(-5)=-2$ \
+we have $B(-5)=-2+7$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-5,5)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\
+\\hspace{1em}of}$ $B$.\\n\\\\end{hint}\\nIf $Y(-5)=-2$ and $B(n)=Y(n)+7$ the \
+point on the graph of $B$ is \
+\\\\answer{$(-5,5)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\begin{\
+exercise}\\nIf $f(10)=-9$ and $g(w)=f(w)-2$, what point can you determine on \
+the graph of $g$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou only have \
+information about a point where \
+$w=10$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$g(10)=f(10)-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $f(10)=-9$ \
+we have $g(10)=-9-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(10,-11)$ ${\\\\bf is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\
+\\\\hspace{1em}of}$ $g$.\\n\\\\end{hint}\\nIf $f(10)=-9$ and $g(w)=f(w)-2$ \
+the point on the graph of $g$ is \
+\\\\answer{$(10,-11)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\\\\\
+begin{exercise}\\nIf $r(-3)=-3$ and $Y(u)=r(u)-2$, what point can you \
+determine on the graph of $Y$?\\n\\\\begin{solution}\\n\\\\begin{hint}\\nYou \
+only have information about a point where \
+$u=-3$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nAt this point we have \
+$Y(-3)=r(-3)-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\nSubstituting $r(-3)=-3$ \
+we have $Y(-3)=-3-2$.\\n\\\\end{hint}\\n\\\\begin{hint}\\n${\\\\bf Thus}$ \
+$(-3,-5)$ ${\\\\bf \
+is\\\\hspace{1em}on\\\\hspace{1em}the\\\\hspace{1em}graph\\\\hspace{1em}of}$ \
+$Y$.\\n\\\\end{hint}\\nIf $r(-3)=-3$ and $Y(u)=r(u)-2$ the point on the graph \
+of $Y$ is \
+\\\\answer{$(-3,-5)$}.\\n\\\\end{solution}\\n\\\\end{exercise}\\n\\n\"\>"], \
+"Output",
+ CellChangeTimes->{3.600217653200366*^9, 3.600217967221122*^9, 
+  3.600218062666774*^9, 3.600218456581415*^9, 3.600218533072607*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{110, Automatic}, {Automatic, 11}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 9666, 208, 981, "Input"],
+Cell[10248, 232, 13960, 212, 7509, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
