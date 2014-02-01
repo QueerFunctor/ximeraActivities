@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     24561,        464]
-NotebookOptionsPosition[     24224,        447]
-NotebookOutlinePosition[     24582,        463]
-CellTagsIndexPosition[     24539,        460]
+NotebookDataLength[     25078,        476]
+NotebookOptionsPosition[     24739,        459]
+NotebookOutlinePosition[     25097,        475]
+CellTagsIndexPosition[     25054,        472]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -167,8 +167,18 @@ information about a point where $\>\"", ",",
          RowBox[{"TeXForm", "[", 
           RowBox[{"func2", "[", "Point0", "]"}], "]"}], "]"}], ",", 
         "\"\<=\>\"", ",", 
-        RowBox[{"ToString", "[", "Point1", "]"}], ",", "PlaceHolder", ",", 
-        RowBox[{"ToString", "[", "Point2", "]"}], ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "Point1", "]"}], "]"}], ",", "PlaceHolder", 
+        ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "Point2", "]"}], "]"}], ",", 
+        "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\nSo $\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"func2", "[", "Point0", "]"}], "]"}], "]"}], ",", 
+        "\"\<=\>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Point1", "+", "Point2"}], "]"}], ",", 
         "\"\<$.\n\\\\end{hint}\n\\\\begin{hint}\n${\\\\bf Thus}$ $\>\"", ",", 
         "answer", ",", 
         "\"\<$ ${\\\\bf \
@@ -228,7 +238,9 @@ $\>\"", ",",
    3.600217516368785*^9, 3.6002176174536543`*^9}, {3.600217759316299*^9, 
    3.600217761931499*^9}, {3.6002178428268833`*^9, 3.6002179614142723`*^9}, {
    3.6002180387797203`*^9, 3.6002180601859093`*^9}, {3.600218121906109*^9, 
-   3.600218128679833*^9}, {3.600218471873762*^9, 3.600218530748249*^9}}],
+   3.600218128679833*^9}, {3.600218471873762*^9, 3.600218530748249*^9}, {
+   3.6002189882004004`*^9, 3.60021900298365*^9}, {3.6002199951481113`*^9, 
+   3.600220114292337*^9}}],
 
 Cell[BoxData["\<\"\\\\begin{exercise}\\nIf $R(-3)=5$ and $b(t)=R(t)+10$, what \
 point can you determine on the graph of \
@@ -446,7 +458,7 @@ of $Y$ is \
 }, Open  ]]
 },
 WindowSize->{740, 652},
-WindowMargins->{{110, Automatic}, {Automatic, 11}},
+WindowMargins->{{40, Automatic}, {-51, Automatic}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
 StyleDefinitions->"Default.nb"
@@ -463,8 +475,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 9666, 208, 981, "Input"],
-Cell[10248, 232, 13960, 212, 7509, "Output"]
+Cell[579, 22, 10181, 220, 1015, "Input"],
+Cell[10763, 244, 13960, 212, 7509, "Output"]
 }, Open  ]]
 }
 ]
