@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     44623,        880]
-NotebookOptionsPosition[     44164,        860]
-NotebookOutlinePosition[     44520,        876]
-CellTagsIndexPosition[     44477,        873]
+NotebookDataLength[     44711,        882]
+NotebookOptionsPosition[     44229,        861]
+NotebookOutlinePosition[     44608,        878]
+CellTagsIndexPosition[     44565,        875]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -173,7 +173,7 @@ ymin=-5,\n\t\t\tymax=5,\n            axis lines =center, xlabel=$\>\"", ",",
 axis.above origin),anchor=south},\n              every axis x \
 label/.style={at=(current axis.right of origin),anchor=west},\n            \
 domain=-5:5,\n            grid = major,\n          ]\n          \\\\addplot \
-[very thick, smooth] {\>\"", ",", 
+[very thick, smooth, samples=550] {\>\"", ",", 
        RowBox[{"ToString", "[", 
         RowBox[{"InputForm", "[", 
          RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
@@ -389,7 +389,8 @@ looking at $\>\"", ",",
    3.5987398835398903`*^9}, {3.5987787859383307`*^9, 3.598778790554565*^9}, {
    3.598778821104553*^9, 3.598778823584256*^9}, {3.598779436652259*^9, 
    3.5987794559562902`*^9}, {3.5987846880135517`*^9, 3.598784741024415*^9}, {
-   3.598784999911028*^9, 3.598785004523638*^9}}],
+   3.598784999911028*^9, 3.598785004523638*^9}, {3.600622601185508*^9, 
+   3.6006226063307734`*^9}}],
 
 Cell["\<\
 An Easier problem:
@@ -858,10 +859,11 @@ of the curve at the point $w=1$.\\n\\\\end{hint}\\nThe value of $A(1)$ is \
  CellChangeTimes->{3.598785779052681*^9, 3.5987860204036303`*^9}]
 }, Open  ]]
 },
-WindowSize->{1366, 708},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1061, 558},
+WindowMargins->{{Automatic, -53}, {Automatic, 0}},
 ShowSelection->True,
-FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -875,12 +877,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 16962, 371, 2085, "Input"],
-Cell[17522, 393, 114, 5, 69, "Text"],
-Cell[17639, 400, 11454, 242, 1295, "Input"],
+Cell[557, 20, 17027, 372, 1678, "Input"],
+Cell[17587, 394, 114, 5, 68, "Text"],
+Cell[17704, 401, 11454, 242, 1032, "Input"],
 Cell[CellGroupData[{
-Cell[29118, 646, 315, 7, 32, "Input"],
-Cell[29436, 655, 14712, 202, 9107, "Output"]
+Cell[29183, 647, 315, 7, 28, "Input"],
+Cell[29501, 656, 14712, 202, 7169, "Output"]
 }, Open  ]]
 }
 ]
