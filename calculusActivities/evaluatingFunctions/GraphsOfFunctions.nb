@@ -10,340 +10,410 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     44711,        882]
-NotebookOptionsPosition[     44229,        861]
-NotebookOutlinePosition[     44608,        878]
-CellTagsIndexPosition[     44565,        875]
+NotebookDataLength[     38069,        832]
+NotebookOptionsPosition[     37590,        811]
+NotebookOutlinePosition[     37968,        828]
+CellTagsIndexPosition[     37925,        825]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- RowBox[{"code", ":=", 
-  RowBox[{"Module", "[", 
+ RowBox[{
+  RowBox[{"(*", 
    RowBox[{
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"func", "=", 
-       RowBox[{"RandomChoice", "[", 
-        RowBox[{"{", 
-         RowBox[{
-         "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", ",",
-           "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", "G", 
-          ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"variable", "=", 
-       RowBox[{"RandomChoice", "[", 
-        RowBox[{"{", 
-         RowBox[{
-         "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", ",",
-           "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}]}], "}"}], 
-    ",", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"P1", " ", "=", " ", 
-      RowBox[{"{", 
-       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"P2", "=", 
-      RowBox[{"{", 
-       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"P3", "=", 
-      RowBox[{"{", 
-       RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"P4", "=", 
-      RowBox[{"{", 
-       RowBox[{".5", ",", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"P5", "=", 
-      RowBox[{"{", 
-       RowBox[{"3.5", ",", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"P6", "=", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "3.5"}], ",", 
-        RowBox[{"Random", "[", 
-         RowBox[{"Integer", ",", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"While", "[", "\[IndentingNewLine]", 
+     RowBox[{
+     "Function", " ", "to", " ", "Calculate", " ", "height", " ", "values", 
+      " ", "for", " ", "all", " ", "zeros", " ", "of", " ", "a", " ", 
+      "function", " ", "for"}], " ", "-", "5"}], "\[LessEqual]", "x", 
+    "\[LessEqual]", "5"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Zero", "[", "f_", "]"}], ":=", 
+     RowBox[{"Map", "[", 
       RowBox[{
        RowBox[{
+        RowBox[{"f", "[", "#", "]"}], "&"}], ",", 
+       RowBox[{"Select", "[", 
         RowBox[{
-         RowBox[{"P1", "[", 
-          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-         RowBox[{"P2", "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
-        RowBox[{
-         RowBox[{"P1", "[", 
-          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-         RowBox[{"P3", "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], "||", 
-        RowBox[{
-         RowBox[{"P2", "[", 
-          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-         RowBox[{"P3", "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"P1", " ", "=", " ", 
-         RowBox[{"{", 
+         RowBox[{"Flatten", "[", 
           RowBox[{
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
-         "\[IndentingNewLine]", 
-        RowBox[{"P2", "=", 
-         RowBox[{"{", 
+           RowBox[{"Solve", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"D", "[", 
+               RowBox[{
+                RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}], "\[Equal]", 
+              "0"}], ",", "x", ",", "Reals"}], "]"}], "/.", 
+           RowBox[{"Rule", "\[Rule]", "List"}]}], "]"}], ",", 
+         RowBox[{
           RowBox[{
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";",
-         "\[IndentingNewLine]", 
-        RowBox[{"P3", "=", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
-           RowBox[{"Random", "[", 
-            RowBox[{"Integer", ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}]}]}], 
-      "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"#", "\[LessEqual]", "5"}], "&&", 
+           RowBox[{"#", "\[GreaterEqual]", 
+            RowBox[{"-", "5"}]}]}], "&"}], ",", "5"}], "]"}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"code", ":=", 
+    RowBox[{"Module", "[", 
      RowBox[{
-      RowBox[{"ff", "[", "xx_", "]"}], "=", 
-      RowBox[{"InterpolatingPolynomial", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
        RowBox[{
+        RowBox[{"func", "=", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+           "a", ",", "b", ",", "c", ",", "f", ",", "g", ",", "s", ",", "p", 
+            ",", "r", ",", "y", ",", "A", ",", "B", ",", "C", ",", "F", ",", 
+            "G", ",", "P", ",", "R", ",", "Y"}], "}"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"variable", "=", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+           "x", ",", "z", ",", "t", ",", "n", ",", "k", ",", "w", ",", "u", 
+            ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}]}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"P1", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"P2", "=", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"P3", "=", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"P4", "=", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", 
+          RowBox[{"Random", "[", 
+           RowBox[{"Integer", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"P5", "=", 
+        RowBox[{"{", 
+         RowBox[{"3.5", ",", 
+          RowBox[{"Random", "[", 
+           RowBox[{"Integer", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"P6", "=", 
         RowBox[{"{", 
          RowBox[{
-         "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], "}"}],
-         ",", "xx"}], "]"}]}], ";", "\n", 
-     RowBox[{"mm", "=", 
-      RowBox[{"First", "[", 
-       RowBox[{"xx", "/.", 
-        RowBox[{"Solve", "[", 
+          RowBox[{"-", "3.5"}], ",", 
+          RowBox[{"Random", "[", 
+           RowBox[{"Integer", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"While", "[", "\[IndentingNewLine]", 
+        RowBox[{
          RowBox[{
           RowBox[{
+           RowBox[{"P1", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+           RowBox[{"P2", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+          RowBox[{
+           RowBox[{"P1", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+           RowBox[{"P3", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+          RowBox[{
+           RowBox[{"P2", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+           RowBox[{"P3", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"P1", " ", "=", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"P2", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"P3", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], 
+            "}"}]}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"ff", "[", "xx_", "]"}], "=", 
+        RowBox[{"InterpolatingPolynomial", "[", 
+         RowBox[{
+          RowBox[{"{", 
            RowBox[{
-            RowBox[{"ff", "'"}], "[", "xx", "]"}], "\[Equal]", "0"}], ",", 
-          "xx"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"StringJoin", "[", 
-      RowBox[{"\"\<\\\\begin{question}\nIn the plot below, is $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-       "\"\<$ a function of $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
-       "\"\<$?\n\\\\[\n\\\\begin{tikzpicture}\n\\\\begin{axis}[\n            \
-ymin=-5,\n\t\t\tymax=5,\n            axis lines =center, xlabel=$\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
-       "\"\<$, ylabel=$\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-       "\"\<$,\n              every axis y label/.style={at=(current \
+           "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], 
+           "}"}], ",", "xx"}], "]"}]}], ";", "\n", 
+       RowBox[{"mm", "=", 
+        RowBox[{"First", "[", 
+         RowBox[{"xx", "/.", 
+          RowBox[{"Solve", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"ff", "'"}], "[", "xx", "]"}], "\[Equal]", "0"}], ",", 
+            "xx"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+         "Do", " ", "we", " ", "care", " ", "if", " ", "max", " ", "y", " ", 
+          "is", " ", "different", " ", "than", " ", "min", " ", 
+          RowBox[{"y", "?"}]}], ";", "\[IndentingNewLine]", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ZeroList", "=", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Min", "[", 
+             RowBox[{
+              RowBox[{"-", "5"}], ",", 
+              RowBox[{"Min", "[", 
+               RowBox[{"Zero", "[", "ff", "]"}], "]"}]}], "]"}], ",", 
+            RowBox[{"Max", "[", 
+             RowBox[{"5", ",", 
+              RowBox[{"Max", "[", 
+               RowBox[{"Zero", "[", "ff", "]"}], "]"}]}], "]"}]}], "}"}]}], 
+         ";"}], "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"ZeroList", "=", 
+        RowBox[{"Max", "[", 
+         RowBox[{"Abs", "[", 
+          RowBox[{
+           RowBox[{"Zero", "[", "ff", "]"}], "+", "1"}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<\\\\begin{question}\nIn the plot below, is $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<$ a function of $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+         "\"\<$?\n\\\\[\n\\\\begin{tikzpicture}\n\\\\begin{axis}[\n           \
+ ymin=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"N", "[", 
+            RowBox[{"-", "ZeroList"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<,\n\t\t\tymax=\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"N", "[", "ZeroList", "]"}], "]"}], "]"}], ",", 
+         "\"\<,\n            axis lines =center, xlabel=$\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+         "\"\<$, ylabel=$\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<$,\n              every axis y label/.style={at=(current \
 axis.above origin),anchor=south},\n              every axis x \
 label/.style={at=(current axis.right of origin),anchor=west},\n            \
 domain=-5:5,\n            grid = major,\n          ]\n          \\\\addplot \
 [very thick, smooth, samples=550] {\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"InputForm", "[", 
-         RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
-       "\"\<};\n        \\\\end{axis}\n\\\\end{tikzpicture}\n\\\\]\n\
+         RowBox[{"ToString", "[", 
+          RowBox[{"InputForm", "[", 
+           RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
+         "\"\<};\n        \\\\end{axis}\n\\\\end{tikzpicture}\n\\\\]\n\
 \\\\begin{multiple-choice}\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
 \\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
 input, how many outputs are there?\n\\\\end{hint}\n\\\\end{solution}\nUse the \
 plot to compute $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-       "\"\<)$\n\\\\begin{solution}\n\\\\begin{hint}\nTo start, find $\>\"", 
-       ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-       "\"\<$ on the horizontal axis. \n\\\\end{hint}\n\\\\begin{hint}\nNow \
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+         "\"\<)$\n\\\\begin{solution}\n\\\\begin{hint}\nTo start, find $\>\"",
+          ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+         "\"\<$ on the horizontal axis. \n\\\\end{hint}\n\\\\begin{hint}\nNow \
 from this position, move up or down until you reach the curve. The value of $\
 \>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-       "\"\<)$ is the height of the curve at the point $\>\"", ",", " ", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
-       ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-       "\"\<$.\n\\\\end{hint}\nThe value of $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-       "\"\<)$ is \\\\answer{$\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"P1", "[", 
-         RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
-       "\"\<$}.\n\\\\end{solution}\nIs $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-       "\"\<^{-1}$ a function of $\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
-       "\"\<$ on the domain $[\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"Ceiling", "[", 
-         RowBox[{"MinValue", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"ff", "[", "xx", "]"}], ",", 
-             RowBox[{
-              RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]", 
-              " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
-       "\"\<,\>\"", ",", 
-       RowBox[{"ToString", "[", 
-        RowBox[{"Floor", "[", 
-         RowBox[{"MaxValue", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"ff", "[", "xx", "]"}], ",", 
-             RowBox[{
-              RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]", 
-              " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
-       "\"\<]$?\n\\\\begin{multiple-choice}\>\"", ",", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"-", "5"}], "\[LessEqual]", "mm", "\[LessEqual]", "5"}], 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+         "\"\<)$ is the height of the curve at the point $\>\"", ",", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", "\"\<=\>\"", 
          ",", 
-         RowBox[{"StringJoin", "[", "\[IndentingNewLine]", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+         "\"\<$.\n\\\\end{hint}\nThe value of $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", "\"\<(\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+         "\"\<)$ is \\\\answer{$\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"P1", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+         "\"\<$}.\n\\\\end{solution}\nIs $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+         "\"\<^{-1}$ a function of $\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
+         "\"\<$ on the domain $[\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Ceiling", "[", 
+           RowBox[{"MinValue", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"ff", "[", "xx", "]"}], ",", 
+               RowBox[{
+                RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]",
+                 " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<,\>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Floor", "[", 
+           RowBox[{"MaxValue", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"ff", "[", "xx", "]"}], ",", 
+               RowBox[{
+                RowBox[{"-", "5"}], "\[LessEqual]", " ", "xx", "\[LessEqual]",
+                 " ", "5"}]}], "}"}], ",", "xx"}], "]"}], "]"}], "]"}], ",", 
+         "\"\<]$?\n\\\\begin{multiple-choice}\>\"", ",", 
+         RowBox[{"If", "[", 
           RowBox[{
-          "\"\<\n\\\\choice{Yes.}\n\\\\choice[correct]{No.}\n\
+           RowBox[{
+            RowBox[{"-", "5"}], "\[LessEqual]", "mm", "\[LessEqual]", "5"}], 
+           ",", 
+           RowBox[{"StringJoin", "[", "\[IndentingNewLine]", 
+            RowBox[{
+            "\"\<\n\\\\choice{Yes.}\n\\\\choice[correct]{No.}\n\
 \\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
 input of $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
 \\\\end{solution}\nRestrict the domain of $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<$ to \>\"", ",", 
-           RowBox[{"If", "[", 
-            RowBox[{
-             RowBox[{"mm", ">", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<$ to \>\"", ",", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{"mm", ">", 
+                RowBox[{"P2", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}], ",", " ", 
+               RowBox[{"StringJoin", "[", 
+                RowBox[{"\"\<$[-5,\>\"", ",", 
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"Floor", "[", "mm", "]"}], "]"}], ",", 
+                 "\"\<]$\>\""}], "]"}], ",", 
+               RowBox[{"StringJoin", "[", 
+                RowBox[{"\"\<$[\>\"", ",", 
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"Ceiling", "[", "mm", "]"}], "]"}], ",", 
+                 "\"\<,5]$\>\""}], "]"}]}], "]"}], ",", 
+             "\"\< and compute $\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}(\>\"", ",", 
+             RowBox[{"ToString", "[", 
               RowBox[{"P2", "[", 
-               RowBox[{"[", "1", "]"}], "]"}]}], ",", " ", 
-             RowBox[{"StringJoin", "[", 
-              RowBox[{"\"\<$[-5,\>\"", ",", 
-               RowBox[{"ToString", "[", 
-                RowBox[{"Floor", "[", "mm", "]"}], "]"}], ",", "\"\<]$\>\""}],
-               "]"}], ",", 
-             RowBox[{"StringJoin", "[", 
-              RowBox[{"\"\<$[\>\"", ",", 
-               RowBox[{"ToString", "[", 
-                RowBox[{"Ceiling", "[", "mm", "]"}], "]"}], ",", 
-               "\"\<,5]$\>\""}], "]"}]}], "]"}], ",", 
-           "\"\< and compute $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}(\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-           "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+             "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
 looking at $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}$, now we must find $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
-           "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of $\>\"", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}$, now we must find $\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+             "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of \
+$\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}(\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+             "\"\<)$ is \\\\answer{$\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+             "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}], 
            ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}(\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
-           "\"\<)$ is \\\\answer{$\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-           "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}], 
-         ",", 
-         RowBox[{"StringJoin", "[", 
-          RowBox[{
-          "\"\<\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
+           RowBox[{"StringJoin", "[", 
+            RowBox[{
+            "\"\<\n\\\\choice[correct]{Yes.}\n\\\\choice{No.}\n\
 \\\\end{multiple-choice}\n\\\\begin{solution}\n\\\\begin{hint}\nFor each \
 input of $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}$, how many outputs are there?\n\\\\end{hint}\n\
 \\\\end{solution}\nCompute $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}(\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-           "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}(\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+             "\"\<)$.\n\\\\begin{solution}\n\\\\begin{hint}\nSince we are \
 looking at $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}$, now we must find $\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
-           "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of $\>\"", 
-           ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
-           "\"\<^{-1}(\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
-           "\"\<)$ is \\\\answer{$\>\"", ",", 
-           RowBox[{"ToString", "[", 
-            RowBox[{"P2", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
-           "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}]}], 
-        "\n", "]"}]}], "]"}]}]}], "]"}]}]], "Input",
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}$, now we must find $\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+             "\"\<$ on the vertical axis. \n\\\\end{hint}\nThe value of \
+$\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"TeXForm", "[", "func", "]"}], "]"}], ",", 
+             "\"\<^{-1}(\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+             "\"\<)$ is \\\\answer{$\>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+             "\"\<$}.\n\\\\end{solution}\n\\\\end{question}\n\>\""}], "]"}]}],
+           "\n", "]"}]}], "]"}]}]}], "]"}]}]}]}]], "Input",
  CellChangeTimes->{{3.598112582278224*^9, 3.598112602091975*^9}, {
    3.5981126694973707`*^9, 3.598112679303165*^9}, {3.598112713769826*^9, 
    3.598112836398057*^9}, {3.598112908954523*^9, 3.598112935446889*^9}, {
@@ -390,7 +460,20 @@ looking at $\>\"", ",",
    3.598778821104553*^9, 3.598778823584256*^9}, {3.598779436652259*^9, 
    3.5987794559562902`*^9}, {3.5987846880135517`*^9, 3.598784741024415*^9}, {
    3.598784999911028*^9, 3.598785004523638*^9}, {3.600622601185508*^9, 
-   3.6006226063307734`*^9}}],
+   3.6006226063307734`*^9}, {3.600816588246068*^9, 3.6008165979726343`*^9}, {
+   3.6008231589013157`*^9, 3.600823171058824*^9}, {3.6008232061833963`*^9, 
+   3.6008232064853573`*^9}, {3.6008233943425007`*^9, 3.600823394740375*^9}, {
+   3.600823435077557*^9, 3.600823456015666*^9}, {3.6008237238263807`*^9, 
+   3.600823749785037*^9}, {3.600823780867907*^9, 3.600823799740863*^9}, {
+   3.600823832140807*^9, 3.6008238325252*^9}, {3.600825846440443*^9, 
+   3.600825855574263*^9}, {3.6008261917326117`*^9, 3.600826207057765*^9}, {
+   3.600826238791316*^9, 3.60082638481347*^9}, {3.600826431813304*^9, 
+   3.600826463467533*^9}, {3.600827231933859*^9, 3.600827249548456*^9}, {
+   3.600827309548974*^9, 3.600827346333935*^9}, {3.600827380744185*^9, 
+   3.6008274438866034`*^9}, 3.600827512668488*^9, {3.6008276561926126`*^9, 
+   3.6008276814208384`*^9}, {3.600827727500496*^9, 3.6008277379244328`*^9}, {
+   3.600827849944397*^9, 3.600827908524411*^9}, {3.6008279756924067`*^9, 
+   3.600828259386305*^9}}],
 
 Cell["\<\
 An Easier problem:
@@ -527,6 +610,32 @@ Cell[BoxData[
          RowBox[{
          "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], "}"}],
          ",", "xx"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"(*", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+       "Do", " ", "we", " ", "care", " ", "if", " ", "max", " ", "y", " ", 
+        "is", " ", "different", " ", "than", " ", "min", " ", 
+        RowBox[{"y", "?"}]}], ";", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{"ZeroList", "=", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Min", "[", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", 
+            RowBox[{"Min", "[", 
+             RowBox[{"Zero", "[", "ff", "]"}], "]"}]}], "]"}], ",", 
+          RowBox[{"Max", "[", 
+           RowBox[{"5", ",", 
+            RowBox[{"Max", "[", 
+             RowBox[{"Zero", "[", "ff", "]"}], "]"}]}], "]"}]}], "}"}]}], 
+       ";"}], "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"ZeroList", "=", 
+      RowBox[{"Max", "[", 
+       RowBox[{"Abs", "[", 
+        RowBox[{
+         RowBox[{"Zero", "[", "ff", "]"}], "+", "1"}], "]"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
      RowBox[{"StringJoin", "[", 
       RowBox[{"\"\<\\\\begin{question}\nIn the plot below, is $\>\"", ",", 
        RowBox[{"ToString", "[", 
@@ -535,7 +644,16 @@ Cell[BoxData[
        RowBox[{"ToString", "[", 
         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
        "\"\<$?\n\\\\[\n\\\\begin{tikzpicture}\n\\\\begin{axis}[\n            \
-ymin=-5,\n\t\t\tymax=5,\n            axis lines =center, xlabel=$\>\"", ",", 
+ymin=\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{"N", "[", 
+          RowBox[{"-", "ZeroList"}], "]"}], "]"}], "]"}], ",", 
+       "\"\<,\n\t\t\tymax=5\>\"", ",", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{"N", "[", "ZeroList", "]"}], "]"}], "]"}], ",", 
+       "\"\<,\n            axis lines =center, xlabel=$\>\"", ",", 
        RowBox[{"ToString", "[", 
         RowBox[{"TeXForm", "[", "variable", "]"}], "]"}], ",", 
        "\"\<$, ylabel=$\>\"", ",", 
@@ -546,7 +664,7 @@ axis.above origin),anchor=south},\n              every axis x \
 label/.style={at=(current axis.right of origin),anchor=west},\n            \
 domain=-5:5,\n            grid = major,\n            %xtick={-4,...,4},\n     \
        %ytick={-4,...,4},\n          ]\n          \\\\addplot [very thick, \
-smooth] {\>\"", ",", 
+smooth, samples=550] {\>\"", ",", 
        RowBox[{"ToString", "[", 
         RowBox[{"InputForm", "[", 
          RowBox[{"ff", "[", "x", "]"}], "]"}], "]"}], ",", 
@@ -641,7 +759,9 @@ from this position, move up or down until you reach the curve. The value of $\
    3.598784978978714*^9}, 3.598785113751367*^9, {3.598785173116312*^9, 
    3.598785179678982*^9}, {3.598785694689937*^9, 3.5987856982243958`*^9}, {
    3.598785761566568*^9, 3.5987857709729853`*^9}, {3.598786003249073*^9, 
-   3.598786004555044*^9}}],
+   3.598786004555044*^9}, {3.600815357506433*^9, 3.6008153603322067`*^9}, {
+   3.60082726897052*^9, 3.600827295885768*^9}, {3.600828133755229*^9, 
+   3.600828134812331*^9}, {3.600828274848918*^9, 3.600828371677759*^9}}],
 
 Cell[CellGroupData[{
 
@@ -649,218 +769,48 @@ Cell[BoxData[
  RowBox[{"StringJoin", "[", 
   RowBox[{"Table", "[", 
    RowBox[{"code", ",", 
-    RowBox[{"{", "10", "}"}]}], "]"}], "]"}]], "Input",
+    RowBox[{"{", "1", "}"}]}], "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.598784955636462*^9, 3.59878495597823*^9}, {
-  3.5987852046868896`*^9, 3.5987852054838953`*^9}, {3.598785242841728*^9, 
-  3.598785273228985*^9}}],
+   3.5987852046868896`*^9, 3.5987852054838953`*^9}, {3.598785242841728*^9, 
+   3.598785273228985*^9}, {3.600827452486064*^9, 3.6008274698318453`*^9}, 
+   3.600828052963583*^9, {3.600828388486787*^9, 3.600828389747899*^9}}],
 
-Cell[BoxData["\<\"\\\\begin{question}\\nIn the plot below, is $r$ a function \
-of $w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
-ylabel=$r$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{-1 + (3.5 + x)*(-0.42857142857142855 + (-3.5 + x)*(-0.4489795918367347 + \
-x*(0.4553287981859411 + (-1 + x)*(0.04318855747427175 - \
-0.10200593057735911*(3 + x)))))};\\n        \
-\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
-\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$r(0)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $0$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $r(0)$ is the height \
-of the curve at the point $w=0$.\\n\\\\end{hint}\\nThe value of $r(0)$ is \
-\\\\answer{$3$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $a$ a function of $\\\\theta$?\\n\\\\[\\n\\\
-\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, \
-xlabel=$\\\\theta$, ylabel=$a$,\\n              every axis y \
+Cell[BoxData["\<\"\\\\begin{question}\\nIn the plot below, is $G$ a function \
+of $n$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-60.1251,\\n\\t\\t\\tymax=60.1251,\\n            axis lines =center, \
+xlabel=$n$, ylabel=$G$,\\n              every axis y \
 label/.style={at=(current axis.above origin),anchor=south},\\n              \
 every axis x label/.style={at=(current axis.right of origin),anchor=west},\\n \
-           domain=-5:5,\\n            grid = major,\\n            \
-%xtick={-4,...,4},\\n            %ytick={-4,...,4},\\n          ]\\n          \
-\\\\addplot [very thick, smooth] {-1 + (4 + x)*(-0.4 + (-3.5 + \
-x)*(-0.20740740740740737 + (-0.5 + x)*(0.10529100529100527 + \
-(0.00008140008140009433 + 0.03676027676027677*(-3 + x))*(3.5 + x))))};\\n     \
-   \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\\
-n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$a(3)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $3$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $a(3)$ is the height \
-of the curve at the point $\\\\theta=3$.\\n\\\\end{hint}\\nThe value of \
-$a(3)$ is \
-\\\\answer{$-4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $P$ a function of \
-$k$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$k$, \
-ylabel=$P$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{1 + (3.5 + x)*(-0.5714285714285714 + (-3.5 + x)*(0.16326530612244897 + \
-(-0.3327149041434756 + (-0.20522334808049095 + 0.04019472590901159*(-3 + \
-x))*(-2 + x))*x))};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\
-\\\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\
-\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each \
-input, how many outputs are there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse \
-the plot to compute $P(2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo \
-start, find $2$ on the horizontal axis. \
-\\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, move up or down \
-until you reach the curve. The value of $P(2)$ is the height of the curve at \
-the point $k=2$.\\n\\\\end{hint}\\nThe value of $P(2)$ is \\\\answer{$2$}.\\n\
-\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{question}\\nIn the plot \
-below, is $y$ a function of \
-$v$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$v$, \
-ylabel=$y$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{-2 + (-4 + x)*(-0.6666666666666666 + (3.5 + x)*(0.16666666666666669 + (-0.5 \
-+ x)*(0.039999999999999994 + (0.0069841269841269815 + \
-0.13671957671957674*(-3.5 + x))*(1 + x))))};\\n        \
-\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
-\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$y(-1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-1$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $y(-1)$ is the height \
-of the curve at the point $v=-1$.\\n\\\\end{hint}\\nThe value of $y(-1)$ is \
-\\\\answer{$0$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $b$ a function of \
-$z$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$z$, \
-ylabel=$b$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{1 + (4 + x)*(0.26666666666666666 + (-3.5 + x)*(0.23703703703703705 + (-0.5 + \
-x)*(0.18787138787138785 + (-0.06029032695699361 - 0.06119312785979451*(-2 + \
-x))*(3 + x))))};\\n        \
-\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
-\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$b(2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $2$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $b(2)$ is the height \
-of the curve at the point $z=2$.\\n\\\\end{hint}\\nThe value of $b(2)$ is \
-\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $R$ a function of \
-$n$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$n$, \
-ylabel=$R$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{4 + (-0.42857142857142855 + (-0.05952380952380952 + (0.09163059163059163 + \
-(-0.041447441447441453 - 0.08955488955488956*(-3 + x))*(-2 + x))*(-0.5 + \
-x))*(-3.5 + x))*(3.5 + x)};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\
-\\\\]\\n\\\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{\
-No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor \
-each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$R(3)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $3$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $R(3)$ is the height \
-of the curve at the point $n=3$.\\n\\\\end{hint}\\nThe value of $R(3)$ is \
-\\\\answer{$1$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $b$ a function of \
-$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
-ylabel=$b$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{2 + (3.5 + x)*(0.2857142857142857 + (-3.5 + x)*(0.489795918367347 + \
-x*(0.34013605442176864 + (-0.5850340136054422 - 0.25117739403453676*(-0.5 + \
+           domain=-5:5,\\n            grid = major,\\n          ]\\n          \
+\\\\addplot [very thick, smooth, samples=550] {-3 + (3.5 + \
+x)*(0.7142857142857143 + (-3.5 + x)*(0.20408163265306123 + \
+x*(0.46134817563388997 + (-0.3043496186353329 - 0.42737579880437027*(-1 + \
 x))*(2 + x))))};\\n        \
 \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
 \\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$b(-2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-2$ on the \
+$G(0)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $0$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $b(-2)$ is the height \
-of the curve at the point $w=-2$.\\n\\\\end{hint}\\nThe value of $b(-2)$ is \
-\\\\answer{$4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $r$ a function of \
-$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
-ylabel=$r$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{-2 + (-4 + x)*(3.5 + x)*(-0.14285714285714285 + (-0.5 + \
-x)*(0.031746031746031744 + (-0.06637806637806637 - 0.09991983325316657*(-3.5 \
-+ x))*(2 + x)))};\\n        \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\
-\\begin{multiple-choice}\\n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\\
-end{multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each \
-input, how many outputs are there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse \
-the plot to compute $r(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo \
-start, find $1$ on the horizontal axis. \
-\\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, move up or down \
-until you reach the curve. The value of $r(1)$ is the height of the curve at \
-the point $w=1$.\\n\\\\end{hint}\\nThe value of $r(1)$ is \
-\\\\answer{$-4$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $B$ a function of \
-$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
-ylabel=$B$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{2 + (3.5 + x)*(0.2857142857142857 + (-3.5 + x)*(0.5952380952380952 + (-0.5 + \
-x)*(0.23597883597883595 + (0.00016280016280015083 + 0.2995522995522995*(-3 + \
-x))*(1 + x))))};\\n        \
-\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
-\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$B(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $1$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $B(1)$ is the height \
-of the curve at the point $w=1$.\\n\\\\end{hint}\\nThe value of $B(1)$ is \
-\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\\\\begin{\
-question}\\nIn the plot below, is $A$ a function of \
-$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5,\\n\\t\\t\\tymax=5,\\n            axis lines =center, xlabel=$w$, \
-ylabel=$A$,\\n              every axis y label/.style={at=(current axis.above \
-origin),anchor=south},\\n              every axis x label/.style={at=(current \
-axis.right of origin),anchor=west},\\n            domain=-5:5,\\n            \
-grid = major,\\n            %xtick={-4,...,4},\\n            \
-%ytick={-4,...,4},\\n          ]\\n          \\\\addplot [very thick, smooth] \
-{1 + (4 + x)*(-0.6666666666666666 + (-3.5 + x)*(-0.4444444444444444 + (-0.5 + \
-x)*(-0.4444444444444444 + (0.10774410774410775 - 0.03447811447811448*(-2 + \
-x))*(3.5 + x))))};\\n        \
-\\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
-\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
-begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
-there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$A(1)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $1$ on the \
-horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $A(1)$ is the height \
-of the curve at the point $w=1$.\\n\\\\end{hint}\\nThe value of $A(1)$ is \
-\\\\answer{$2$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\"\>"], "Output",\
-
- CellChangeTimes->{3.598785779052681*^9, 3.5987860204036303`*^9}]
+move up or down until you reach the curve. The value of $G(0)$ is the height \
+of the curve at the point $n=0$.\\n\\\\end{hint}\\nThe value of $G(0)$ is \
+\\\\answer{$-3$}.\\n\\\\end{solution}\\nIs $G^{-1}$ a function of $n$ on the \
+domain $[-863,401]$?\\n\\\\begin{multiple-choice}\\n\\\\choice{Yes.}\\n\\\\\
+choice[correct]{No.}\\n\\\\end{multiple-choice}\\n\\\\begin{solution}\\n\\\\\
+begin{hint}\\nFor each input of $G^{-1}$, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $G$ to \
+$[-3,5]$ and compute \
+$G^{-1}(1)$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince we are looking \
+at $G^{-1}$, now we must find $3$ on the vertical axis. \
+\\n\\\\end{hint}\\nThe value of $G^{-1}(3)$ is \
+\\\\answer{$1$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\"\>"], "Output",
+ CellChangeTimes->{3.6008274532265377`*^9, 3.6008277475501432`*^9, 
+  3.600828053739235*^9, 3.600828159263588*^9, 3.600828200877799*^9, 
+  3.6008283904934683`*^9}]
 }, Open  ]]
 },
 WindowSize->{1061, 558},
-WindowMargins->{{Automatic, -53}, {Automatic, 0}},
+WindowMargins->{{Automatic, 78}, {Automatic, 0}},
 ShowSelection->True,
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
@@ -877,12 +827,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 17027, 372, 1678, "Input"],
-Cell[17587, 394, 114, 5, 68, "Text"],
-Cell[17704, 401, 11454, 242, 1032, "Input"],
+Cell[557, 20, 21231, 455, 1814, "Input"],
+Cell[21791, 477, 114, 5, 68, "Text"],
+Cell[21908, 484, 13012, 279, 1134, "Input"],
 Cell[CellGroupData[{
-Cell[29183, 647, 315, 7, 28, "Input"],
-Cell[29501, 656, 14712, 202, 7169, "Output"]
+Cell[34945, 767, 436, 8, 28, "Input"],
+Cell[35384, 777, 2190, 31, 1015, "Output"]
 }, Open  ]]
 }
 ]
