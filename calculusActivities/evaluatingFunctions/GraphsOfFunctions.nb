@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     39736,        868]
-NotebookOptionsPosition[     39258,        847]
-NotebookOutlinePosition[     39636,        864]
-CellTagsIndexPosition[     39593,        861]
+NotebookDataLength[     62656,       1368]
+NotebookOptionsPosition[     61820,       1339]
+NotebookOutlinePosition[     62201,       1356]
+CellTagsIndexPosition[     62158,       1353]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -75,61 +75,10 @@ Cell[BoxData[
             ",", "v", ",", "\[Theta]", ",", "\[Psi]"}], "}"}], "]"}]}]}], 
        "}"}], ",", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"P1", " ", "=", " ", 
-        RowBox[{"{", 
-         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{"P2", "=", 
-        RowBox[{"{", 
-         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{"P3", "=", 
-        RowBox[{"{", 
-         RowBox[{"0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{"P4", "=", 
-        RowBox[{"{", 
-         RowBox[{".5", ",", 
-          RowBox[{"Random", "[", 
-           RowBox[{"Integer", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-       "\[IndentingNewLine]", 
-       RowBox[{"P5", "=", 
-        RowBox[{"{", 
-         RowBox[{"3.5", ",", 
-          RowBox[{"Random", "[", 
-           RowBox[{"Integer", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-       "\[IndentingNewLine]", 
-       RowBox[{"P6", "=", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"-", "3.5"}], ",", 
-          RowBox[{"Random", "[", 
-           RowBox[{"Integer", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], ";", 
-       "\[IndentingNewLine]", 
-       RowBox[{"While", "[", "\[IndentingNewLine]", 
+       RowBox[{"c1", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
         RowBox[{
-         RowBox[{
-          RowBox[{
-           RowBox[{"P1", "[", 
-            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-           RowBox[{"P2", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}], "||", 
-          RowBox[{
-           RowBox[{"P1", "[", 
-            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-           RowBox[{"P3", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}], "||", 
-          RowBox[{
-           RowBox[{"P2", "[", 
-            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-           RowBox[{"P3", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{"c1", "\[NotEqual]", "1"}], ",", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{"P1", " ", "=", " ", 
            RowBox[{"{", 
@@ -138,12 +87,12 @@ Cell[BoxData[
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", " ", 
              RowBox[{"Random", "[", 
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}]}], 
           ";", "\[IndentingNewLine]", 
           RowBox[{"P2", "=", 
            RowBox[{"{", 
@@ -152,12 +101,12 @@ Cell[BoxData[
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", " ", 
              RowBox[{"Random", "[", 
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], "}"}]}], 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}]}], 
           ";", "\[IndentingNewLine]", 
           RowBox[{"P3", "=", 
            RowBox[{"{", 
@@ -166,21 +115,218 @@ Cell[BoxData[
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}], ",", " ", 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", " ", 
              RowBox[{"Random", "[", 
               RowBox[{"Integer", ",", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "4"}], ",", "4"}], "}"}]}], "]"}]}], 
-            "}"}]}]}]}], "]"}], ";", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"ff", "[", "xx_", "]"}], "=", 
-        RowBox[{"InterpolatingPolynomial", "[", 
-         RowBox[{
-          RowBox[{"{", 
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"P4", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", 
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"P5", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", 
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"P6", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Random", "[", 
+              RowBox[{"Integer", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", 
+             RowBox[{
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "+", 
+              RowBox[{"Random", "[", 
+               RowBox[{"Integer", ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}]}], "}"}]}],
+           ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
            RowBox[{
-           "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", "P6"}], 
-           "}"}], ",", "xx"}], "]"}]}], ";", "\n", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"P1", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P1", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P3", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P3", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P4", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P4", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P6", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P6", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P1", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P4", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P1", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P1", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P6", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P4", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P2", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P6", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P3", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P4", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P3", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P5", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"P3", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", 
+              RowBox[{"P6", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"ff", "[", "xx_", "]"}], "=", 
+              RowBox[{"InterpolatingPolynomial", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                 "P1", ",", "P2", ",", "P3", ",", "P4", ",", "P5", ",", 
+                  "P6"}], "}"}], ",", "xx"}], "]"}]}], ";", 
+             "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Element", "[", 
+                 RowBox[{
+                  RowBox[{"Abs", "[", 
+                   RowBox[{"ff", "[", "0", "]"}], "]"}], ",", "Reals"}], 
+                 "]"}], "&&", 
+                RowBox[{"Element", "[", 
+                 RowBox[{
+                  RowBox[{"Abs", "[", 
+                   RowBox[{"MaxValue", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ff", "[", "xx", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"x", "\[LessEqual]", "5"}], "&&", 
+                    RowBox[{"xx", "\[GreaterEqual]", 
+                    RowBox[{"-", "5"}]}]}]}], "}"}], ",", "xx"}], "]"}], 
+                   "]"}], ",", "Reals"}], "]"}], "&&", 
+                RowBox[{"Element", "[", 
+                 RowBox[{
+                  RowBox[{"Abs", "[", 
+                   RowBox[{"MinValue", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ff", "[", "xx", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"xx", "\[LessEqual]", "5"}], "&&", 
+                    RowBox[{"xx", "\[GreaterEqual]", 
+                    RowBox[{"-", "5"}]}]}]}], "}"}], ",", "xx"}], "]"}], 
+                   "]"}], ",", "Reals"}], "]"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"ff", "[", "0", "]"}], "]"}], "\[LessEqual]", 
+                    "5"}], "&&", 
+                   RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"MaxValue", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ff", "[", "xx", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"xx", "\[LessEqual]", "5"}], "&&", 
+                    RowBox[{"xx", "\[GreaterEqual]", 
+                    RowBox[{"-", "5"}]}]}]}], "}"}], ",", "xx"}], "]"}], 
+                    "]"}], "\[LessEqual]", "5"}], "&&", 
+                   RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"MinValue", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ff", "[", "xx", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"xx", "\[LessEqual]", "5"}], "&&", 
+                    RowBox[{"xx", "\[GreaterEqual]", 
+                    RowBox[{"-", "5"}]}]}]}], "}"}], ",", "xx"}], "]"}], 
+                    "]"}], "\[LessEqual]", "5"}]}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"c1", "=", "1"}], ";"}]}], "\[IndentingNewLine]", 
+                 "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";", "\[IndentingNewLine]", 
        RowBox[{"mm", "=", 
         RowBox[{"First", "[", 
          RowBox[{"xx", "/.", 
@@ -474,7 +620,13 @@ $\>\"", ",",
    3.6008276814208384`*^9}, {3.600827727500496*^9, 3.6008277379244328`*^9}, {
    3.600827849944397*^9, 3.600827908524411*^9}, {3.6008279756924067`*^9, 
    3.600828259386305*^9}, {3.600829907087537*^9, 3.600829907179926*^9}, {
-   3.600829968921212*^9, 3.600829972368127*^9}}],
+   3.600829968921212*^9, 3.600829972368127*^9}, {3.6086042596607313`*^9, 
+   3.608604261400378*^9}, 3.608609962065061*^9, {3.608609994256118*^9, 
+   3.608609994647863*^9}, {3.608610100662813*^9, 3.6086102595031223`*^9}, {
+   3.608610354411559*^9, 3.608610383522275*^9}, 3.608610824325135*^9, {
+   3.608610916009207*^9, 3.6086109382630444`*^9}, {3.6086110974750147`*^9, 
+   3.608611097683198*^9}, {3.608638705680504*^9, 3.60863876933451*^9}, 
+   3.608638839814973*^9, {3.6086389183547077`*^9, 3.608638942921012*^9}}],
 
 Cell["\<\
 An Easier problem:
@@ -813,40 +965,380 @@ Cell[BoxData[
    3.5987852046868896`*^9, 3.5987852054838953`*^9}, {3.598785242841728*^9, 
    3.598785273228985*^9}, {3.600827452486064*^9, 3.6008274698318453`*^9}, 
    3.600828052963583*^9, {3.600828388486787*^9, 3.600828389747899*^9}, {
-   3.6008299844661007`*^9, 3.600829985337747*^9}}],
+   3.6008299844661007`*^9, 3.600829985337747*^9}, {3.608609980673745*^9, 
+   3.608610005310519*^9}, {3.608610283932502*^9, 3.6086102841719723`*^9}}],
 
-Cell[BoxData["\<\"\\\\begin{question}\\nIn the plot below, is $c$ a function \
-of $n$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
-ymin=-5.29247,\\n\\t\\t\\tymax=5.29247,\\n            axis lines =center, \
-xlabel=$n$, ylabel=$c$,\\n              every axis y \
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"LessEqual", "::", "nord"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Invalid comparison with \[NoBreak]\\!\\(3\\/35 + 1\\/\\(70\
+\\\\ \\@\\(3\\/\\(47778 + \\(\\(35\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\) + \\(\\(35\\\\ \\(\\(Power[\\(\\(\
+\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\)\\)\\) - \
+\\(\\(1\\/2\\\\ \\@\\(31852\\/1225 - \\(\\(1\\/105\\\\ \\((1427365125 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\)\\) - \\((475788375 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\/\\(35\\\\ 3\\^\\(2/3\\)\\) - \
+\\(3256248\\\\ \\@\\(3\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/1225\\)\\)\\)\\)\[NoBreak] attempted. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/nord\\\", \
+ButtonNote -> \\\"LessEqual::nord\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.608638969580614*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"LessEqual", "::", "nord"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Invalid comparison with \[NoBreak]\\!\\(3\\/35 + 1\\/\\(70\
+\\\\ \\@\\(3\\/\\(47778 + \\(\\(35\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\) + \\(\\(35\\\\ \\(\\(Power[\\(\\(\
+\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\)\\)\\) - \
+\\(\\(1\\/2\\\\ \\@\\(31852\\/1225 - \\(\\(1\\/105\\\\ \\((1427365125 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\)\\) - \\((475788375 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\/\\(35\\\\ 3\\^\\(2/3\\)\\) - \
+\\(3256248\\\\ \\@\\(3\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/1225\\)\\)\\)\\)\[NoBreak] attempted. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/nord\\\", \
+ButtonNote -> \\\"LessEqual::nord\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.60863896967808*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"LessEqual", "::", "nord"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Invalid comparison with \[NoBreak]\\!\\(3\\/35 + 1\\/\\(70\
+\\\\ \\@\\(3\\/\\(47778 + \\(\\(35\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\) + \\(\\(35\\\\ \\(\\(Power[\\(\\(\
+\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\)\\)\\) - \
+\\(\\(1\\/2\\\\ \\@\\(31852\\/1225 - \\(\\(1\\/105\\\\ \\((1427365125 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\)\\) - \\((475788375 + \
+\\(\\(Times[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\))\\)\\^\\(1/3\\)\\/\\(35\\\\ 3\\^\\(2/3\\)\\) - \
+\\(3256248\\\\ \\@\\(3\\\\ \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/1225\\)\\)\\)\\)\[NoBreak] attempted. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/nord\\\", \
+ButtonNote -> \\\"LessEqual::nord\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.6086389696796083`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(LessEqual \
+:: nord\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.608638969711397*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringJoin", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(2\\)\[NoBreak] \
+in \[NoBreak]\\!\\(\\(\\(\\\"\\\\\\\\begin{question}\\\\nIn the plot below, \
+is $b$ a function of $w$?\\\\n\\\\\\\\[\\\\n\\\\\\\\begin{tikzpicture}\\\\n\\\
+\\\\\\begin{axis}[\\\\n            \
+ymin=-5.57275,\\\\n\\\\t\\\\t\\\\tymax=5.57275,\\\\n            axis lines \
+=center, xlabel=$w$, ylabel=$b$,\\\\n              every axis y \
+label/.style={at=(cu\\\" \[Ellipsis] \\\" up or down until you reach the \
+curve. The value of $b(4)$ is the height of the curve at the point \
+$w=4$.\\\\n\\\\\\\\end{hint}\\\\nThe value of $b(4)$ is \\\\\\\\answer{$-2$}.\
+\\\\n\\\\\\\\end{solution}\\\\nIs $b^{-1}$ a function of $w$ on the domain \
+$[-4,1]$?\\\\n\\\\\\\\begin{multiple-choice}\\\"\\)\\) <> \\(\\(\
+\[LeftSkeleton] 1 \[RightSkeleton]\\)\\)\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/StringJoin\\\", ButtonNote -> \
+\\\"StringJoin::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.608638969781509*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringJoin", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(2\\)\[NoBreak] \
+in \[NoBreak]\\!\\(\\(\\(\\\"\\\\\\\\begin{question}\\\\nIn the plot below, \
+is $b$ a function of $w$?\\\\n\\\\\\\\[\\\\n\\\\\\\\begin{tikzpicture}\\\\n\\\
+\\\\\\begin{axis}[\\\\n            \
+ymin=-5.57275,\\\\n\\\\t\\\\t\\\\tymax=5.57275,\\\\n            axis lines \
+=center, xlabel=$w$, ylabel=$b$,\\\\n              every axis y \
+label/.style={at=(cu\\\" \[Ellipsis] \\\" up or down until you reach the \
+curve. The value of $b(4)$ is the height of the curve at the point \
+$w=4$.\\\\n\\\\\\\\end{hint}\\\\nThe value of $b(4)$ is \\\\\\\\answer{$-2$}.\
+\\\\n\\\\\\\\end{solution}\\\\nIs $b^{-1}$ a function of $w$ on the domain \
+$[-4,1]$?\\\\n\\\\\\\\begin{multiple-choice}\\\"\\)\\) <> \\(\\(\
+\[LeftSkeleton] 1 \[RightSkeleton]\\)\\)\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/StringJoin\\\", ButtonNote -> \
+\\\"StringJoin::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.608638969873638*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringJoin", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(1\\)\[NoBreak] \
+in \[NoBreak]\\!\\(StringJoin[\\(\\(\\(\\(\\\"\\\\\\\\begin{question}\\\\nIn \
+the plot below, is $b$ a function of \
+$w$?\\\\n\\\\\\\\[\\\\n\\\\\\\\begin{tikzpicture}\\\\n\\\\\\\\begin{axis}[\\\\\
+n            ymin=-5.57275,\\\\n\\\\t\\\\t\\\\tymax=5.57275,\\\\n            \
+axis lines =center, xlabel=$w$, ylabel=$b$,\\\\n              every axis y \
+label/.style={\\\" \[Ellipsis] \\\" down until you reach the curve. The value \
+of $b(4)$ is the height of the curve at the point \
+$w=4$.\\\\n\\\\\\\\end{hint}\\\\nThe value of $b(4)$ is \\\\\\\\answer{$-2$}.\
+\\\\n\\\\\\\\end{solution}\\\\nIs $b^{-1}$ a function of $w$ on the domain \
+$[-4,1]$?\\\\n\\\\\\\\begin{multiple-choice}\\\"\\)\\) <> \\(\\(\
+\[LeftSkeleton] 1 \[RightSkeleton]\\)\\)\\)\\)]\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/StringJoin\\\", ButtonNote -> \
+\\\"StringJoin::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.6086389699649763`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(StringJoin :: string\\), \
+\\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.608638845968793*^9, {3.608638901717561*^9, 3.6086389074497757`*^9}, 
+   3.608638969989996*^9}],
+
+Cell[BoxData[
+ RowBox[{"\<\"\\\\begin{question}\\nIn the plot below, is $b$ a function of \
+$w$?\\n\\\\[\\n\\\\begin{tikzpicture}\\n\\\\begin{axis}[\\n            \
+ymin=-5.57275,\\n\\t\\t\\tymax=5.57275,\\n            axis lines =center, \
+xlabel=$w$, ylabel=$b$,\\n              every axis y \
 label/.style={at=(current axis.above origin),anchor=south},\\n              \
 every axis x label/.style={at=(current axis.right of origin),anchor=west},\\n \
-           domain=-5:5,\\n            grid = major,\\n            \
-%xtick={-4,...,4},\\n            %ytick={-4,...,4},\\n          ]\\n          \
-\\\\addplot [very thick, smooth, samples=550] {-2 + (3.5 + \
-x)*(0.2857142857142857 + (-3.5 + x)*(-0.3214285714285714 + (-0.5 + \
-x)*(-0.05238095238095242 + (-0.04117216117216117 - 0.026406186406186406*(-3 + \
-x))*(2 + x))))};\\n        \
+           domain=-5:5,\\n            grid = major,\\n          ]\\n          \
+\\\\addplot [very thick, smooth, samples=550] {-2 + (-4 + x)*(-1/3 + (5 + \
+x)*(1/6 + x*(-1/60 + (1 + x)*(-1/80 + (7*(4 + x))/3600))))};\\n        \
 \\\\end{axis}\\n\\\\end{tikzpicture}\\n\\\\]\\n\\\\begin{multiple-choice}\\n\\\
 \\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{multiple-choice}\\n\\\\\
 begin{solution}\\n\\\\begin{hint}\\nFor each input, how many outputs are \
 there?\\n\\\\end{hint}\\n\\\\end{solution}\\nUse the plot to compute \
-$c(-2)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $-2$ on the \
+$b(4)$\\n\\\\begin{solution}\\n\\\\begin{hint}\\nTo start, find $4$ on the \
 horizontal axis. \\n\\\\end{hint}\\n\\\\begin{hint}\\nNow from this position, \
-move up or down until you reach the curve. The value of $c(-2)$ is the height \
-of the curve at the point $n=-2$.\\n\\\\end{hint}\\nThe value of $c(-2)$ is \
-\\\\answer{$0$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\\n\"\>"], "Output",\
-
+move up or down until you reach the curve. The value of $b(4)$ is the height \
+of the curve at the point $w=4$.\\n\\\\end{hint}\\nThe value of $b(4)$ is \
+\\\\answer{$-2$}.\\n\\\\end{solution}\\nIs $b^{-1}$ a function of $w$ on the \
+domain $[-4,1]$?\\n\\\\begin{multiple-choice}\"\>", "<>", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "5"}], "\[LessEqual]", 
+     RowBox[{
+      FractionBox["3", "35"], "+", 
+      FractionBox["1", 
+       RowBox[{"70", " ", 
+        SqrtBox[
+         FractionBox["3", 
+          RowBox[{"47778", "+", 
+           RowBox[{"35", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"1427365125", "-", 
+               RowBox[{"12", " ", 
+                SqrtBox["8904627412850073"]}]}], ")"}], 
+             RowBox[{"1", "/", "3"}]]}], "+", 
+           RowBox[{"35", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"3", " ", 
+               RowBox[{"(", 
+                RowBox[{"475788375", "+", 
+                 RowBox[{"4", " ", 
+                  SqrtBox["8904627412850073"]}]}], ")"}]}], ")"}], 
+             RowBox[{"1", "/", "3"}]]}]}]]]}]], "-", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["31852", "1225"], "-", 
+          RowBox[{
+           FractionBox["1", "105"], " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1427365125", "-", 
+              RowBox[{"12", " ", 
+               SqrtBox["8904627412850073"]}]}], ")"}], 
+            RowBox[{"1", "/", "3"}]]}], "-", 
+          FractionBox[
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"475788375", "+", 
+              RowBox[{"4", " ", 
+               SqrtBox["8904627412850073"]}]}], ")"}], 
+            RowBox[{"1", "/", "3"}]], 
+           RowBox[{"35", " ", 
+            SuperscriptBox["3", 
+             RowBox[{"2", "/", "3"}]]}]], "-", 
+          FractionBox[
+           RowBox[{"3256248", " ", 
+            SqrtBox[
+             FractionBox["3", 
+              RowBox[{"47778", "+", 
+               RowBox[{"35", " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"1427365125", "-", 
+                   RowBox[{"12", " ", 
+                    SqrtBox["8904627412850073"]}]}], ")"}], 
+                 RowBox[{"1", "/", "3"}]]}], "+", 
+               RowBox[{"35", " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"3", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"475788375", "+", 
+                    RowBox[{"4", " ", 
+                    SqrtBox["8904627412850073"]}]}], ")"}]}], ")"}], 
+                 RowBox[{"1", "/", "3"}]]}]}]]]}], "1225"]}], ")"}]}]}]}], 
+     "\[LessEqual]", "5"}], ",", 
+    RowBox[{"\<\"\\n\\\\choice{Yes.}\\n\\\\choice[correct]{No.}\\n\\\\end{\
+multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each input of \
+$\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], 
+     "<>", "\<\"^{-1}$, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nRestrict the domain of $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"$ to \"\>", "<>", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"mm", ">", 
+        RowBox[{
+        "P2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], ",", 
+       RowBox[{"\<\"$[-5,\"\>", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Floor", "[", "mm", "]"}], "]"}], "<>", "\<\"]$\"\>"}], ",", 
+       
+       RowBox[{"\<\"$[\"\>", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Ceiling", "[", "mm", "]"}], "]"}], "<>", "\<\",5]$\"\>"}]}],
+       "]"}], "<>", "\<\" and compute $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}(\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\")$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince \
+we are looking at $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}$, now we must find $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\"$ on the vertical axis. \\n\\\\end{hint}\\nThe value \
+of $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}(\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\")$ is \\\\answer{$\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\"$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\"\>"}],
+     ",", 
+    RowBox[{"\<\"\\n\\\\choice[correct]{Yes.}\\n\\\\choice{No.}\\n\\\\end{\
+multiple-choice}\\n\\\\begin{solution}\\n\\\\begin{hint}\\nFor each input of \
+$\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], 
+     "<>", "\<\"^{-1}$, how many outputs are \
+there?\\n\\\\end{hint}\\n\\\\end{solution}\\nCompute $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}(\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\")$.\\n\\\\begin{solution}\\n\\\\begin{hint}\\nSince \
+we are looking at $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}$, now we must find $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\"$ on the vertical axis. \\n\\\\end{hint}\\nThe value \
+of $\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      InterpretationBox["\<\"\\\\text{func$\\\\$$41109}\"\>",
+       TeXForm[$CellContext`func$41109],
+       AutoDelete->True,
+       Editable->True], "]"}], "<>", "\<\"^{-1}(\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", "\<\")$ is \\\\answer{$\"\>", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"P2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+      "]"}], "<>", \
+"\<\"$}.\\n\\\\end{solution}\\n\\\\end{question}\\n\"\>"}]}], 
+   "]"}]}]], "Output",
  CellChangeTimes->{
-  3.6008274532265377`*^9, 3.6008277475501432`*^9, 3.600828053739235*^9, 
-   3.600828159263588*^9, 3.600828200877799*^9, 3.6008283904934683`*^9, 
-   3.600829576075881*^9, 3.600829742388888*^9, {3.600829921711454*^9, 
-   3.60082994683248*^9}, {3.600829986238224*^9, 3.6008300083858633`*^9}, {
-   3.600830047844419*^9, 3.600830074030869*^9}}]
+  3.608610422640431*^9, 3.608610832498293*^9, 3.6086110160613813`*^9, 
+   3.608611101916782*^9, 3.608638782284298*^9, 3.608638847159292*^9, {
+   3.608638902126902*^9, 3.608638907880439*^9}, 3.608638970003834*^9}]
 }, Open  ]]
 },
-WindowSize->{1061, 558},
-WindowMargins->{{Automatic, 78}, {Automatic, 0}},
+WindowSize->{1164, 714},
+WindowMargins->{{18, Automatic}, {-362, Automatic}},
 ShowSelection->True,
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
 2012)",
@@ -863,12 +1355,20 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 21329, 456, 1814, "Input"],
-Cell[21889, 478, 114, 5, 68, "Text"],
-Cell[22006, 485, 14828, 317, 1168, "Input"],
+Cell[557, 20, 28164, 608, 1882, "Input"],
+Cell[28724, 630, 114, 5, 68, "Text"],
+Cell[28841, 637, 14828, 317, 1134, "Input"],
 Cell[CellGroupData[{
-Cell[36859, 806, 488, 9, 28, "Input"],
-Cell[37350, 817, 1892, 27, 794, "Output"]
+Cell[43694, 958, 586, 10, 28, "Input"],
+Cell[44283, 970, 1177, 21, 94, "Message"],
+Cell[45463, 993, 1176, 21, 94, "Message"],
+Cell[46642, 1016, 1179, 21, 94, "Message"],
+Cell[47824, 1039, 609, 13, 24, "Message"],
+Cell[48436, 1054, 1275, 22, 246, "Message"],
+Cell[49714, 1078, 1275, 22, 246, "Message"],
+Cell[50992, 1102, 1289, 22, 246, "Message"],
+Cell[52284, 1126, 612, 13, 24, "Message"],
+Cell[52899, 1141, 8905, 195, 1590, "Output"]
 }, Open  ]]
 }
 ]
